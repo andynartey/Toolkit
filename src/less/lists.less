@@ -1,0 +1,107 @@
+//--------------------------------------------------------------
+// Lists
+//
+//--------------------------------------------------------------
+
+// Numbered list
+.list-fancy-numbers:extend(.list-unstyled) {
+  @number-width: 40px;
+  .clearfix();
+
+  counter-reset: li;
+
+  li {
+    margin: 0 0 10px @number-width;
+    padding: 0 20px;
+
+    position:relative;
+    min-height: @number-width;
+
+    &:before {
+      left: -1 * @number-width;
+      .square(@number-width);
+      border-width: @border-radius-base;
+      font-size: @font-size-h6;
+      line-height: 36px;
+
+      top: 0;
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      border-color: @brand-hero;
+      border-style: solid;
+      border-radius: 100%;
+      color: @brand-hero;
+      text-align: center;
+    }
+  }
+}
+
+.list-inline {
+  display: inline;
+  margin-left: 0;
+
+  > li {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+.list-inline-block {
+  .list-inline;
+
+  display: inline-block;
+  margin-right: -4px;
+
+  > li {
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+.list-horizontal {
+  .clearfix();
+  .list-unstyled();
+
+  margin-right: -4px;
+
+  > li {
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  &.list-horizontal-condensed {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.list-row-spacing {
+  li {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+}
+
+.list-unstyled {
+  > dt {
+    font-weight: normal;
+  }
+
+  > dt,
+  > dd {
+    margin: 0;
+  }
+}
+
+.list-bullet {
+  display: block;
+  list-style-type: disc;
+  padding-left: 40px;
+}

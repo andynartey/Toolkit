@@ -1,0 +1,198 @@
+//--------------------------------------------------------------
+// Panels
+//
+// Import bootstrap panels
+//--------------------------------------------------------------
+@import (less) "bootstrap/less/panels.less";
+
+.panel {
+  margin-bottom: @line-height-computed;
+  border-width: 1px;
+  border-radius: @panel-border-radius;
+  box-shadow: none;
+  position: relative;
+
+  p:last-child {
+    margin-bottom: 5px;
+  }
+}
+
+.panel-header {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: @separator-thin-line solid @gray-light;
+}
+
+.panel-body {
+  padding: @panel-body-padding;
+
+  .panel-condensed & {
+    padding: (@panel-body-padding / 2) @panel-body-padding;
+  }
+
+  > img {
+    margin-bottom: @panel-body-padding;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .panel-title-separator {
+    border-bottom: 1px solid @brand-secondary-gray;
+    padding-bottom: 8px;
+  }
+
+  .panel-content {
+      margin-bottom: 20px;
+  }
+}
+
+.panel-title {
+  .h4;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.panel-image {
+  margin-bottom: 10px;
+}
+
+.panel-footer {
+  padding: 10px @panel-body-padding;
+  border: none;
+  background-color: transparent;
+
+  &:before {
+    content: "";
+    border-top: 1px solid @gray-light;
+    display: block;
+
+    margin-bottom: 10px;
+  }
+}
+
+.panel-bg() {
+  position: absolute;
+  .text-hide();
+  .text-overflow();
+}
+
+.panel-bg-top-right {
+  .panel-bg();
+  top: @panel-bg-position;
+  right: @panel-bg-position;
+
+  .panel-condensed & {
+    right: @panel-bg-position * 2;
+  }
+}
+
+.panel-bg-top-left {
+  .panel-bg();
+  top: @panel-bg-position;
+  left: @panel-bg-position;
+}
+
+.panel-bg-bottom-right {
+  .panel-bg();
+  bottom: @panel-bg-position;
+  right: @panel-bg-position;
+}
+
+.panel-bg-bottom-left {
+  .panel-bg();
+  bottom: @panel-bg-position;
+  right: @panel-bg-position;
+}
+
+
+// Contextual variation
+.panel-alternate {
+  .panel-default;
+  border-style: dashed;
+}
+
+.panel-loud {
+  .panel-variant(@panel-loud-border; @panel-loud-text; @panel-loud-heading-bg; @panel-loud-border);
+
+  &.panel-hover:hover {
+    border-color: @brand-primary;
+  }
+}
+
+.panel-bleed {
+  .panel-default();
+
+  .panel-body:first-child {
+    padding-bottom: 0;
+  }
+
+  img {
+    margin: 0;
+  }
+}
+
+.panel-hero {
+  .panel-hero-image {
+    .media-object;
+    .pull-left;
+    margin: 0 20px 0 0;
+
+    // For implementation .panel-hero-image may be on a parent selector
+    // of the actual hero image
+    img {
+      margin: 0;
+    }
+  }
+  .panel-body {
+    padding-bottom: 0;
+  }
+  .media-body {
+    padding-bottom: 20px;
+  }
+}
+
+.panel-image {
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.panel-footer-image {
+  &,
+  & img {
+    width: 100%;
+  }
+}
+
+// Only show top and bottom borders
+.panel-horizontal {
+  border-left: none;
+  border-right: none;
+}
+
+// For a fixed height row stretch the panel
+// and footer to fill the required height
+.row-fixed {
+  > [class*='col-'] {
+
+    .panel {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+
+      left: @grid-gutter-width / 2;
+      right: @grid-gutter-width / 2;
+
+      .panel-footer,
+      .panel-footer-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}

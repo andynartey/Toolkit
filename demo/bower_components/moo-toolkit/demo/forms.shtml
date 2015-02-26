@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Forms</title>
+  </head>
+  <body>
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="forms" class="page-header">
+            <a href="#forms" class="link-unstyled link-fragment">Forms</a>
+          </h2>
+
+          <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> and <code>.btn-block</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <form role="form">
+                <fieldset>
+                  <legend data-automation="form-legend">Legend</legend>
+
+                  <div class="form-group" data-automation="form-input-text">
+                    <input type="text" class="form-control" id="example1" placeholder="Full name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="example2" placeholder="Email address">
+                  </div>
+
+
+                  <div class="form-group" data-automation="form-radio">
+                    <label>
+                      <span class="form-styled-radio" data-automation="form-input-radio">
+                        <input type="radio" name="gender">
+                        <span class="form-radio-icon"></span>
+                      </span>
+                      Male
+                    </label>
+
+                    <label>
+                      <span class="form-styled-radio" data-automation="form-input-radio-checked">
+                        <input type="radio" name="gender">
+                        <span class="form-radio-icon"></span>
+                      </span>
+                      Female
+                    </label>
+                  </div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary btn-block" data-automation="form-submit-block">Submit</button>
+              </form>
+            </div>
+          </div>
+
+          <hr>
+
+          <h3>Styled dropdowns</h3>
+          <p>http://silviomoreto.github.io/bootstrap-select/</p>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup" data-no-preview>
+              <form role="form">
+                <div class="form-group form-icon" data-automation="form-select-dropdown">
+                  <select name="dropdown" class="form-control form-styled-select">
+                    <option value="">Facebook</option>
+                    <option value="">Twitter</option>
+                    <option value="">Instagram</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+
+            <div class="highlight"><pre><code>&lt;form role=&quot;form&quot;&gt;
+&lt;div class=&quot;form-group form-icon&quot;&gt;
+&lt;select name=&quot;dropdown&quot; class=&quot;form-control form-styled-select&quot;&gt;
+  &lt;option value=&quot;&quot;&gt;Facebook&lt;/option&gt;
+  &lt;option value=&quot;&quot;&gt;Twitter&lt;/option&gt;
+  &lt;option value=&quot;&quot;&gt;Instagram&lt;/option&gt;
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;/form&gt;</code></pre></div>
+          </div>
+
+          <hr>
+
+          <h3 id="error-states">
+            <a href="#error-states" class="link-unstyled link-fragment">Error States</a>
+          </h3>
+
+          <p>Feedback can be provided to the user by adding the classes <code>.has-error</code> and <code>.has-success</code> to the respective <code>.form-control</code>.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <form role="form">
+                <div class="form-group has-error" data-automation="form-input-text-error">
+                  <div class="form-icon">
+                    <input type="text" class="form-control" id="example4" placeholder="Full name">
+                  </div>
+                  <p class="has-error-msg">Jawa Ipsum tirah saras payung wos tirah kathok kemul</p>
+                </div>
+                <div class="form-group" data-automation="form-input-password">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group has-success" data-automation="form-input-text-success">
+                  <div class="form-icon">
+                    <input type="text" class="form-control" id="example5" placeholder="Email" value="foo@moo.com">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+              </form>
+
+            </div>
+          </div>
+
+
+          <hr>
+
+          <h3 id="inline-forms">
+            <a href="inline-forms" class="link-unstyled">Inline Forms</a>
+          </h3>
+
+          <p>Forms can be made inline by adding the class <code>.form-inline</code>.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <form class="form-inline" data-automation="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="example3" placeholder="Email address">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+
+
+          <hr>
+
+          <h3 id="cta">
+            <a href="#cta" class="link-unstyled link-fragment">CTA</a>
+          </h3>
+          <p>For buttons <code>&lt;button&gt;</code> and links <code>&lt;a&gt;</code> that require a button style, you should use the following classes - <code>.btn</code>, <code>.btn-primary</code> together and apply a role.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <a href="#" class="btn btn-primary" role="button">Primary link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<h3 id="condensed-tables">
+  <a href="#condensed-tables" class="link-unstyled link-fragment">Condensed table</a>
+</h3>
+
+<p>Condensed tables have a little less padding and can be created using the modifier <code>.table-condensed</code></p>
+
+<div class="examples-container">
+  <div class="moo-example" data-language="markup">
+    <table class="table table-condensed" data-automation="table-condensed">
+      <thead>
+        <tr>
+          <th>Lorem ipsum</th>
+          <th>Dolor sit</th>
+          <th>Consectetur</th>
+          <th>Adipisicing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Assumenda nisi cum</td>
+          <td>deserunt, enim repudiandae</td>
+          <td>a maxime dignissimos sapiente</td>
+          <td>eum, laborum excepturi commodi</td>
+        </tr>
+        <tr>
+          <td>Autem dolore obcaecati</td>
+          <td>obcaecati doloremque</td>
+          <td>animi eveniet</td>
+          <td>ducimus facilis</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" align="right">
+            <small>* (Lorem ipsum dolor sit amet.  <a href="#">Active link</a>)</small>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

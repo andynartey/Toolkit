@@ -1,0 +1,164 @@
+<!-- Website Footer -->
+<footer class="separator separator-thin separator-top">
+  <div class="container">
+    <div class="row separator separator-bottom separator-thin separator-light spacer-top spacer-bottom">
+      <div class="col-4 spacer-bottom">
+        <span class="h6"><strong>Next day Rush Printing</strong></span>
+        <div>
+          <div class="mooimage-stopwatch pull-right spacer-left"></div>
+          Order before midnight and we'll print the next day. <a href="http://uk.moo.com/help/faq/delivery-and-turnaround.html">More on Rush Printing</a>.
+        </div>
+      </div>
+
+      <div class="col-4 spacer-bottom">
+        <span class="h6"><strong>20+ Employees?</strong></span>
+        <div>
+          <div class="mooimage-people pull-right spacer-left"></div>
+          We offer a dedicated account managed service and easy online ordering system. <a href="/products/business-services/">Find out more</a>.
+        </div>
+      </div>
+
+      <div class="col-4 spacer-bottom">
+        <span class="h6"><strong>The MOO Promise</strong></span>
+        <div>
+          <div class="mooimage-promise-stamp pull-right spacer-left"></div>
+          We're only happy when you're happy – our <a href="/help/contact-us.html">customer service</a> team are always there to help.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <nav class="col-2">
+        Products
+        <ul class="list-unstyled list-row-spacing">
+          <li><a href="http://uk.moo.com/products/business-cards.html">Business Cards</a>
+          <li><a href="http://uk.moo.com/products/minicards.html">MiniCards</a>
+          <li><a href="http://uk.moo.com/products/postcards.html">Postcards</a>
+          <li><a href="http://uk.moo.com/products/luxe/notecards.html">Notecards</a>
+          <li><a href="http://uk.moo.com/products/letterheads.html">Letterheads</a>
+          <li><a href="http://uk.moo.com/products/stickers/">Stickers</a>
+          <li><a href="http://uk.moo.com/products/greeting-cards.html">Greeting Cards</a>
+          <li><a href="http://uk.moo.com/accessories/">Accessories</a>
+          <li><a href="http://uk.moo.com/flyers/">Flyers</a>
+        </ul>
+      </nav>
+
+      <nav class="col-2">
+        Useful Stuff
+        <ul class="list-unstyled list-row-spacing">
+          <li><a href="http://uk.moo.com/about/moo-promise.html">The MOO Promise</a>
+          <li><a href="http://uk.moo.com/about/">Why choose MOO?</a>
+          <li><a href="http://uk.moo.com/help/faq/">FAQs</a>
+          <li><a href="http://uk.moo.com/help/faq/cost-calculator.html">Pricing</a>
+          <li><a href="http://uk.moo.com/help/faq/delivery-and-turnaround.html">Delivery &amp; turnaround times</a>
+          <li><a href="http://uk.moo.com/help/faq/templates-and-guidelines.html">Artwork guidelines</a>
+          <li><a href="http://uk.moo.com/refer-a-friend/">Refer a Friend</a>
+          <li><a href="http://uk.moo.com/about/privacy-policy/">Privacy &amp; Cookie policy</a>
+        </ul>
+      </nav>
+
+      <nav class="col-2">
+        Working with MOO
+        <ul class="list-unstyled list-row-spacing">
+          <li><a href="http://uk.moo.com/products/business-services">10+ Employees?</a>
+          <li><a href="http://uk.moo.com/students/">Student ordering</a>
+          <li><a href="http://uk.moo.com/affiliates/">Affiliate programme</a>
+          <li><a href="http://uk.moo.com/pickup/">MOO for Events</a>
+          <li><a href="http://uk.moo.com/about/jobs/">Careers</a>
+          <li><a href="http://uk.moo.com/about/press.html">Press kit</a>
+          <li><a href="http://uk.moo.com/api/">API</a>
+        </ul>
+      </nav>
+
+      <nav class="col-2">
+        Contact MOO
+        <ul class="list-unstyled list-row-spacing">
+          <li><a href="http://uk.moo.com/help/contact-us.html">Contact us</a>
+          <li><a href="http://uk.moo.com/blog/">Blog</a>
+          <li><a href="http://uk.moo.com/newsletter/archive.html">Newsletter</a>
+          <li><a href="http://www.twitter.com/overheardatmoo">Twitter</a>
+          <li><a href="http://uk.moo.com/about/community.html">Community</a>
+          <li><a href="http://uk.moo.com/shop/">The MOO Shop</a>
+        </ul>
+      </nav>
+
+      <nav class="col-2">
+        We speak
+        <ul class="list-unstyled list-row-spacing">
+          <li><a href="http://uk.moo.com/de/" rel="alternate" hreflang="de" lang="de" title="Change language">Deutsch</a>
+          <li><a href="http://uk.moo.com/en/" rel="alternate" hreflang="en" lang="en" title="Change language" class="link-unstyled">English</a>
+          <li><a href="http://uk.moo.com/es/" rel="alternate" hreflang="es" lang="es" title="Change language">Español</a>
+          <li><a href="http://uk.moo.com/fr/" rel="alternate" hreflang="fr" lang="fr" title="Change language">Français</a>
+          <li><a href="http://uk.moo.com/it/" rel="alternate" hreflang="it" lang="it" title="Change language">Italiano</a>
+        </ul>
+      </nav>
+
+      <div class="col-2">
+        We accept:
+
+        <div class="row">
+          <div class="col-8">
+            <ul class="list-inline list-row-spacing">
+              <li>
+                <span class="moosprite-card-paypal">
+                  <span class="sr-only">Paypal</span>
+                </span>
+              </li>
+              <li>
+                <span class="moosprite-card-visa">
+                  <span class="sr-only">Visa</span>
+                </span>
+              </li>
+              <li>
+                <span class="moosprite-card-amex">
+                  <span class="sr-only">American Express</span>
+                </span>
+              </li>
+              <li>
+                <span class="moosprite-card-mastercard">
+                  <span class="sr-only">Mastercard</span>
+                </span>
+              </li>
+              <li>
+                <span class="moosprite-card-giropay">
+                  <span class="sr-only">Giropay</span>
+                </span>
+              </li>
+              <li>
+                <span class="moosprite-card-sofort">
+                  <span class="sr-only">Sofort</span>
+                </span>
+              </li>
+              <li>
+                <span class="moosprite-card-ideal">
+                  <span class="sr-only">Ideal</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-alt separator separator-thin separator-top spacer-top">
+    <div class="container">
+      <div class="row spacer-top spacer-bottom">
+        <div class="col-9">
+          <span class="pull-left mooimage-lockup-solid"></span>
+          <small class="pull-right">&copy; <address class="address-inline">MOO Print Limited, 32-38 Scrutton Street (REAR), London, EC2A 4RQ.</address> Registered in England, Company Number: 5121723</small>
+        </div>
+
+        <div class="col-3">
+          <small>
+            <ul class="list-horizontal pull-right">
+              <li><a href="http://uk.moo.com/about/fonts/">Fonts</a>
+              <li><a href="http://uk.moo.com/about/terms-conditions/">Terms &amp; conditions</a>
+              <li><a href="http://uk.moo.com/about/privacy-policy/">Privacy policy</a>
+            </ul>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

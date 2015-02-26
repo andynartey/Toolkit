@@ -1,0 +1,79 @@
+<h3 id="muted-tables">
+  <a href="#muted-tables" class="link-unstyled link-fragment">Muted table</a>
+</h3>
+
+<p>A muted theme with no background colors can be created with the modifier class <code>.table-muted</code></p>
+
+<div class="examples-container">
+  <div class="moo-example" data-language="markup">
+    <table class="table table-muted" data-automation="table-muted">
+      <thead>
+        <tr>
+          <th>Lorem ipsum</th>
+          <th>Dolor sit</th>
+          <th>Consectetur</th>
+          <th>Adipisicing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Assumenda nisi cum</td>
+          <td>deserunt, enim repudiandae</td>
+          <td>a maxime dignissimos sapiente</td>
+          <td>eum, laborum excepturi commodi</td>
+        </tr>
+        <tr>
+          <td>Assumenda nisi cum</td>
+          <td>deserunt, enim repudiandae</td>
+          <td>a maxime dignissimos sapiente</td>
+          <td>eum, laborum excepturi commodi</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" align="right">
+            <small>* (Lorem ipsum dolor sit amet.  <a href="#">link</a>)</small>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+<p>Background colors for individual rows can be removed with the modifier <code>.row-muted</code>, useful for pricing tables when the last row may be a total cost.</p>
+
+<div class="examples-container">
+  <div class="moo-example" data-language="markup">
+    <table class="table" data-automation="table-row-muted">
+      <thead>
+        <tr>
+          <th>Lorem ipsum</th>
+          <th>Dolor sit</th>
+          <th>Consectetur</th>
+          <th>Adipisicing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Assumenda nisi cum</td>
+          <td>deserunt, enim repudiandae</td>
+          <td>a maxime dignissimos sapiente</td>
+          <td>eum, laborum excepturi commodi</td>
+        </tr>
+        <tr class="row-muted">
+          <td>Assumenda nisi cum</td>
+          <td>deserunt, enim repudiandae</td>
+          <td>a maxime dignissimos sapiente</td>
+          <td>eum, laborum excepturi commodi</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" align="right">
+            <small>* (Lorem ipsum dolor sit amet.  <a href="#">Active link</a>)</small>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

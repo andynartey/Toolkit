@@ -1,0 +1,39 @@
+//---------------------------------------------------
+// Navs
+// --------------------------------------------------
+
+@import (less) "bootstrap/less/navs.less";
+
+.tabs {
+  > ul,
+  > ol {
+    .nav;
+    .nav-tabs;
+    margin-bottom: 20px;
+    .h6();
+
+    > li {
+      // Actual tabs (as links)
+      .bryant-pro-regular();
+
+      > a {
+        padding: 0 9px;
+        margin-bottom: 0;
+        border-radius: 0;
+        border: none;
+      }
+
+      &.active > a {
+        .bryant-pro-medium();
+
+        &,
+        &:hover,
+        &:focus {
+          border: 0 solid @nav-tabs-active-link-hover-border-color;
+          border-bottom-color: @brand-hero;
+          border-bottom-width: 2px;
+        }
+      }
+    }
+  }
+}

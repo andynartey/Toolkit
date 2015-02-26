@@ -1,0 +1,52 @@
+<h4>3 Column</h4>
+<div class="row">
+  <div class="col-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">Lorem ipsum dolor sit amet</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ad, eum incidunt accusantium perferendis facilis nisi fugiat minima ipsam officia harum quod saepe rem aliquam ratione architecto omnis deserunt blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#" class="text-standout">
+          <strong>Read more</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">Lorem ipsum dolor sit amet</h3>
+        <img src="http://placehold.it/216x140.png" alt="...">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ad, eum incidunt accusantium perferendis facilis nisi fugiat minima.</p>
+        <p>Adipisicing elit.</p>
+        <a href="#" class="text-standout">
+          <strong>Read more</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="panel panel-bleed">
+      <div class="panel-body">
+        <h3 class="panel-title">
+          <a href="#">Lorem ipsum dolor sit amet</a>
+        </h3>
+      </div>
+      <img class="full-bleed" src="http://placehold.it/216x140.png" alt="...">
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ad, eum incidunt accusantium perferendis facilis nisi fugiat minima.</p>
+        <p>Adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">Lorem ipsum dolor sit amet</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ad, eum incidunt accusantium perferendis facilis nisi fugiat minima.</p>
+        <p>Adipisicing elit.</p>
+        <button type="button" class="btn btn-default btn-block">Contact moo</button>
+      </div>
+    </div>
+  </div>
+</div>

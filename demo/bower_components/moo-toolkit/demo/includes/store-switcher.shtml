@@ -1,0 +1,62 @@
+<div id="store-switcher" class="popover-content" data-placement="bottom" data-toggle="popover">
+  <div class="popover-list-current option-us_en">
+    <span class="text-hide">English ($USD)</span>
+  </div>
+  <span class="popover-list-selection" class="btn btn-default">Select language</span>
+
+  <div class="popover-html hidden">
+    <ul class="popover-list-items">
+      <li>
+        <div class="option-uk_en current">
+          <a rel="alternate" href="#" title="..." hreflang="en" lang="en">English (£GBP)</a>
+        </div>
+      </li>
+      <li>
+        <div class="option-us_en">
+          <a rel="alternate" href="#" title="..." hreflang="en" lang="en">English ($USD)</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="option-eu_en">
+          <a rel="alternate" href="#" title="..." hreflang="en" lang="en">English (€EUR)</a>
+        </div>
+      </li>
+      <li>
+        <div class="option-uk_de">
+          <a rel="alternate" href="#" title="..." hreflang="de" lang="de">Deustch (€EUR)</a>
+        </div>
+      </li>
+      <li>
+        <div class="option-uk_es">
+          <a rel="alternate" href="#" title="..." hreflang="es" lang="es">Espanol (€EUR)</a>
+        </div>
+      </li>
+      <li>
+        <div class="option-uk_fr">
+          <a rel="alternate" href="#" title="..." hreflang="fr" lang="fr">Francais (€EUR)</a>
+        </div>
+      </li>
+      <li>
+        <div class="option-nl_en">
+          <a rel="alternate" href="#" title="..." hreflang="fr" lang="fr">English (€EUR)</a>
+        </div>
+      </li>
+      <li>
+        <div class="option-uk_it">
+          <a rel="alternate" href="#" title="..." hreflang="it" lang="it">Italiano (€EUR)</a>
+        </div>
+      </li>
+      <li>
+        <div class="option-au_en">
+          <a rel="alternate" href="#" title="..." hreflang="au" lang="en">Australia ($AUS)</a>
+        </div>
+      </li>
+      <li>
+        <div class="option-ca_en">
+          <a rel="alternate" href="#" title="..." hreflang="ca" lang="en">Canada ($CAD)</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

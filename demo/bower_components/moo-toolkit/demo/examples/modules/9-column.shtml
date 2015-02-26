@@ -1,0 +1,15 @@
+<h4>9 Column</h4>
+<div class="row">
+  <div class="col-9">
+    <div class="panel panel-default panel-hero">
+      <img class="panel-hero-image" src="http://placehold.it/478x335.png" alt="...">
+      <div class="panel-body">
+        <div class="media-body">
+          <h2 class="panel-title">Lorem ipsum dolor sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ad, eum incidunt accusantium perferendis facilis nisi fugiat minima ipsam officia!</p>
+          <button type="button" class="btn btn-primary">Next step</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

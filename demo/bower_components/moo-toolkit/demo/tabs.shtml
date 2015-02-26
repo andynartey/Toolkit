@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Tabs</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="tabs" class="page-header">
+            <a href="#tabs" class="link-unstyled link-fragment">Tabs</a>
+          </h2>
+          <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap tab styling, while adding the <code>nav</code> and <code>nav-pills</code> classes will apply pill styling.</p>
+
+          <h3 id="basic-tabs">
+            <a href="#basic-tabs">Basic tabs</a>
+          </h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <nav class="tabs">
+                <ul>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <hr/>
+
+          <h3 id="togglable-tabs">
+            <a href="#togglable-tabs">Togglable tabs</a>
+          </h3>
+
+          <p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle="tab"</code>.</p>
+          <div class="alert alert-info">
+            <strong>Use the URL to activate a tab</strong>
+            <p> You can also activate a specific tab using a URL. Simply add the id of the tab to the end of the URL. For example, <code>http://domain.com/tabs.shtml<b>#tabIdName</b></code>.</p>
+          </div>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <!-- Nav tabs -->
+              <nav class="tabs">
+                <ul>
+                  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                  <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                </ul>
+              </nav>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane active" id="home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut eros ut diam accumsan posuere. Ut accumsan lectus quis rhoncus sollicitudin. Etiam pulvinar nisi quis enim porttitor, rhoncus aliquet est porttitor. Phasellus quis placerat orci. Nam quis quam pharetra, tincidunt neque ut, porttitor felis.</div>
+                <div class="tab-pane" id="profile">Sed semper mollis aliquam. Ut sed dolor eu leo tincidunt lobortis sit amet sed elit. Phasellus at lectus pellentesque, venenatis dui in, adipiscing mauris. Cras vulputate eleifend dignissim. Quisque vestibulum sem quis aliquam venenatis.</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="easy-tabs" class="page-header">
+            <a href="#easy-tabs" class="link-unstyled link-fragment">Easy Tabs</a>
+          </h2>
+
+          <p>In the example above the tab content could be toggled by using a combination of fragment identifiers and IDs in the markup. This provides a lot of flexibility but when dealing with CMS content requiring the use of IDs may be difficult to implement. Instead if we add the data attribute <code>data-toggle="auto"</code> to the <code>.tabs</code> element then links inside the <code>.tabs</code> element are automatically wired up to their numerically corresponding <code>.tab-pane</code>. In this way without the sue of IDs upon clicking the second tab link the second tab pane will open</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <!-- Nav tabs -->
+              <nav class="tabs" data-toggle="auto">
+                <ul>
+                  <li class="active"><a>Home</a></li>
+                  <li><a>Profile</a></li>
+                </ul>
+              </nav>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut eros ut diam accumsan posuere. Ut accumsan lectus quis rhoncus sollicitudin. Etiam pulvinar nisi quis enim porttitor, rhoncus aliquet est porttitor. Phasellus quis placerat orci. Nam quis quam pharetra, tincidunt neque ut, porttitor felis.</div>
+                <div class="tab-pane">Sed semper mollis aliquam. Ut sed dolor eu leo tincidunt lobortis sit amet sed elit. Phasellus at lectus pellentesque, venenatis dui in, adipiscing mauris. Cras vulputate eleifend dignissim. Quisque vestibulum sem quis aliquam venenatis.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

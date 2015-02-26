@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="../">
+    <!--#include virtual="../includes/head.shtml" -->
+    <title>MOO Toolkit Example - Icons</title>
+
+    <style>
+      body {
+        text-align: center;
+        color: #4b4f54;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .text-rendering {
+        margin: 20px 0;
+      }
+
+      .text-rendering li {
+        width: 280px;
+        display: inline-block;
+        padding: 10px;
+      }
+
+      .text-rendering li:after {
+        content: "Lorem ipsum dolor sit amet";
+      }
+
+      [class*="col-"] {
+        padding: 0;
+      }
+
+      .size-rendering li {
+        line-height: 80px;
+        border-bottom: 1px solid #4b4f54;
+        padding-bottom: 20px;
+      }
+
+      .size-rendering li span:before{
+        vertical-align: bottom;
+      }
+
+      .hero-icons {
+        padding-top: 20px;
+        background: #00965e;
+        color: #fff;
+      }
+
+      .hero-icons .size-rendering li {
+        border-color: #fff;
+      }
+
+      .icon-size-1  { font-size: 13px; }
+      .icon-size-2  { font-size: 15px; }
+      .icon-size-3  { font-size: 18px; }
+      .icon-size-4  { font-size: 21px; }
+      .icon-size-5  { font-size: 24px; }
+      .icon-size-6  { font-size: 27px; }
+      .icon-size-7  { font-size: 30px; }
+      .icon-size-8  { font-size: 33px; }
+      .icon-size-9  { font-size: 36px; }
+      .icon-size-10 { font-size: 39px; }
+      .icon-size-11 { font-size: 42px; }
+      .icon-size-12 { font-size: 45px; }
+    </style>
+  </head>
+  <body>
+
+    <div class="container" role="main">
+      <div class="row">
+        <div class="col-1">13px</div>
+        <div class="col-1">15px</div>
+        <div class="col-1">18px</div>
+        <div class="col-1">21px</div>
+        <div class="col-1">24px</div>
+        <div class="col-1">27px</div>
+        <div class="col-1">30px</div>
+        <div class="col-1">33px</div>
+        <div class="col-1">36px</div>
+        <div class="col-1">39px</div>
+        <div class="col-1">42px</div>
+        <div class="col-1">45px</div>
+      </div>
+      <div class="row size-rendering">
+        <div class="col-1 icon-size-1">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-2">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-3">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-4">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-5">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-6">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-7">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-8">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-9">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-10">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-11">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+        <div class="col-1 icon-size-12">
+          <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+        </div>
+      </div>
+
+      <div class="row text-rendering">
+        <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+      </div>
+    </div>
+
+    <div class="hero-icons">
+      <div class="container" role="main">
+        <div class="row">
+          <div class="col-1">13px</div>
+          <div class="col-1">15px</div>
+          <div class="col-1">18px</div>
+          <div class="col-1">21px</div>
+          <div class="col-1">24px</div>
+          <div class="col-1">27px</div>
+          <div class="col-1">30px</div>
+          <div class="col-1">33px</div>
+          <div class="col-1">36px</div>
+          <div class="col-1">39px</div>
+          <div class="col-1">42px</div>
+          <div class="col-1">45px</div>
+        </div>
+        <div class="row size-rendering">
+          <div class="col-1 icon-size-1">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-2">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-3">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-4">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-5">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-6">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-7">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-8">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-9">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-10">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-11">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+          <div class="col-1 icon-size-12">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+        </div>
+        <div class="row text-rendering">
+          <div class="col-12">
+            <!--#include virtual="../includes/generated/mooicon-list.shtml" -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="../includes/page-end-body.shtml" -->
+  </body>
+</html>

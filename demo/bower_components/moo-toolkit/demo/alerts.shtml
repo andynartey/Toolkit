@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Alerts</title>
+  </head>
+  <body>
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="alerts" class="page-header">
+            <a href="#alerts" class="link-unstyled link-fragment">Alerts</a>
+          </h2>
+
+          <h3 id="standard">
+            <a href="#standard" class="link-fragment">Standard Alerts</a>
+          </h3>
+
+          <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="alert alert-success">
+                <strong>Well done!</strong> You successfully read this important alert message.
+              </div>
+              <div class="alert alert-info">
+                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+              </div>
+              <div class="alert alert-warning">
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+              </div>
+              <div class="alert alert-danger">
+                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+              </div>
+            </div>
+          </div>
+
+          <h3 id="full-width">
+            <a href="#full-width" class="link-fragment">Full width alerts</a>
+          </h3>
+
+          <p>Full width header and footer alerts. For alerts that span the full width of a page and are either positioned at the top or bottom of a page you can use the <code>.alert-header</code> and <code>.alert-footer</code> modifier classes</p>
+
+          <h4 id="header-alerts">
+            <a href="#header-alerts" class="link-fragment">Header alerts</a>
+          </h4>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="alert alert-header alert-success">
+                <strong>Well done!</strong> You successfully read this important alert message.
+              </div>
+              <div class="alert alert-header alert-info">
+                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+              </div>
+              <div class="alert alert-header alert-warning">
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+              </div>
+              <div class="alert alert-header alert-danger">
+                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+              </div>
+            </div>
+          </div>
+
+          <h4 id="footer-alerts">
+            <a href="#footer-alerts" class="link-fragment">Footer alerts</a>
+          </h4>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="alert alert-footer alert-success">
+                <strong>Well done!</strong> You successfully read this important alert message.
+              </div>
+              <div class="alert alert-footer alert-info">
+                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+              </div>
+              <div class="alert alert-footer alert-warning">
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+              </div>
+              <div class="alert alert-footer alert-danger">
+                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+              </div>
+            </div>
+          </div>
+
+        <h4 id="labels">
+            <a href="#labels" class="link-fragment">Labels</a>
+        </h4>
+
+        <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+                <strong class="label label-primary">Primary</strong>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

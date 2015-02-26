@@ -1,0 +1,215 @@
+//--------------------------------------------------------------
+// Size Comparison
+//--------------------------------------------------------------
+// Specific to USBC experiment
+//
+
+.standard-size-colour() {
+    color: @brand-primary-blue;
+}
+
+.moo-size-colour() {
+    color: @brand-primary-green;
+}
+
+.comparison-image {
+    background-color: @brand-alternate-black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+
+   .comparison-text {
+        text-align: center;
+        color: @brand-primary-white;
+
+        .comparison-head {
+            height: 40px;
+            display: block;
+        }
+
+        .comparison-body {
+            .panel-body;
+            padding-bottom: 0;
+        }
+
+        .comparison-footer {
+            .panel-footer;
+            &:before {
+                border-top-color: transparent;
+            }
+        }
+
+        [class*="comparison-title"] {
+            display: block;
+        }
+
+        .comparison-btn() {
+            color: @brand-primary-black;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .standard-size {
+            .standard-size-colour;
+
+            &.btn-alt {
+                background-color: @brand-primary-blue;
+                color: @brand-primary-black;
+                a {
+                    .comparison-btn;
+                }
+            }
+        }
+
+        .moo-size {
+            .moo-size-colour;
+
+            &.btn-alt {
+                background-color: @brand-primary-green;
+                color: @brand-primary-black;
+                a {
+                    .comparison-btn;
+                }
+            }
+        }
+
+        [class*="mooimage-"] {
+            display: block;
+            margin: 0 auto;
+
+            .square(50px);
+        }
+    }
+}
+
+.comparison-modal {
+
+    border: @separator-thin-line solid @brand-gray;
+
+    .comparison-body {
+        text-align: center;
+    }
+
+    .comparison-footer {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    .panel {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .comparison-size-selectors {
+        .panel {
+            height: 330px;
+            cursor: pointer;
+
+            .panel-default;
+
+            .radio-btn {
+                transition: all .5s ease-in-out;
+
+                &:before {
+                    content: " ";
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    &:extend(.mooimage-tick-grey);
+                }
+            }
+
+            &.active {
+                border-color: @brand-hero;
+                border-width: 2px;
+                cursor: default;
+
+                .radio-btn {
+                    transform: scale(1);
+
+                    &:before {
+                        content: " ";
+                        display: inline-block;
+                        &:extend(.mooimage-tick-green);
+                    }
+                }
+            }
+
+            &.inactive {
+                transition: all .5s ease-in-out;
+                background-color: @brand-alternate-gray;
+                border: 2px solid @brand-alternate-gray;
+            }
+        }
+
+        .panel-body {
+            height: 270px;
+            padding-bottom: 0;
+
+            .example-image {
+                position: relative;
+                display: inline-table;
+
+                .badge {
+                    position: absolute;
+                    right: 240px;
+                    bottom: 130px;
+                }
+            }
+        }
+
+        .form-styled-radio {
+            margin-top: 10px;
+        }
+
+        .trigger {
+            position: absolute;
+            top: 24px;
+            right: 90px;
+
+            &:hover,
+            &:focus {
+                cursor: help;
+            }
+        }
+
+        .panel-footer {
+            &:before {
+                border-top: none;
+                margin: 0;
+            }
+        }
+    }
+
+    .comparison-icon {
+        .square(80px);
+        margin: 0 auto;
+
+        [class*="mooimage-"] {
+            display: block;
+            margin-left: 14px;
+        }
+    }
+
+    .comparison-footer {
+        &.disabled {
+            .panel-body {
+                transition: all .5s ease-in-out;
+                opacity: 0.2;
+            }
+
+            a,
+            .btn {
+                cursor: default;
+            }
+        }
+    }
+}
+
+
+
+

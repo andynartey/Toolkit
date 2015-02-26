@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Date and Time</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include file="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" id="modules-page" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="datetime" class="page-header">
+            <a href="#datetime" class="link-unstyled link-fragment">Date and Time</a>
+          </h2>
+          <h3 id="date-box">
+            <a href="#date-box">Date Box</a>
+          </h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <time datetime="2014-07-25" class="datebox">
+                  <span class="datebox-header">Jul</span>
+                  <span class="datebox-day">25</span>
+              </time>
+            </div>
+          </div>
+
+          <h3 id="date-box-footer">
+            <a href="#date-box-footer">Date Box with Additional Information</a>
+          </h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <time datetime="2014-07-25" class="datebox">
+                  <span class="datebox-header">Jul</span>
+                  <span class="datebox-day">25</span>
+                  <span class="datebox-footer">estimated</span>
+              </time>
+            </div>
+          </div>
+
+          <h3 id="date-box-range">
+            <a href="#date-box-range">Date Box with date range</a>
+          </h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <time class="datebox">
+                  <span class="datebox-header">Jul</span>
+                  <span class="datebox-day">25 - 27</span>
+              </time>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

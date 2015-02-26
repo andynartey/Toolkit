@@ -1,0 +1,368 @@
+//--------------------------------------------------------------
+// Header
+//
+//--------------------------------------------------------------
+
+header {
+  .moo-logo {
+    margin: 10px 0 0 0;
+
+    .mooimage-lockup {
+      display: block;
+    }
+  }
+}
+
+.moo-logo-strap {
+  .h6;
+
+  font-size: 14px;
+  position: absolute;
+  bottom: 0px;
+  left: 139px;
+  margin-bottom: 2px;
+}
+
+.moo-logo-drop {
+  float: left;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.moo-partner-logo {
+  position: absolute;
+  width: 200px;
+  bottom: 5px;
+  left: 139px;
+  padding-bottom: 0;
+  background-color: #ffffff;
+
+  img {
+    max-width: 200px;
+    max-height: 65px;
+  }
+}
+
+.menu-top-nav,
+.dropdown-nav {
+  .pull-right;
+
+  > ul {
+    margin: 18px 0 7px 0;
+  }
+}
+
+.menu-top-nav {
+  &.menu-top-condensed {
+    .col-7;
+
+    margin-top: 16px;
+  }
+}
+
+.menu-top-nav {
+  margin: 5px 0 0;
+  text-align: right;
+  color: @brand-gray;
+
+  > ul {
+    .list-inline;
+    .small;
+
+    > li {
+      padding: 0 4px;
+
+      > .popover-content {
+        padding: 0;
+      }
+    }
+
+    a {
+      &:hover,
+      &:focus {
+        color: @brand-hero-darker;
+      }
+    }
+  }
+
+  .social-links {
+    > li {
+      padding: 0;
+    }
+  }
+
+  .mooicon-cart {
+    font-size: 15px;
+    color: @brand-primary;
+    margin-right: 5px;
+  }
+}
+
+// Social
+.social-links {
+  [class*='moosprite-'] {
+    vertical-align: middle;
+
+    a,
+    &,
+    &:active,
+    &:hover {
+      .text-hide;
+    }
+  }
+
+  .moosprite-social-facebook {
+    &:hover,
+    &:focus {
+
+      .moosprite-social-facebook-alt;
+    }
+  }
+
+  .moosprite-social-google {
+    &:hover,
+    &:focus {
+
+      .moosprite-social-google-alt;
+    }
+  }
+
+  .moosprite-social-twitter {
+    &:hover,
+    &:focus {
+
+      .moosprite-social-twitter-alt;
+    }
+  }
+
+  .menu-top-nav & {
+    > li {
+      padding-right: 0;
+    }
+  }
+}
+
+.dropdown-nav {
+  padding-left: 0;
+  padding-right: 0;
+
+  .dropdown-toggle {
+    z-index: @zindex-navbar-fixed;
+    display: inline-block;
+  }
+
+  .dropdown-nav-links {
+    border-bottom: inherit;
+    .h6;
+
+    margin-top: 23px;
+
+    .open {
+      > a.dropdown-link, >a.dropdown-toggle {
+        &,
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+      > a.dropdown-toggle {
+        &,
+        &:hover,
+        &:focus {
+          color: @brand-hero-darker;
+          border-color: @brand-secondary-gray;
+          border-bottom-color: @brand-primary-white;
+          background-color: @brand-primary-white;
+        }
+      }
+    }
+
+    li {
+      display: inline-block;
+
+      > a {
+
+        &:hover,
+        &:focus {
+          color: @brand-hero-darker;
+          border-color: transparent;
+          background-color: transparent;
+          border-bottom-color: transparent;
+        }
+      }
+    }
+
+    li.separator-top {
+      > a {
+        margin: 10px 10px 0 10px;
+        padding: 15px 0 5px 0;
+
+        &:hover,
+        &:focus {
+          border-color: @brand-secondary-gray;
+        }
+      }
+    }
+  }
+
+  .dropdown {
+    margin-right: 0;
+    padding-right: 0;
+
+    a {
+      padding: 3px 10px 5px 10px;
+      position: relative;
+      font-weight: 500;
+
+      &:after {
+        font-size: 10px;
+      }
+    }
+
+    &:hover,
+    &:focus
+    &:active {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+
+  .dropdown-link, .dropdown-toggle {
+    .bryant-pro-medium;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    border: solid transparent;
+    border-width: 1px;
+  }
+
+  .dropdown-toggle {
+    &:after {
+      padding-left: 5px;
+    }
+  }
+
+  .dropdown-menu {
+    box-shadow: inherit;
+    border-color: @brand-secondary-gray;
+    min-width: 170px;
+    padding: 7px 0;
+    z-index: @zindex-dropdown;
+    margin-top: -1px;
+
+    a {
+      padding: 3px 20px 3px 10px;
+      position: relative;
+      color: @brand-hero;
+
+      .bryant-pro-medium;
+
+      [class*='mooicon-'] {
+        position: absolute;
+        right: 10px;
+        color: @brand-secondary-gray;
+      }
+    }
+
+    > .active {
+      > a {
+        background-color: transparent;
+        color: @brand-hero-darker;
+
+        [class*='mooicon-'] {
+          color: @brand-hero-darker;
+        }
+      }
+    }
+
+    li {
+      margin: 0;
+      display: inline;
+    }
+
+    > li {
+      &:hover,
+      &:focus,
+      &:active {
+
+        .drop-menu-pop {
+          display: block;
+        }
+      }
+    }
+
+    .seperator-padding() {
+      padding-top: 19px;
+    }
+
+    .separator-top {
+      border-top: 1px solid @brand-secondary-gray;
+      margin-top: 14px;
+
+      .seperator-padding();
+
+      &:hover, &:focus {
+        border-color: @brand-secondary-gray;
+      }
+    }
+
+    .sub-menu-chevron {
+      &:after {
+        position: absolute;
+        top: 50%;
+        margin-top: -0.5em;
+        right: 10px;
+
+        .mooicon-chevron-right;
+      }
+    }
+
+    &.last {
+      right: 0;
+      left: inherit;
+    }
+
+    .drop-menu-pop {
+      position: absolute;
+      background: white;
+      min-width: 250px;
+      border: 1px solid @brand-secondary-gray;
+      display: none;
+      padding: 7px 10px;
+
+      left: 100%;
+
+      top: -1px;
+      bottom: -1px;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        height: 100%;
+      }
+
+      li {
+        > a {
+          display: block;
+          text-decoration: none;
+          font-weight: normal;
+          padding: 3px 0 3px 0;
+
+          &.separator-top {
+            .seperator-padding();
+            margin-top: 8px;
+          }
+        }
+
+        &.separator-top {
+          > a {
+            margin: 2px 0 0 0;
+            padding: 20px 0 5px 0;
+          }
+        }
+      }
+    }
+  }
+
+}

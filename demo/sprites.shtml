@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="sprites" class="page-header">
+            <a href="#sprites" class="link-unstyled link-fragment">Sprites</a>
+          </h2>
+
+          <h3 id="generation">
+            <a href="#generation" class="link-unstyled link-fragment">Generation</a>
+          </h3>
+
+          <p>Sprites and their CSS are compiled using a Grunt task. All svg files within <code>/src/images/sprite</code> are converted into a single SVG sprite with a PNG fallback. To update the sprite add new SVG files into the appropriate directory and run <code>grunt sprite</code>. The images are updated in the <code>dist</code> directory and a less file is updated to include mixins and class names based on the sprite icons filename</p>
+
+          <p>For the png fallback to work <a href="http://modernizr.com/" target="_blank">Modernizer</a> is used to detect support for SVG. If the browser supports <code>background-size</code> the sprite can be scaled by adjusting the font size of the element.</p>
+
+          <h3 id="usage">
+            <a href="#usage" class="link-unstyled link-fragment">Usage</a>
+          </h3>
+
+          <p>To use a sprite icon add the relevant class names to a HTML element. Or target a selecotor and use one of the mixins available.<p>
+
+          <div class="examples-container">
+            <div class="example-description">
+              <p>Using HTML classes</p>
+            </div>
+            <div class="moo-example" data-language="markup">
+              <span class="moosprite-flag-uk"></span>
+            </div>
+          </div>
+
+          <div class="examples-container">
+            <div class="example-description">
+              <p>Using less mixins</p>
+            </div>
+            <div class="moo-example moo-example-no-render" data-language="css">
+              #element {
+                .moosprite-flag-uk();
+              }
+            </div>
+          </div>
+
+
+          <p>We have support for the following:</p>
+          <!--#include virtual="includes/generated/moosprite-list.shtml" -->
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

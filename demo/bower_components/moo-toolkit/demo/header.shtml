@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO | Custom Business Cards, MiniCards, Postcards and more...</title>
+  </head>
+  <body>
+
+    <!--#include virtual="examples/includes/header.shtml" -->
+
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

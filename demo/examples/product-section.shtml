@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <base href="../">
+        <!--#include virtual="../includes/head.shtml" -->
+        <title>MOO Toolkit - Modules</title>
+    </head>
+    <body>
+
+        <div class="page-header-container">
+            <!--#include virtual="../includes/page-header.shtml" -->
+        </div>
+
+        <div class="toolkit-body" role="main">
+            <div class="row">
+                <div class="container">
+                    <h2 id="product-size" class="page-header">Product page modules</h2>
+                    <!-- Nav tabs -->
+                    <nav class="tabs">
+                        <ul>
+                            <li><a href="#productSize" data-toggle="tab">Product Size (wide)</a></li>
+                            <li><a href="#comparisonImage" data-toggle="tab">Comparison Image</a></li>
+                            <li><a href="#tabbedContent" data-toggle="tab">Tabbed content (wide)</a></li>
+                            <li class="active"><a href="#sizeComparison" data-toggle="tab">Modal (Size comparison)</a></li>
+                            <li><a href="#Dimensions" data-toggle="tab">Dimensions</a></li>
+                            <li><a href="#RadioButton" data-toggle="tab">Radio buttons</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!-- Product Size -->
+                        <div class="tab-pane" id="productSize">
+                            <div class="container">
+                                <h2 class="page-header">
+                                    Product Size
+                                </h2>
+                                <h3>Media list (wide)</h3>
+                                <div class="examples-container">
+                                    <div class="moo-example" data-language="markup">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="media-list wide border-right">
+                                                            <li class="media">
+                                                                <a class="pull-right" href="#">
+                                                                    <img class="media-object pull-right" alt="Business Cards final card size" src="http://static4.moo.com/images/bc_dimension_card_size.png">
+                                                                </a>
+                                                              <div class="media-body">
+                                                                <h4 class="h5">Standard size</h4>
+                                                                <dl>
+                                                                    <dt>Final card size</dt>
+                                                                    <dd>84mm x 55mm</dd>
+                                                                    <dd>3.30" x 2.16"</dd>
+                                                                    <dd>&nbsp;</dd>
+                                                                </dl>
+                                                              </div>
+                                                            </li>
+                                                            <li class="media">
+                                                                <a class="pull-right" href="#">
+                                                                    <img class="media-object pull-right" alt="Business Cards final artwork size" src="http://static4.moo.com/images/bc_dimension_artwork_size.png">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <dl>
+                                                                        <dt>Final card size</dt>
+                                                                        <dd>84mm x 55mm</dd>
+                                                                        <dd>3.30" x 2.16"</dd>
+                                                                        <dd>&nbsp;</dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <ul class="media-list wide">
+                                                            <li class="media">
+                                                              <a class="pull-right" href="#">
+                                                                <img class="media-object pull-right" alt="Business Cards final card size" src="http://static4.moo.com/images/bc_dimension_card_size.png">
+                                                              </a>
+                                                              <div class="media-body">
+                                                                <h4 class="h5">MOO size</h4>
+                                                                <dl>
+                                                                    <dt>Final card size</dt>
+                                                                    <dd>84mm x 55mm</dd>
+                                                                    <dd>3.30" x 2.16"</dd>
+                                                                    <dd>&nbsp;</dd>
+                                                                </dl>
+                                                              </div>
+                                                            </li>
+                                                            <li class="media">
+                                                              <a class="pull-right" href="#">
+                                                                <img class="media-object pull-right" alt="Business Cards final artwork size" src="http://static4.moo.com/images/bc_dimension_artwork_size.png">
+                                                              </a>
+                                                              <div class="media-body">
+                                                                <dl>
+                                                                    <dt>Final card size</dt>
+                                                                    <dd>84mm x 55mm</dd>
+                                                                    <dd>3.30" x 2.16"</dd>
+                                                                    <dd>&nbsp;</dd>
+                                                                </dl>
+                                                              </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Comparison Image -->
+                        <div class="tab-pane" id="comparisonImage">
+                            <div class="container">
+                                <h2 class="page-header">
+                                    Comparison Image
+                                </h2>
+                            </div>
+                            <hr>
+                            <div class="comparison-image" style="background-image: url('../examples/images/comparison-image-dark.jpg')">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="comparison-text">
+                                            <h3>Which size is right for you?</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 comparison-text">
+                                            <div class="comparison-head">
+                                                <span class="mooimage-new-sticker"></span>
+                                            </div>
+                                            <div class="comparison-body">
+                                                <span class="h4 standard-size">
+                                                    Standard Size
+                                                </span>
+                                                <br>
+                                                <small>3.5" x 2" (89 x 51mm)</small>
+                                                <br><br>
+                                                <p>Quisque sit amet est et sapien ullamcorper pharetra.</p>
+                                            </div>
+                                            <div class="comparison-footer">
+                                                <span type="button" class="btn btn-alt standard-size">Make Standard size</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+
+                                        </div>
+                                        <div class="col-4 comparison-text">
+                                            <div class="comparison-head">
+                                            </div>
+                                            <div class="comparison-body">
+                                                <span class="h4 moo-size">
+                                                    MOO Size
+                                                </span>
+                                                <br>
+                                                <small>3.30" x 2.16" (84 x 55mm)</small>
+                                                <br><br>
+                                                <p>Quisque sit amet est et sapien ullamcorper pharetra.</p>
+                                            </div>
+                                            <div class="comparison-footer">
+                                                <span type="button" class="btn btn-alt moo-size">Make MOO size</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container">
+                                    <div class="examples-container row">
+                                        <div class="moo-example row" data-language="markup">
+                                            <div class="comparison-image" style="background-image: url('../examples/images/comparison-image-dark.jpg')">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="comparison-text">
+                                                            <h3>Which size is right for you?</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4 comparison-text">
+                                                            <div class="comparison-head">
+                                                                <span class="mooimage-new-sticker"></span>
+                                                            </div>
+                                                            <div class="comparison-body">
+                                                                <span class="h4 standard-size">
+                                                                    Standard Size
+                                                                </span>
+                                                                <br>
+                                                                <small>3.5" x 2" (89 x 51mm)</small>
+                                                                <br><br>
+                                                                <p>Quisque sit amet est et sapien ullamcorper pharetra.</p>
+                                                            </div>
+                                                            <div class="comparison-footer">
+                                                                <span type="button" class="btn btn-alt standard-size">Make Standard size</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+
+                                                        </div>
+                                                        <div class="col-4 comparison-text">
+                                                            <div class="comparison-head">
+                                                            </div>
+                                                            <div class="comparison-body">
+                                                                <span class="h4 moo-size">
+                                                                    MOO Size
+                                                                </span>
+                                                                <br>
+                                                                <small>3.30" x 2.16" (84 x 55mm)</small>
+                                                                <br><br>
+                                                                <p>Quisque sit amet est et sapien ullamcorper pharetra.</p>
+                                                            </div>
+                                                            <div class="comparison-footer">
+                                                                <span type="button" class="btn btn-alt moo-size">Make MOO size</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tabbed content (wide variant) -->
+                        <div class="tab-pane" id="tabbedContent">
+                            <div class="container">
+                                <h2 class="page-header">
+                                    Tabbed content (wide variant)
+                                </h2>
+                                <h3>Dimensions</h3>
+                            </div>
+                            <div class="container">
+                                <div class="examples-container">
+                                    <div class="moo-example" data-language="markup">
+                                        <!-- Nav tabs -->
+
+                                        <div class="dimension-tab">
+                                            <nav class="tabs">
+                                              <ul>
+                                                <li class="active col-6"><a href="#home" data-toggle="tab"><span class="h4 panel-title">Standard size</span></a></li>
+                                                <li class="col-6"><a href="#profile" data-toggle="tab"><span class="h4 panel-title">MOO size</span></a></li>
+                                              </ul>
+                                            </nav>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                              <div class="tab-pane active" id="home">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="media-list wide">
+                                                            <li class="media">
+                                                                <a class="pull-right" href="#">
+                                                                    <img class="media-object pull-right" alt="Business Cards final card size" src="http://static4.moo.com/images/bc_dimension_card_size.png">
+                                                                </a>
+                                                              <div class="media-body">
+                                                                <dl>
+                                                                    <dt>Final card size</dt>
+                                                                    <dd>84mm x 55mm</dd>
+                                                                    <dd>3.30" x 2.16"</dd>
+                                                                    <dd>&nbsp;</dd>
+                                                                </dl>
+                                                              </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-6 last">
+                                                        <ul class="media-list wide">
+                                                            <li class="media">
+                                                                <a class="pull-right" href="#">
+                                                                    <img class="media-object pull-right" alt="Business Cards final artwork size" src="http://static4.moo.com/images/bc_dimension_artwork_size.png">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <dl>
+                                                                        <dt>Final card size</dt>
+                                                                        <dd>84mm x 55mm</dd>
+                                                                        <dd>3.30" x 2.16"</dd>
+                                                                        <dd>&nbsp;</dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="tab-pane" id="profile">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="media-list wide">
+                                                            <li class="media">
+                                                                <a class="pull-right" href="#">
+                                                                    <img class="media-object pull-right" alt="Business Cards final artwork size" src="http://static4.moo.com/images/bc_dimension_artwork_size.png">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <dl>
+                                                                        <dt>Final card size</dt>
+                                                                        <dd>84mm x 55mm</dd>
+                                                                        <dd>3.30" x 2.16"</dd>
+                                                                        <dd>&nbsp;</dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-6 last">
+                                                        <ul class="media-list wide">
+                                                            <li class="media">
+                                                                <a class="pull-right" href="#">
+                                                                    <img class="media-object pull-right" alt="Business Cards final card size" src="http://static4.moo.com/images/bc_dimension_card_size.png">
+                                                                </a>
+                                                              <div class="media-body">
+                                                                <dl>
+                                                                    <dt>Final card size</dt>
+                                                                    <dd>84mm x 55mm</dd>
+                                                                    <dd>3.30" x 2.16"</dd>
+                                                                    <dd>&nbsp;</dd>
+                                                                </dl>
+                                                              </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Size comparison modal -->
+                        <div class="tab-pane active" id="sizeComparison">
+                            <div class="container">
+                                <h2 class="page-header">
+                                    Size comparison modal
+                                </h2>
+                            </div>
+                            <div class="examples-container">
+                                <div class="moo-example" data-language="markup">
+                                    <div class="comparison-modal">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="comparison-header">
+                                                    <div class="col-12 panel panel-default">
+                                                        <h3>What size would you like your cards?</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="comparison-body">
+                                                    <div class="comparison-size-selectors">
+                                                        <div class="col-6 panel standard-size ">
+                                                            <div class="panel-body">
+                                                                <span class="h4">Standard size</span>
+                                                                <p>Standard US size business card</p>
+                                                                <div class="popover-markup size-comparison">
+                                                                    <span class="trigger" data-toggle="popover" data-placement="bottom">
+                                                                      <span class="hidden">Standard size</span>
+                                                                    </span>
+                                                                    <div class="content hidden">
+                                                                        <div class="row comparison-container">
+                                                                            <div class="popover-comparison-image">
+                                                                                <h5 class="standard-size">Standard size</h5>
+                                                                                <img src="/examples/images/standard_size_tooltip.png" alt="..." width="183" height="113">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="example-image">
+                                                                    <img src="/examples/images/standard_size_modal_dimensions.png" alt="...">
+                                                                    <span class="badge mooimage-new-sticker">
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="radio-btn"></span>
+                                                        </div>
+                                                        <div class="col-6 panel moo-size">
+                                                            <div class="panel-body">
+                                                                <span class="h4">MOO size</span>
+                                                                <p>Our own slightly boxier shape</p>
+                                                                <div class="popover-markup size-comparison">
+                                                                    <span class="trigger" data-toggle="popover" data-placement="bottom">
+                                                                      <span class="hidden">MOO size</span>
+                                                                    </span>
+                                                                    <div class="content hidden">
+                                                                        <div class="row comparison-container">
+                                                                            <div class="popover-comparison-image">
+                                                                                <h5 class="moo-size">MOO size</h5>
+                                                                                <img src="/examples/images/MOO_size_tooltip.png" alt="..." width="183" height="113">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <img src="/examples/images/moo_size_modal_dimensions.png" alt="...">
+                                                            </div>
+                                                            <span class="radio-btn"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comparison-footer disabled">
+                                                    <div class="col-4 panel panel-default">
+                                                        <div class="panel-body">
+                                                            <a href="..." rel"..." title="...">
+                                                                <span class="h4">Use MOO designs</span>
+                                                                <p>Need inspiration?</p>
+                                                                <div class="comparison-icon">
+                                                                    <span class="mooimage-create-own-templates"></span>
+                                                                </div>
+                                                                <span class="btn btn-primary btn-sm">Choose design</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 panel panel-default">
+                                                        <div class="panel-body">
+                                                            <a href="..." rel"..." title="...">
+                                                                <span class="h4">Design your own</span>
+                                                                <p>Start from scratch</p>
+                                                                <div class="comparison-icon">
+                                                                    <span class="mooimage-dyo"></span>
+                                                                </div>
+                                                                <span class="btn btn-primary btn-sm">Make</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 panel panel-default">
+                                                        <div class="panel-body">
+                                                            <a href="..." rel"..." title="...">
+                                                                <span class="h4">Upload complete design</span>
+                                                                <p>gif, png, jpeg, pdf</p>
+                                                                <div class="comparison-icon">
+                                                                    <span class="mooimage-create-own-make"></span>
+                                                                </div>
+                                                                <span type="button" class="btn btn-primary btn-sm">Upload</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="examples-container">
+                                <div class="moo-example" data-language="markup">
+                                    <div class="comparison-modal">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="comparison-footer">
+                                                    <div class="col-4 panel panel-default">
+                                                        <div class="panel-body">
+                                                            <a href="..." rel"..." title="...">
+                                                                <span class="h4">Use MOO designs</span>
+                                                                <p>Need inspiration?</p>
+                                                                <div class="comparison-icon">
+                                                                    <span class="mooimage-create-own-templates"></span>
+                                                                </div>
+                                                                <span class="btn btn-primary btn-sm">Choose design</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 panel panel-default">
+                                                        <div class="panel-body">
+                                                            <a href="..." rel"..." title="...">
+                                                                <span class="h4">Design your own</span>
+                                                                <p>Start from scratch</p>
+                                                                <div class="comparison-icon">
+                                                                    <span class="mooimage-dyo"></span>
+                                                                </div>
+                                                                <span class="btn btn-primary btn-sm">Make</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 panel panel-default">
+                                                        <div class="panel-body">
+                                                            <a href="..." rel"..." title="...">
+                                                                <span class="h4">Upload complete design</span>
+                                                                <p>gif, png, jpeg, pdf</p>
+                                                                <div class="comparison-icon">
+                                                                    <span class="mooimage-create-own-make"></span>
+                                                                </div>
+                                                                <span type="button" class="btn btn-primary btn-sm">Upload</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Dimensions -->
+                        <div class="tab-pane" id="Dimensions">
+                            <div class="container">
+                                <h2 class="page-header">
+                                    Dimensions
+                                </h2>
+                            </div>
+                            <div class="container">
+                                <div class="examples-container">
+                                    <div class="moo-example" data-language="markup">
+                                        <div class="col-4">
+                                            <div class="panel panel-default" >
+                                                <div class="panel-body dimensions">
+                                                    <h3 class="panel-title">Dimensions</h3>
+                                                    <!-- Nav tabs -->
+                                                    <nav class="tabs">
+                                                      <ul>
+                                                        <li class="active"><a href="#home" data-toggle="tab">Standard size</a></li>
+                                                        <li><a href="#profile" data-toggle="tab">MOO size</a></li>
+                                                      </ul>
+                                                    </nav>
+
+                                                    <!-- Tab panes -->
+                                                    <div class="tab-content">
+                                                      <div class="tab-pane active" id="home">
+                                                        <ul class="media-list">
+                                                              <li class="media">
+                                                                  <img class="media-object pull-right" alt="Business Cards final card size" src="http://static4.moo.com/images/bc_dimension_card_size.png">
+                                                                  <div class="media-body">
+                                                                      <dl>
+                                                                          <dt>Final card size</dt>
+                                                                          <dd>84mm x 55mm</dd>
+                                                                          <dd>3.30" x 2.16"</dd>
+                                                                          <dd>&nbsp;</dd>
+                                                                      </dl>
+                                                                  </div>
+                                                              </li>
+                                                              <li class="media">
+                                                                  <img class="media-object pull-right" alt="Business Cards final artwork size" src="http://static4.moo.com/images/bc_dimension_artwork_size.png">
+                                                                  <div class="media-body">
+                                                                      <dl>
+                                                                          <dt>Final artwork size</dt>
+                                                                          <dd>88mm x 59mm</dd>
+                                                                          <dd>3.46" x 2.32"</dd>
+                                                                          <dd>(300dpi)</dd>
+                                                                      </dl>
+                                                                  </div>
+                                                              </li>
+                                                        </ul>
+                                                        </div>
+                                                        <div class="tab-pane" id="profile">
+                                                            <ul class="media-list">
+                                                                  <li class="media">
+                                                                      <img class="media-object pull-right" alt="Business Cards final card size" src="http://static4.moo.com/images/bc_dimension_card_size.png">
+                                                                      <div class="media-body">
+                                                                          <dl>
+                                                                              <dt>Final card size</dt>
+                                                                              <dd>84mm x 55mm</dd>
+                                                                              <dd>3.30" x 2.16"</dd>
+                                                                              <dd>&nbsp;</dd>
+                                                                          </dl>
+                                                                      </div>
+                                                                  </li>
+                                                                  <li class="media">
+                                                                      <img class="media-object pull-right" alt="Business Cards final artwork size" src="http://static4.moo.com/images/bc_dimension_artwork_size.png">
+                                                                      <div class="media-body">
+                                                                          <dl>
+                                                                              <dt>Final artwork size</dt>
+                                                                              <dd>88mm x 59mm</dd>
+                                                                              <dd>3.46" x 2.32"</dd>
+                                                                              <dd>(300dpi)</dd>
+                                                                          </dl>
+                                                                      </div>
+                                                                  </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <a href="http://uk.moo.com/luxe/" class="more mooCustomTracking" rel="...">Compare sizes</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Radio button -->
+                        <div class="tab-pane" id="RadioButton">
+                            <div class="container">
+                                <h2 class="page-header">
+                                    Radio buttons
+                                </h2>
+                            </div>
+                            <div class="container">
+                                <div class="examples-container">
+                                    <div class="moo-example" data-language="markup">
+                                        <div class="col-4">
+                                            <div class="form-styled-radio">
+                                              <input type="radio" id="option1" name="radio" />
+                                              <label for="option1"><span class="hidden">Option 1</span></label>
+                                            </div>
+
+                                            <div class="form-styled-radio">
+                                             <input type="radio" id="option2" name="radio" />
+                                             <label for="option2"><span class="hidden">Option 2</span></label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Examples End -->
+
+            </div>
+        </div>
+
+        <!--#include virtual="../includes/page-end-body.shtml" -->
+    </body>
+</html>

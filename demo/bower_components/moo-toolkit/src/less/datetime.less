@@ -1,0 +1,37 @@
+@import (reference) "type";
+
+.datebox {
+  border: 2px solid @brand-dark-green;
+  border-radius: 3px;
+  display: inline-block;
+  padding-bottom: 5px;
+  min-width: 70px;
+  background: @brand-white;
+  color: @brand-black;
+  line-height: 1em;
+  text-align: center;
+
+  > span {
+    display: block;
+    padding: 0 4px;
+  }
+}
+
+.datebox-header {
+  margin-bottom: 5px;
+  padding: 2px 0;
+  background-color: @brand-dark-green;
+  color: @brand-white;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.datebox-day {
+  font-family: @font-family-bryant;
+  font-size: 26px;
+  line-height: 1em;
+}
+
+.datebox-footer {
+  .small();
+}

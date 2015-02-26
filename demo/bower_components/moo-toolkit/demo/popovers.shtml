@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Popovers</title>
+  </head>
+  <body>
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="popovers" class="page-header">
+            <a href="#popovers" class="link-unstyled link-fragment">Popovers</a>
+          </h2>
+
+          <div class="alert alert-info">
+            <strong><a href="http://getbootstrap.com/javascript/#popovers" target="_blank" class="alert-link">Read the bootstrap docs!</a></strong> There are far more options and events available for the popover plugin.
+          </div>
+
+          <p>Add small overlays of content, like those on the iPad, to any element for housing secondary information.<br/> Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
+
+          <div class="row">
+            <div class="col-8">
+
+              <h3>Basic Popovers</h3>
+              <div class="examples-container">
+                <div class="moo-example text-center" data-language="markup">
+                  <p>Top:
+                    <span data-container="body" data-toggle="popover" data-placement="top" data-content="Popover on top" class="tooltip popover-tooltip">?
+                      </span>
+                  </p>
+                  <p>Right:
+                    <span data-container="body" data-toggle="popover" data-placement="right" data-content="Popover on right" class="tooltip popover-tooltip">?
+                      </span>
+                  </p>
+                  <p>Bottom:
+                    <span data-container="body" data-toggle="popover" data-placement="bottom" data-content="Popover on bottom" class="tooltip popover-tooltip">?
+                      </span>
+                  </p>
+                  <p>Left:
+                    <span data-container="body" data-toggle="popover" data-placement="left" data-content="Popover on left" class="tooltip popover-tooltip">?
+                      </span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-4">
+
+              <h3>Popover content</h3>
+              <div class="examples-container">
+                <div class="moo-example text-center" data-language="markup">
+                  <div id="store-switcher" class="popover-content" data-placement="bottom" data-toggle="popover">
+                    <div class="popover-list-current option-us_en">
+                      <span class="text-hide">English ($USD)</span>
+                    </div>
+                    <span class="popover-list-selection" class="btn btn-default">Select language</span>
+
+                    <div class="popover-html hidden">
+                      <ul class="popover-list-items">
+                        <li>
+                          <div class="option-uk_en current">
+                            <a rel="alternate" href="#" title="..." hreflang="en" lang="en">English (£GBP)</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="option-us_en">
+                            <a rel="alternate" href="#" title="..." hreflang="en" lang="en">English ($USD)</a>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="option-eu_en">
+                            <a rel="alternate" href="#" title="..." hreflang="en" lang="en">English (€EUR)</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="option-uk_de">
+                            <a rel="alternate" href="#" title="..." hreflang="de" lang="de">Deustch (€EUR)</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="option-uk_es">
+                            <a rel="alternate" href="#" title="..." hreflang="es" lang="es">Espanol (€EUR)</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="option-uk_fr">
+                            <a rel="alternate" href="#" title="..." hreflang="fr" lang="fr">Francais (€EUR)</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="option-nl_en">
+                            <a rel="alternate" href="#" title="..." hreflang="fr" lang="fr">English (€EUR)</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="option-uk_it">
+                            <a rel="alternate" href="#" title="..." hreflang="it" lang="it">Italiano (€EUR)</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="option-au_en">
+                            <a rel="alternate" href="#" title="..." hreflang="au" lang="en">Australia ($AUS)</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="option-ca_en">
+                            <a rel="alternate" href="#" title="..." hreflang="ca" lang="en">Canada ($CAD)</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

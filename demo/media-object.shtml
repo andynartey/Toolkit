@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Media object</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include file="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" id="modules-page" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="separators" class="page-header">
+            <a href="#separators" class="link-unstyled link-fragment">Media object</a>
+          </h2>
+          <h3 id="media-object-assortment">
+            <a href="">Media object assortment</a>
+          </h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <ul class="media-list">
+                <li class="media">
+                  <div class="media-body">
+                    <h4>Media heading</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+                <li class="media">
+                  <img class="media-object pull-left" src="http://placehold.it/60x60.png" alt="...">
+                  <div class="media-body">
+                    <h4>Media heading</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+                <li class="media">
+                  <img class="media-object pull-right" src="http://placehold.it/60x60.png" alt="...">
+                  <div class="media-body">
+                    <h4>Media heading</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+                <li class="media">
+                  <img class="media-object pull-left" src="http://placehold.it/280x150.png" alt="...">
+                  <div class="media-body">
+                    <h4>Media heading</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+                <li class="media">
+                  <img class="media-object pull-right" src="http://placehold.it/280x150.png" alt="...">
+                  <div class="media-body">
+                    <h4>Media heading</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quo, voluptates excepturi deserunt ut nihil culpa fugit minus consequatur reiciendis repellat ad suscipit nesciunt ipsa voluptate eveniet expedita. Ut, veritatis!
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-body">
+                    <h4><a href="#">Media heading</a></h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placehold.it/60x60.png" alt="...">
+                  </a>
+                  <div class="media-body">
+                    <h4><a href="#">Media heading</a></h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 id="link-only">
+            <a href="#link-only">Link only</a>
+          </h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <ul class="media-list">
+                <li class="media">
+                  <div class="media-body">
+                    <h4><a href="#">Media heading</a></h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-body">
+                    <h4><a href="#">Media heading</a></h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 id="image-and-links">
+            <a href="#image-and-links">Image and link</a>
+          </h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <ul class="media-list">
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placehold.it/60x60.png" alt="...">
+                  </a>
+                  <div class="media-body">
+                    <h4><a href="#">Media heading</a></h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placehold.it/60x60.png" alt="...">
+                  </a>
+                  <div class="media-body">
+                    <h4><a href="#">Media heading</a></h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

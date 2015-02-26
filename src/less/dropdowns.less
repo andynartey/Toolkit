@@ -1,0 +1,31 @@
+//--------------------------------------------------------------
+// Dropdowns
+//
+//--------------------------------------------------------------
+@import (less) "bootstrap/less/dropdowns.less";
+
+.caret {
+  border: none;
+  width: 1em;
+
+  .dropup & {
+    border: none;
+  }
+
+  &:after {
+    .mooicon-chevron-down;
+  }
+}
+
+.dropdown-menu {
+  padding: 0;
+  margin: 0;
+
+  padding-top: @padding-base-vertical;
+  padding-bottom: @padding-base-vertical;
+
+  li {
+    .h6();
+    margin: 0;
+  }
+}

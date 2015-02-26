@@ -1,0 +1,36 @@
+{
+  "name": "moo-toolkit",
+  "version": "0.1.82",
+  "authors": [
+    "thomaswelton <thomaswelton@me.com>"
+  ],
+  "description": "UI Toolkit for moo.com",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "moo"
+  ],
+  "license": "MIT",
+  "homepage": "http://moo.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "bootstrap": "~3.2.0",
+    "bootstrap-select": "82d7416c21028e7c1dff57e3a50e75fa5e4f1de9",
+    "requirejs": "~2.1.11",
+    "html5shiv": "~3.7.1",
+    "prism": "git+ssh://goth/usr/local/git/thomaswelton/prism#gh-pages",
+    "visibilityjs": "~1.2.1",
+    "almond": "~0.2.9",
+    "jQuery-menu-aim": "*",
+    "background-size-polyfill": "0.2.0"
+  }
+}

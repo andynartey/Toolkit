@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Separators</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" id="separators-page" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="separators" class="page-header">
+            <a href="#separators" class="link-unstyled link-fragment">Separators</a>
+          </h2>
+
+          <p>We have a variety of different separators and borders. As well as spacer classes that add margins to the top or bottom of the specified element. <code>.spacer-top</code> <code>.spacer-bottom</code></p>
+
+          <h3>Thick</h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="separator separator-bottom separator-thick" data-automation="separator-thick-line"></div>
+            </div>
+          </div>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="separator separator-bottom separator-thick separator-light" data-automation="separator-thick-line-light"></div>
+            </div>
+          </div>
+
+          <h3>Medium</h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="separator separator-bottom" data-automation="separator-medium-line"></div>
+            </div>
+          </div>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="separator separator-bottom separator-light" data-automation="separator-medium-line-light"></div>
+            </div>
+          </div>
+
+          <h3>Thin</h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="separator separator-bottom separator-thin" data-automation="separator-thin-line"></div>
+            </div>
+          </div>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="separator separator-bottom separator-thin separator-light" data-automation="separator-thin-line-light"></div>
+            </div>
+          </div>
+
+          <h2 id="heading-separators">
+            <a href="#heading-separators" class="link-unstyled">Heading Separators</a>
+          </h2>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <h2 class="separator-thin-heading" data-automation="separator-thin-heading">Page H2</h2>
+            </div>
+          </div>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <h2 class="separator-thin-heading separator-light" data-automation="separator-thin-heading-light">Page H2</h2>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

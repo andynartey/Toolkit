@@ -1,0 +1,74 @@
+// This file is meant to be an example of a site that consumes the toolkit
+// and can contain styles to specific elements that do no fit into the toolkit
+@import (reference) "template";
+
+html {
+  // Match the footer for tall screens
+  .background-alt;
+}
+
+
+/* These styles only exist for the product page demo. They should be replaced where possible by toolkit styles when
+   they have been created. */
+
+.header-row {
+    height: 87px;
+
+    .header-row-inner {
+        width: 960px;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+}
+
+.banner {
+    position: relative;
+    height: 550px;
+    margin-bottom: 20px;
+    background: #f1f1f1;
+
+    .banner-inner {
+        position: relative;
+        width: 960px;
+        margin: auto;
+
+        .text-standout {
+            line-height: 1.3;
+        }
+
+        img {
+            position: absolute;
+            left: -480px;
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            p {
+                width: 300px;
+            }
+        }
+    }
+}
+
+.panel {
+    .text-standout {
+        display: inline-block;
+    }
+}
+
+
+.button-bar {
+    margin-top: 20px;
+    .btn {
+        margin-right: 10px - 4;
+        letter-spacing: 0.5px;
+    }
+}
+
+.media > .pull-left {
+    margin-right: 15px;
+}
+
+

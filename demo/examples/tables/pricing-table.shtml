@@ -1,0 +1,490 @@
+<h3 id="striped-tables">
+  <a href="#striped-tables" class="link-unstyled link-fragment">Pricing table examples</a>
+</h3>
+
+<h4>12 Column container</h4>
+<div class="examples-container">
+  <div class="moo-example" data-language="markup">
+    <table class="table table-striped" data-automation="table-striped">
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Classic</th>
+          <th>Green</th>
+          <th>Luxe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>50</b></td>
+          <td>
+            <span class="price-with-tax">
+                <span class="price-actual"><strong>£13.19</strong></span>
+            </span>
+            <br/>
+            <small>
+              <span class="price-without-tax vat-message">
+                  (<span class="price-actual">£10.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+              </span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+                <span class="price-actual"><strong>£15.35</strong></span>
+            </span>
+            <br/>
+            <small>
+              <span class="price-without-tax vat-message">
+                  (<span class="price-actual">£12.79</span> <span class="excluding-tax-text">excl. VAT</span>)
+              </span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+                <span class="price-actual"><strong>£28.79</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£23.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><b>100</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>£26.38</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£21.98</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>£30.70</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£25.58</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>£57.58</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£47.98</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><b>200</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>£47.99</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£39.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>£55.19</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£45.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <strong>
+                <span class="price-full">
+                  <s>£115.15</s>
+                </span>
+                <span class="price-actual">
+                  £92.39
+                </span>
+              </strong>
+            </span>
+            <br/>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£76.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><b>400</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>£81.58</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£67.98</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>£97.90</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£81.58</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <strong>
+                <span class="price-full">
+                  <s>£230.30</s>
+                </span>
+                <span class="price-actual">
+                  £143.95
+                </span>
+              </strong>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              (<span class="price-actual">£119.96</span> <span class="excluding-tax-text">excl. VAT</span>)
+            </small>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" align="right">
+            <small>* (Lorem ipsum dolor sit amet.  <a href="#">Active link</a>)</small>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-4">
+    <h4>4 Column container</h4>
+    <table class="table table-striped" data-automation="table-striped">
+      <thead>
+        <tr>
+          <th>Quanity</th>
+          <th>Classic</th>
+          <th>Green</th>
+          <th>Luxe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>50</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$13.19</strong></span>
+            </span>
+            <br/>
+            <small>
+              <span class="price-without-tax vat-message">
+                <span class="price-actual">$10.99</span>
+              </span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$15.35</strong></span>
+            </span>
+            <br/>
+            <small>
+              <span class="price-without-tax vat-message">
+                <span class="price-actual">$12.79</span>
+              </span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$28.79</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$23.99</span>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><b>100</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$26.38</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$21.98</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$30.70</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$25.58</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$57.58</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$47.98</span>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><b>200</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$47.99</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$39.99</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$55.19</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$45.99</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <strong>
+                <span class="price-full">
+                  <s>$115.15</s>
+                </span>
+                <span class="price-actual">
+                  $92.39
+                </span>
+              </strong>
+            </span>
+            <br/>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$76.99</span>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><b>400</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$81.58</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$67.98</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$97.90</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$81.58</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <strong>
+                <span class="price-full">
+                  <s>$230.30</s>
+                </span>
+                <span class="price-actual">
+                  $143.95
+                </span>
+              </strong>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$119.96</span>
+            </small>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" align="right">
+            <small>* (Lorem ipsum dolor sit amet.  <a href="#">Active link</a>)</small>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <div class="col-8">
+    <h4>8 Column container</h4>
+    <table class="table table-striped" data-automation="table-striped">
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Classic</th>
+          <th>Green</th>
+          <th>Luxe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>50</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$13.19</strong></span>
+            </span>
+            <br/>
+            <small>
+              <span class="price-without-tax vat-message">
+                <span class="price-actual">$10.99</span>
+              </span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$15.35</strong></span>
+            </span>
+            <br/>
+            <small>
+              <span class="price-without-tax vat-message">
+                <span class="price-actual">$12.79</span>
+              </span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$28.79</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$23.99</span>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><b>100</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$26.38</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$21.98</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$30.70</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$25.58</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$57.58</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$47.98</span>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><b>200</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$47.99</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$39.99</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$55.19</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$45.99</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <strong>
+                <span class="price-full">
+                  <s>$115.15</s>
+                </span>
+                <span class="price-actual">
+                  $92.39
+                </span>
+              </strong>
+            </span>
+            <br/>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$76.99</span>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><b>400</b></td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$81.58</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$67.98</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <span class="price-actual"><strong>$97.90</strong></span>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$81.58</span>
+            </small>
+          </td>
+          <td>
+            <span class="price-with-tax">
+              <strong>
+                <span class="price-full">
+                  <s>$230.30</s>
+                </span>
+                <span class="price-actual">
+                  $143.95
+                </span>
+              </strong>
+            </span>
+            <br>
+            <small class="price-without-tax vat-message">
+              <span class="price-actual">$119.96</span>
+            </small>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" align="right">
+            <small>* (Lorem ipsum dolor sit amet.  <a href="#">Active link</a>)</small>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

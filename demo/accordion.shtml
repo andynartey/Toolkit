@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Accordion</title>
+  </head>
+  <body>
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="accordion" class="page-header">
+            <a href="#accordion" class="link-unstyled link-fragment">Accordion</a>
+          </h2>
+
+          <div class="alert alert-info">
+            <strong><a href="http://getbootstrap.com/javascript/#collapse" target="_blank" class="alert-link">Read the bootstrap docs!</a></strong> There are far more options and events available for the collapse plugin that a documented on this page.
+          </div>
+
+          <div class="alert alert-warning">
+            <strong>Auto Open:</strong> If an accordion has no open panel on page load, the the first panel that that contains a link to the current page will be opened automatically.
+          </div>
+
+          <p>A simple accordion can be created using the bootstrap collapse plug in. Reading the bootstrap documentation will provide more information on configuration option, however an an example implementation is provided below.</p>
+
+          <p>Collapsible components can be created using data attributes and fragment identifiers on links. Provided an <code>&lt;a&gt;</code> has the data attribute <code>data-toggle="collapse"</code> and the fragment ID <code>href="#foo"</code> when clicked it will show and hide the element with id <code>id="foo"</code>.</p>
+
+          <div class="examples-container">
+            <div class="example-description">Example implementation using data attributes</div>
+            <div class="moo-example" data-language="markup">
+              <ul>
+                <li>
+                  <a data-toggle="collapse" href="#collapseOne">Menu option one</a>
+                  <ul id="collapseOne" class="collapse">
+                    <li>Submenu option one</li>
+                    <li>Submenu option two</li>
+                  </ul>
+                </li>
+                <li>
+                  <a data-toggle="collapse" href="#collapseTwo">Menu option two</a>
+                  <ul id="collapseTwo" class="collapse">
+                    <li>Submenu option one</li>
+                    <li>Submenu option two</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="easy-accordion" class="page-header">
+            <a href="#easy-accordion" class="link-unstyled link-fragment">Easy Accordion</a>
+          </h2>
+
+          <p>Using data attributes allows us to easily create new collapsible widgets without having to write any javascript. But can be quite verbose and requires unique IDs for each of the collapsible elements. In addition there are no decorative CSS rules that are applied to the widget.</p>
+          <p>For ease of implementation we also provide a styled accordion that requires no data attributes to work.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <ul class="accordion">
+                <li>
+                  <a href="#" class="accordion-toggle">Option one</a>
+                  <ul class="accordion-content collapse">
+                    <li>Submenu one</li>
+                    <li>Submenu two</li>
+                    <li>Submenu three</li>
+                    <li>Submenu four</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle">Option two</a>
+                  <ul class="accordion-content collapse">
+                    <li>Submenu one</li>
+                    <li>Submenu two</li>
+                    <li>Submenu three</li>
+                    <li>Submenu four</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle">Option three</a>
+                  <div class="accordion-content collapse">
+                    <h3>OMG</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, velit magni, nostrum mollitia dicta aut nesciunt accusantium voluptates dolore perspiciatis blanditiis architecto eius? Laborum tempora maiores, ex eum earum tempore!</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p>The Easy Accordion also supports the ability to auto collapse open content blocks when new targets are clicked. This is done via the use of the data attribute <code>data-accordion-toggle="collapse"</code></p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <ul class="accordion" data-accordion-toggle="collapse">
+                <li>
+                  <a href="#" class="accordion-toggle">Option one</a>
+                  <ul class="accordion-content collapse">
+                    <li>Submenu one</li>
+                    <li>Submenu two</li>
+                    <li>Submenu three</li>
+                    <li>Submenu four</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle">Option two</a>
+                  <ul class="accordion-content collapse">
+                    <li>Submenu one</li>
+                    <li>Submenu two</li>
+                    <li>Submenu three</li>
+                    <li>Submenu four</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle">Option three</a>
+                  <div class="accordion-content collapse">
+                    <h3>OMG</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, velit magni, nostrum mollitia dicta aut nesciunt accusantium voluptates dolore perspiciatis blanditiis architecto eius? Laborum tempora maiores, ex eum earum tempore!</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p>A panel can be forced open on page load by adding the class name <code>.accordion-open</code> to the <code>.accordion-toggle</code> anchor and the class <code>.in</code> to the <code>.accordion-content</code></p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <ul class="accordion">
+                <li>
+                  <a href="#" class="accordion-toggle">Option one</a>
+                  <ul class="accordion-content collapse">
+                    <li>Submenu one</li>
+                    <li>Submenu two</li>
+                    <li>Submenu three</li>
+                    <li>Submenu four</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle accordion-open">Option two</a>
+                  <ul class="accordion-content collapse in">
+                    <li>Submenu one</li>
+                    <li>Submenu two</li>
+                    <li>Submenu three</li>
+                    <li>Submenu four</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle">Option three</a>
+                  <div class="accordion-content collapse">
+                    <h3>OMG</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, velit magni, nostrum mollitia dicta aut nesciunt accusantium voluptates dolore perspiciatis blanditiis architecto eius? Laborum tempora maiores, ex eum earum tempore!</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p>Accordions can also be set into a lockable state where by one panel always has to be in the open state. This can be done by adding the data attribute <code>data-accordion-toggle="locked"</code></p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <ul class="accordion" data-accordion-toggle="locked">
+                <li>
+                  <a href="#" class="accordion-toggle">Option one</a>
+                  <ul class="accordion-content collapse">
+                    <li>Submenu one</li>
+                    <li>Submenu two</li>
+                    <li>Submenu three</li>
+                    <li>Submenu four</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle accordion-open">Option two</a>
+                  <ul class="accordion-content collapse in">
+                    <li>Submenu one</li>
+                    <li>Submenu two</li>
+                    <li>Submenu three</li>
+                    <li>Submenu four</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle">Option three</a>
+                  <div class="accordion-content collapse">
+                    <h3>OMG</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, velit magni, nostrum mollitia dicta aut nesciunt accusantium voluptates dolore perspiciatis blanditiis architecto eius? Laborum tempora maiores, ex eum earum tempore!</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

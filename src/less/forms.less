@@ -1,0 +1,269 @@
+//--------------------------------------------------------------
+// Forms
+//--------------------------------------------------------------
+@import (less) "bootstrap/less/forms.less";
+@import (less) "bootstrap-select/bootstrap-select.css";
+
+input{
+  outline: none;
+}
+
+legend {
+  .h3;
+  border: 0;
+}
+
+label {
+  font-weight: normal;
+}
+
+.form-group {
+  margin-bottom: @line-height-computed / 2;
+
+  input[type=text],
+  input[type=password],
+  input[type=button],
+  input[type=reset] {
+      line-height: 1em;
+      box-sizing: border-box;
+      height: 40px;
+  }
+
+  textarea {
+    line-height: 1em;
+    box-sizing: border-box;
+  }
+}
+
+.form-control-thicker-border() {
+  border-width: 1px;
+
+  padding-top: @padding-base-vertical + 1;
+  padding-bottom: @padding-base-vertical + 1;
+
+  padding-left: @padding-base-horizontal + 1;
+  padding-right: @padding-base-horizontal + 1;
+}
+
+.form-control {
+  .box-shadow(none);
+  .placeholder();
+
+  border-radius: @input-border-radius;
+  border-width: 1px;
+
+  font-size: @font-size-base;
+
+  padding-top: @padding-base-vertical + 2;
+  padding-bottom: @padding-base-vertical + 2;
+
+  padding-left: @padding-base-horizontal + 2;
+  padding-right: @padding-base-horizontal + 2;
+
+  border-color: @brand-secondary-gray;
+  height: auto;
+
+  .has-success & {
+    border-color: @brand-secondary-gray;
+  }
+
+  &:focus,
+  .has-error & {
+    border-width: 1px;
+  }
+
+  &:focus,
+  .has-error &:focus,
+  .has-success &:focus  {
+    border-color: @brand-secondary-green;
+  }
+
+  &:focus,
+  .has-error &,
+  .has-error &:focus,
+  .has-success &,
+  .has-success &:focus {
+    box-shadow: none;
+  }
+}
+
+.form-horizontal {
+  @media (min-width: @screen-sm-min) {
+    .control-label {
+      text-align: left;
+    }
+  }
+}
+
+.form-styled-select {
+  &.btn-group.bootstrap-select {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    border-width: 1px;
+
+    padding-top: @padding-base-vertical + 2;
+    padding-bottom: @padding-base-vertical + 2;
+
+    padding-left: @padding-base-horizontal + 2;
+    padding-right: @padding-base-horizontal + 2;
+  }
+
+  &.btn-group.open .dropdown-toggle {
+    box-shadow: none;
+  }
+
+  &.btn-group .btn .caret {
+    line-height: @input-height-base;
+
+    top: 0;
+    margin-top: 0;
+  }
+
+  // Remove borders and rounded corners when the menu is open
+  // so that the two elements appear connected. A dropdown is
+  // open in the down position by default by may appear as a
+  // dropup also
+  &.open {
+    .dropdown-toggle.btn-default {
+      .form-control-thicker-border();
+      border-color: @brand-secondary-green;
+      border-bottom-color: @brand-primary-white;
+
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+
+      .caret {
+        margin-top: -1px;
+        margin-right: -1px;
+      }
+    }
+
+    > .dropdown-menu {
+      border-top-width: 2px;
+
+      border-top-color: @brand-secondary-green;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+
+      margin-top: -2px;
+      padding-top: 0;
+      box-shadow: none;
+    }
+
+    // Dropdowns can appear above the element too
+    &.dropup {
+      .dropdown-toggle.btn-default {
+        border-radius: @border-radius-base;
+
+        border-bottom-color: @brand-secondary-green;
+        border-top-color: @brand-primary-white;
+
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+
+      > .dropdown-menu {
+        border-top-width: 2px / 2;
+        border-bottom-width: 2px;
+
+        border-radius: @border-radius-base;
+
+        margin-top: 0;
+        margin-bottom: -2px;
+
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+
+        padding-bottom: 0;
+
+        border-top-color: @brand-secondary-gray;
+        border-bottom-color: @brand-secondary-green;
+      }
+    }
+  }
+}
+
+.dropdown-menu.selectpicker > li > a {
+  padding-top: @padding-base-vertical + 2;
+  padding-bottom: @padding-base-vertical + 2;
+
+  padding-left: @padding-base-horizontal + 2;
+  padding-right: @padding-base-horizontal + 2;
+
+  color: @brand-dark-green;
+
+  &:focus {
+    outline: none;
+    background: @brand-secondary-green;
+    color: @input-color;
+  }
+
+  &:hover {
+    background: @brand-secondary-blue;
+    color: @input-color;
+  }
+}
+
+.form-icon {
+  position: relative;
+  font-size: 24px;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: @padding-base-horizontal + 2;
+    line-height: @input-height-base;
+
+    width: 1em;
+    text-align: center;
+
+    .has-error & {
+      .mooicon-circle-fill-carousel();
+      color: @brand-danger;
+      font-size: 6px;
+      padding-top: 18px;
+    }
+
+    .has-success & {
+      .mooicon-tick();
+      color: @brand-primary;
+    }
+  }
+
+
+  // Select dropdown requires bootstrap-select
+  // See import path above
+  .bootstrap-select {
+    &.btn {
+      &:focus {
+        outline: none;
+        outline-offset: -2px;
+      }
+    }
+
+    .caret {
+      position: absolute;
+      vertical-align: middle;
+      right: @padding-base-horizontal + 2;
+
+      &:after {
+        .mooicon-chevron-down();
+        color: @brand-secondary-gray;
+        position: static;
+      }
+    }
+  }
+}
+
+// Error messages
+.has-error {
+  .has-error-msg {
+    color: @brand-danger;
+    padding-top: 5px;
+  }
+}
+
+
+

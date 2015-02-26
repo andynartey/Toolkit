@@ -1,0 +1,42 @@
+<h3 id="standard-tables">
+  <a href="#standard-tables" class="link-unstyled link-fragment">Standard table</a>
+</h3>
+
+<p>Default tables styles. Transparent table headers with gray background body. Also shown is an optional table <code>caption</code></p>
+
+<div class="examples-container">
+  <div class="moo-example" data-language="markup">
+    <table class="table" data-automation="table">
+      <caption>Table Caption</caption>
+      <thead>
+        <tr>
+          <th>Lorem ipsum</th>
+          <th>Dolor sit</th>
+          <th>Consectetur</th>
+          <th>Adipisicing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Assumenda nisi cum</td>
+          <td>deserunt, enim repudiandae</td>
+          <td>a maxime dignissimos sapiente</td>
+          <td>eum, laborum excepturi commodi</td>
+        </tr>
+        <tr>
+          <td>Autem dolore obcaecati</td>
+          <td>obcaecati doloremque</td>
+          <td>animi eveniet</td>
+          <td>ducimus facilis</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" align="right">
+            <small>* (Lorem ipsum dolor sit amet.  <a href="#">Active link</a>)</small>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

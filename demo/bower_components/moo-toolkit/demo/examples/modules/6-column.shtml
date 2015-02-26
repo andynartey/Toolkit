@@ -1,0 +1,99 @@
+<h4>6 Column</h4>
+<div class="row">
+  <div class="col-6">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">Lorem ipsum dolor sit amet</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ad, eum incidunt accusantium perferendis facilis nisi fugiat minima ipsam officia harum quod saepe rem aliquam ratione architecto omnis deserunt blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <hr/>
+        <h4>Table title</h4>
+        <table class="table table-striped table-bordered" data-automation="table-striped-bordered">
+          <thead>
+            <tr>
+              <th>FOO</th>
+              <th>BAR</th>
+              <th>FOO</th>
+              <th>BAR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>BAR</b></td>
+              <td>Baz</td>
+              <td>Baz</td>
+              <td>Baz</td>
+            </tr>
+            <tr>
+              <td><b>FOO</b></td>
+              <td>Baz</td>
+              <td>Baz</td>
+              <td>Baz</td>
+            </tr>
+            <tr>
+              <td><b>BAR</b></td>
+              <td>Baz</td>
+              <td>Baz</td>
+              <td>Baz</td>
+            </tr>
+            <tr>
+              <td><b>FOO</b></td>
+              <td>Baz</td>
+              <td>Baz</td>
+              <td>Baz</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr/>
+
+        <h4>Table title</h4>
+        <table class="table table-striped table-bordered" data-automation="table-striped-bordered">
+          <thead>
+            <tr>
+              <th>FOO</th>
+              <th>BAR</th>
+              <th>FOO</th>
+              <th>BAR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>BAR</b></td>
+              <td>Baz</td>
+              <td>Baz</td>
+              <td>Baz</td>
+            </tr>
+            <tr>
+              <td><b>FOO</b></td>
+              <td>Baz</td>
+              <td>Baz</td>
+              <td>Baz</td>
+            </tr>
+            <tr>
+              <td><b>BAR</b></td>
+              <td>Baz</td>
+              <td>Baz</td>
+              <td>Baz</td>
+            </tr>
+            <tr>
+              <td><b>FOO</b></td>
+              <td>Baz</td>
+              <td>Baz</td>
+              <td>Baz</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr/>
+        <h4>Make business cards</h4>
+        <button type="button" class="btn btn-primary">Next step</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="alert alert-info clearfix">
+      <div class="container">
+        <p>This module, use both the <a href="./panels.shtml">panel component</a> and table content. Please refer to the <a href="./tables.shtml">table content</a> pages for other examples.</p>
+      </div>
+    </div>
+  </div>
+</div>

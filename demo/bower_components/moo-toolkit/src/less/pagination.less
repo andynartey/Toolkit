@@ -1,0 +1,70 @@
+//--------------------------------------------------------------
+// Pagination
+//
+// Import bootstrap pagination as a reference
+// Define customizations and moo paginaton style
+//--------------------------------------------------------------
+@import (less) "bootstrap/less/pagination.less";
+
+.pagination {
+  > li {
+    > a,
+    > span {
+      border-width: 0;
+      padding: 1px 12px;
+      line-height: 1;
+    }
+  }
+
+  > li {
+    > a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  > .disabled,
+  > .active {
+    > a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .previous {
+    a {
+      border-right-width: 1px;
+
+      &:before {
+        .mooicon-chevron-left-small;
+        left: 0;
+      }
+    }
+  }
+
+  .next {
+    a {
+      border-left-width: 1px;
+
+      &:before {
+        .mooicon-chevron-right-small;
+        right: 0;
+      }
+    }
+  }
+
+  .previous,
+  .next {
+    a:before {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .ellipsis a {
+    &,
+    &:hover {
+      color: @text-color;
+    }
+  }
+
+}
+

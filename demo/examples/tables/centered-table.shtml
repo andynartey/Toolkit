@@ -1,0 +1,34 @@
+<h3 id="centered-tables">
+  <a href="#centered-tables" class="link-unstyled link-fragment">Centered table</a>
+</h3>
+
+<p>In instances where space is tight we can also use the class <code>.table-center</code>, this removes horizontal padding in table cells and centers the text meaning it can fit in smaller widths</p>
+
+<div class="examples-container">
+  <div class="moo-example" data-language="markup">
+    <table class="table table-center">
+      <thead>
+        <tr>
+          <th>Lorem ipsum</th>
+          <th>Dolor sit</th>
+          <th>Consectetur</th>
+          <th>Adipisicing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Assumenda nisi cum</td>
+          <td>deserunt, enim repudiandae</td>
+          <td>a maxime dignissimos sapiente</td>
+          <td>eum, laborum excepturi commodi</td>
+        </tr>
+        <tr>
+          <td>Autem dolore obcaecati</td>
+          <td>obcaecati doloremque</td>
+          <td>animi eveniet</td>
+          <td>ducimus facilis</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Polyfills</title>
+  </head>
+  <body>
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="background-size" class="page-header">
+            <a href="#background-size" class="link-unstyled link-fragment">Background Size</a>
+          </h2>
+
+          <p>Support for the background sizing options are available for IE8 by using the <a href="https://github.com/louisremi/background-size-polyfill">background-size-polyfill</a>. <a href="http://caniuse.com/#feat=background-img-opts">Native browser support stats</a>. The mixin <code>.background-size()</code> will load the polyfill and also set the background size for browsers that support it.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

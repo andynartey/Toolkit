@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Images</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="images" class="page-header">
+            <a href="#images" class="link-unstyled link-fragment">Images</a>
+          </h2>
+
+          <h3 id="helpers">
+            <a href="#helpers" class="link-unstyled link-fragment">Image Helpers</a>
+          </h3>
+
+          <div class="examples-container">
+            <div class="example-description">Border helpers</div>
+            <div class="moo-example" data-language="markup">
+              <img src="http://placehold.it/150x150/f1eb9c" alt="Placeholder">
+              <img src="http://placehold.it/150x150/f1eb9c" alt="Placeholder" class="img-border">
+              <img src="http://placehold.it/150x150/f1eb9c" alt="Placeholder" class="img-rounded">
+              <img src="http://placehold.it/150x150/f1eb9c" alt="Placeholder" class="img-circle">
+              <img src="http://placehold.it/150x150/f1eb9c" alt="Placeholder" class="img-thumbnail">
+            </div>
+          </div>
+
+          <h3 id="svg">
+            <a href="#svg" class="link-unstyled link-fragment">SVG Images</a>
+          </h3>
+
+          <p>The toolkit ships with template images for use across the site. The SVG images are set in CSS and have a PNG fallback. Variables, mixins and CSS selectors are generated based on the filename. Given the file <code>foo.svg</code> the following will generated.</p>
+          <dl>
+            <dt>@mooimage-url-foo</dt>
+              <dd>Variable - The relative image URL</dd>
+            <dt>@mooimage-width-foo</dt>
+              <dd>Variable - Image width</dd>
+            <dt>@mooimage-height-foo</dt>
+              <dd>Variable - Image height</dd>
+            <dt>.mooimage-background-foo()</dt>
+              <dd>Mixin - Sets background image with fallback</dd>
+            <dt>mooimage-foo</dt>
+              <dd>CSS Selector - Sets background image, with dimensions.</dd>
+          </dl>
+
+          <!--#include virtual="includes/generated/mooimage-list.shtml" -->
+
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Jumbotron</title>
+  </head>
+  <body>
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="jumbotron" class="page-header">
+            <a href="#jumbotron" class="link-unstyled link-fragment">Jumbotron</a>
+          </h2>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="jumbotron" data-automation="jumbotron">
+                <div class="container">
+                  <h1>Page H1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                  <p><a class="btn btn-primary" role="button">Add to cart</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="jumbotron jumbotron-left">
+                <div class="container">
+                  <h1>Page H1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    <img src="http://placehold.it/150x150/f1eb9c" alt="Placeholder">
+                  <p><a class="btn btn-primary" role="button">Add to cart</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

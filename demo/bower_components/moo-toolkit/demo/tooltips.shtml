@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--#include virtual="includes/head.shtml" -->
+        <title>MOO Toolkit - Tooltips</title>
+    </head>
+    <body>
+        <div class="page-header-container">
+          <!--#include virtual="includes/page-header.shtml" -->
+        </div>
+
+        <div class="toolkit-body container" role="main">
+            <div class="row">
+                <div class="container">
+                    <h2 id="tooltips" class="page-header">
+                        <a href="#tooltips" class="link-unstyled link-fragment">Tooltips</a>
+                    </h2>
+                    <p>Tooltips can be added to any element. Documentation on all tooltip options can be found on the <a href="http://getbootstrap.com/javascript/#tooltips">Bootstrap tooltips</a> page.</p>
+                    <p>Bootstrap tooltips usually need to be initialized manually. However in the toolkit any element with the class <code>tooltip-anchor</code> is initialized and also styled using our icon font.</p>
+
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+
+                    <h3 class="page-header">
+                        Tooltips (Basic)
+                    </h3>
+
+                    <div class="examples-container">
+                        <div class="moo-example" data-language="markup">
+                            <span data-container="body" data-toggle="popover" data-placement="right" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsa explicabo veniam magni, suscipit, soluta nihil veritatis, aperiam facilis doloribus non minima ex, assumenda necessitatibus a voluptas quis sapiente possimus." class="tooltip-anchor"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <h3 class="page-header">
+                        Tooltips (Content)
+                    </h3>
+
+                    <div class="examples-container">
+                        <div class="moo-example" data-language="markup">
+                            <div class="popover-markup">
+                                <span class="trigger" data-toggle="popover" data-placement="bottom">
+                                  <span class="hidden">Popover A.</span>
+                                </span>
+                                <div class="head hidden">
+                                  Popover Content A
+                                </div>
+                                <div class="content hidden">
+                                  <p>Popover Content A.</p>
+                                </div>
+                            </div>
+
+                            <div class="popover-markup">
+                                <span class="trigger" data-toggle="popover" data-placement="bottom">
+                                  <span class="hidden">Popover B.</span>
+                                </span>
+                                <div class="head hidden">
+                                  Popover Content B
+                                </div>
+                                <div class="content hidden">
+                                  <p>Popover Content B</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--#include virtual="includes/page-end-body.shtml" -->
+    </body>
+</html>

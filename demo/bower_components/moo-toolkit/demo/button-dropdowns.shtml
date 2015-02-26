@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Button Groups</title>
+  </head>
+  <body>
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="button-dropdowns" class="page-header">
+            <a href="#button-dropdowns" class="link-unstyled link-fragment">Button dropdowns</a>
+          </h2>
+
+          <h3 id="split-button">
+            <a href="#split-button" class="link-unstyled link-fragment">Split button dropdowns</a>
+          </h3>
+
+          <p>Turn a button into a dropdown toggle with some basic markup changes.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li class="selected"><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3 id="split-button">
+            <a href="#split-button" class="link-unstyled link-fragment">Split button dropdowns</a>
+          </h3>
+
+          <p>Turn a button into a dropdown toggle with some basic markup changes.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary">Action</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="selected"><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Hero Slideshow</title>
+</head>
+<body>
+<div class="page-header-container">
+    <!--#include virtual="includes/page-header.shtml" -->
+</div>
+
+<div class="toolkit-body container" role="main">
+    <div class="row">
+        <div class="col-12">
+            <h2 id="slideshow" class="page-header">
+                <a href="#slideshow" class="link-unstyled link-fragment">Hero Slideshow</a>
+            </h2>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="includes/slideshow-homepage.shtml" -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 id="usage" class="page-header">
+                <a href="#usage" class="link-unstyled link-fragment">Usage</a>
+            </h2>
+
+            <p>An element with <code>.slideshow-container</code> contains an unordered list
+                <code>.slideshow-slides</code> which contains list items that represent each slide</p>
+
+            <p>Each <code>&lt;li&gt;</code> needs to implement it's own grid container. As the main slide background
+                image stretches full width. You can see inside each <code>&lt;li&gt;</code> there are
+                <code>.container</code> and <code>.row</code> elements. The element <code>.slideshow-content</code> is a
+                12 column grid element and should contain the content for the slide</p>
+
+            <p>Each slide has the data attribute <code>data-slideshow-image</code> with specifies the URL for the slide
+                background image. Which is loaded via javascript.</p>
+
+            <p><strong>Active Slide:</strong> The active slide needs to be specified in the markup by adding the class
+                <code>.active</code> you are also required to set an inline style to set the background image.</p>
+
+            <div class="examples-container">
+                <div class="moo-example moo-example-no-render" data-language="markup">
+                    <div class="slideshow-container">
+                        <ul class="slideshow-slides">
+                            <li class="active"
+                                style="background-image: url('foo.jpg')"
+                                data-slideshow-image="foo.jpg">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="slideshow-content">
+                                            <!-- Slide Content -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li data-slideshow-image="bar.jpg">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="slideshow-content">
+                                            <!-- Slide Content -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="pager" class="page-header">
+                <a href="#pager" class="link-unstyled link-fragment">Pager</a>
+            </h2>
+
+            <p>The slideshow can optionally have left and right arrows against each slide for navigation. This can be
+                implemented by adding the following markup inside of the <code>.slideshow-container</code></p>
+
+            <div class="examples-container">
+                <div class="moo-example moo-example-no-render" data-language="markup">
+                    <nav class="slideshow-pager">
+                        <ul>
+                            <li class="prev" data-slideshow-nav="prev">
+                                <span class="sr-only">Previous</span>
+                            </li>
+                            <li class="next" data-slideshow-nav="next">
+                                <span class="sr-only">Next</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <h2 id="navigation" class="page-header">
+                <a href="#navigation" class="link-unstyled link-fragment">Navigation</a>
+            </h2>
+
+            <p>Navigation can be added to the bottom of the slider by including the following markup as the last element
+                inside the <code>.slideshow-container</code></p>
+
+            <p>The navigation has three modifier classes</p>
+            <ul>
+                <li><code>slideshow-nav-labels</code></li>
+                <li><code>slideshow-nav-minimal</code></li>
+                <li><code>slideshow-nav-thumbs</code></li>
+            </ul>
+
+            <div class="examples-container">
+                <div class="moo-example moo-example-no-render" data-language="markup">
+                    <ul class="slideshow-nav slideshow-nav-labels">
+                        <li class="active">
+                            Welcome
+                        </li>
+                        <li>
+                            Business Cards
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>The navigation list item for the active slide needs to be specified with the class <code>.active</code>
+            </p>
+
+            <p>For the modifier <code>slideshow-nav-thumbs</code> you will also need to include an <code>
+                &lt;img&gt;</code> inside the <code>&lt;li&gt;</code></p>
+
+            <h2 id="javascript" class="page-header">
+                <a href="#javascript" class="link-unstyled link-fragment">Javascript</a>
+            </h2>
+
+            <p>Each slideshow needs initialization from javascript. Below is a simple requirejs module that will
+                initialize the element <code>#mySlideshow</code></p>
+
+            <div class="examples-container">
+                <div class="moo-example moo-example-no-render" data-language="javascript">
+                    define(function (require) {
+                    'use strict';
+
+                    var $ = require('jquery');
+
+                    require('slideshow');
+                    $('#mySlideshow').slideshow();
+                    });
+                </div>
+            </div>
+
+            <h2 id="video-slides" class="page-header">
+                <a href="#video-slides" class="link-unstyled link-fragment">Video Slides</a>
+            </h2>
+            <p>To have a video play in the slide space when you click the play button:</p>
+            <p>Please use Vimeo for video, <a href="http://wiki.moo.com/display/COM/Community+Logins#CommunityLogins-Vimeo-ThisisaPROaccountandourprimaryvideohostingchannel">we have a pro account</a>.</p>
+            <div class="examples-container">
+                <div class="moo-example moo-example-no-render" data-language="markup">
+                    <li data-slideshow-image="image.jpg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="slideshow-content jumbotron jumbotron-left">
+                                    <h1>Slide Content</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-overlay">
+                            <iframe class="video-player invisible"
+                                    src=""
+                                    frameborder="0"
+                                    webkitallowfullscreen
+                                    mozallowfullscreen
+                                    allowfullscreen></iframe>
+                            <button class="play-cta"><span class="mooicon-play-fill"></span></button>
+                            <button class="close-cta invisible"><span class="mooicon-cross"></span></button>
+                        </div>
+                    </li>
+                </div>
+            </div>
+
+
+            <h2 id="javascript-api" class="page-header">
+                <a href="#javascript-api" class="link-unstyled link-fragment">Javascript API</a>
+            </h2>
+
+            <p>Once initialized the slideshow instance is bound to the <code>.slideshow-container</code> element using
+                jQuery data under the key <code>moo.slideshow</code>. Once obtained the following methods can be called
+                on the slideshow.</p>
+            <ul>
+                <li>startAutoplay()</li>
+                <li>stopAutoplay()</li>
+                <li>showSlide(index)</li>
+                <li>prev</li>
+                <li>next</li>
+            </ul>
+
+            <p>For example to pause the slideshow</p>
+
+            <div class="examples-container">
+                <div class="moo-example moo-example-no-render" data-language="javascript">
+                    var slideshowEl = $('#theSlideshowId'),
+                    slideshow = slideshowEl.data('moo.slideshow');
+
+                    slideshow.data('moo.slideshow').next();
+                </div>
+            </div>
+
+            <p>The Javascript API allows you to pass in certain options to change the behaviour
+            of the slideshow. These options are:</p>
+            <ul>
+              <li><code>autoplay</code> - Whether or not the slideshow should start rotating on load</li>
+              <li><code>preventNavigation</code> - If true, clicking the navigation at the bottom will have no effect. The pager (left, right) is unaffected.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="slideshow-container hero-banner slideshow-simple">
+    <div class="container slideshow-content slideshow-content-fixed">
+        <div class="row spacer-top">
+            <div class="col-4">
+                <h1>Title</h1>
+                <span class="text-standout"><strong>Foobar</strong></span>
+                <p class="large">Casual text</p>
+                <p class="large">Casual text</p>
+                <p class="large">Casual text</p>
+                <p class="large">Casual text</p>
+                <p class="large">Casual text</p>
+                <p class="large">Casual text</p>
+                <p class="large">Casual text</p>
+                <p class="large">Casual text</p>
+                <a href="#apply-form" class="btn btn-md btn-default">Do something</a>
+            </div>
+        </div>
+    </div>
+
+    <ul class="slideshow-slides">
+        <li class="active" style=" background-image: url('./bower_components/moo-toolkit/demo/examples/images/slideshow/4.jpg') " data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/4.jpg">
+            <div class="video-overlay">
+                <iframe class="video-player invisible" src="//player.vimeo.com/video/113897053?title=0&amp;byline=0&amp;playbar=0&amp;share=0&amp;portrait=0&amp;badge=0&amp;api=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                <button class="play-cta"><span class="mooicon-play-fill"></span></button>
+                <button class="close-cta invisible"><span class="mooicon-cross"></span></button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--#include virtual="includes/page-end-body.shtml" -->
+</body>
+</html>

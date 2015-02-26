@@ -1,0 +1,100 @@
+//--------------------------------------------------------------
+// Dropdowns
+//
+//--------------------------------------------------------------
+@import (less) "bootstrap/less/button-groups.less";
+
+// Buttons groups
+//
+.btn-group {
+  .btn {
+    &:first-child  {
+      border-right-width: 1px;
+    }
+  }
+
+  &.open {
+    .btn {
+      z-index: @zindex-dropdown + 1;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .dropdown-toggle {
+      box-shadow: none;
+    }
+
+    .dropdown-menu {
+      padding-top: 0;
+      padding-bottom: 0;
+      box-shadow: none;
+      border: 1px solid @brand-hero-darker;
+      border-top-left-radius: 0;
+
+      a {
+        padding-top: @padding-base-vertical + 2;
+        padding-bottom: @padding-base-vertical + 2;
+
+        &:focus {
+          background-color: @brand-hero-lighter;
+        }
+
+        &:active,
+        &:hover {
+          background-color: @gray-lighter;
+          color: @input-color;
+        }
+      }
+
+      .selected {
+        a {
+          background-color: @brand-hero-lighter;
+          color: @brand-white;
+
+          &:active,
+          &:hover {
+            background-color: @brand-hero-darker;
+          }
+        }
+      }
+
+      .divider {
+        margin: 0;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    > li > a {
+      padding: 2px (@padding-base-horizontal - 2)
+    }
+  }
+}
+
+.dropdown-toggle {
+  vertical-align: top;
+
+  &:after {
+    .mooicon-chevron-down();
+    padding-left: @padding-base-horizontal;
+  }
+
+  .btn-group > .btn + & {
+    padding-left: 0;
+    padding-right: @padding-base-horizontal;
+
+    &:after {
+      padding-left: 0;
+    }
+  }
+}
+
+.btn-container {
+  .btn {
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

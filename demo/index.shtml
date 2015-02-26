@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit</title>
+  </head>
+  <body id="toolkit-index">
+
+    <!--#include virtual="includes/page-header.shtml" -->
+
+    <div class="container">
+
+      <div class="row">
+        <article class="toolkit-content spacer-bottom">
+          <h2>Overview</h2>
+          <p class="h6">Front end development framework for <a href="http://moo.com">MOO.com</a>. Authored in <a href="http://lesscss.org/">LESS</a> and using the the <a href="http://getbootstrap.com">Bootstrap 3</a> framework. This toolkit aims to provide guidance on implementation, as well as documentation on all available CSS components that are available for use on our site.</p>
+          <p class="h6">The toolkit is based upon Twitter Bootstrap, and implements many of it's features and styles. Documentation and markup examples can be found on the bootstrap website <a href="http://getbootstrap.com">http://getbootstrap.com/</a></p>
+
+          <hr>
+          <h3>Base examples, Components and Demos</h3>
+            <ul>
+              <li class="h4">Base</li>
+              <li><a href="./typography.shtml">Typography</a></li>
+              <li><a href="./colors.shtml">Colour pallete</a></li>
+              <li><a href="./buttons.shtml">Buttons</a></li>
+              <li><a href="./lists.shtml">Lists</a></li>
+              <li><a href="./tables.shtml">Tables</a></li>
+              <li><a href="./forms.shtml">Forms</a></li>
+              <li><a href="./sprites.shtml">Sprites</a></li>
+              <li><a href="./separators.shtml">Separators</a></li>
+              <li><a href="./grid.shtml">Grid</a></li>
+              <li><a href="./alerts.shtml">Alerts</a></li>
+              <li><a href="./images.shtml">Images</a></li>
+              <li><a href="./shapes.shtml">Shapes</a></li>
+              <li><a href="./media-object.shtml">Media object</a></li>
+              <li><a href="./polyfills.shtml">Polyfills</a></li>
+            </ul>
+
+            <ul>
+              <li class="h4">Components</li>
+              <li><a href="./accordion.shtml">Accordion</a></li>
+              <li><a href="./panels.shtml">Panels</a></li>
+              <li><a href="./icons.shtml">Icons</a></li>
+              <li><a href="./button-dropdowns.shtml">Button dropdowns</a></li>
+              <li><a href="./pagination.shtml">Pagination</a></li>
+              <li><a href="./jumbotron.shtml">Jumbotron</a></li>
+              <li><a href="./statuses.shtml">Status indicator</a></li>
+              <li><a href="./tabs.shtml">Tabs</a></li>
+              <li><a href="./favicon.shtml">Favicon</a></li>
+              <li><a href="./navigation.shtml">Navigation</a></li>
+              <li><a href="./popovers.shtml#popovers">Popovers</a></li>
+              <li><a href="./slideshow.shtml">Slideshow</a></li>
+              <li><a href="./datetime.shtml">Date and Time</a></li>
+              <li><a href="./tooltips.shtml">Tooltips</a></li>
+            </ul>
+
+            <ul>
+              <li class="h4">Demo</li>
+              <li><a href="./examples/typography.shtml" target="_blank">Typography</a></li>
+              <li><a href="./examples/buttons.shtml" target="_blank">Buttons</a></li>
+              <li><a href="./examples/icons.shtml" target="_blank">Icons</a></li>
+              <li><a href="./examples/tables.shtml" target="_blank">Tables</a></li>
+              <li><a href="./examples/modules.shtml">Modules</a></li>
+              <li><a href="./examples/accordion.shtml">Accordion</a></li>
+            </ul>
+        <hr>
+        </article>
+
+        <aside class="toolkit-info">
+          <h3>Getting started</h3>
+          <p class="h6">For information on</p>
+          <ul class="h6">
+            <li>- Setup</li>
+            <li>- Development</li>
+            <li>- Release process</li>
+            <li>- Intall/FAQ</li>
+          </ul>
+          <!--#include virtual="includes/generated/readme.shtml" -->
+        </aside>
+
+      </div>
+      <hr>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

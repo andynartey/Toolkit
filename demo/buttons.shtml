@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Buttons</title>
+  </head>
+  <body id="buttons-page">
+
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="buttons-links" class="page-header">
+            <a href="#buttons-links" class="link-fragment">Button and links</a>
+          </h2>
+          <!-- Buttons Begin -->
+
+          <h3 id="primary-button"><a href="#primary-button" class="link-fragment">Primary button</a></h3>
+
+          <p>Creating a primary button style, requires a combination of the following classes: <code>.btn</code> and <code>.btn-primary</code>.
+          <br>
+          The above classes can be applied to <code>&lt;button&gt;</code> or link <code>&lt;a&gt;</code> elements.</p>
+
+          <div class="examples-container">
+            <div class="example-description">Standard buttons using the class <code>.btn.primary</code></div>
+            <div class="moo-example" data-language="markup">
+              <button type="button" class="btn btn-primary" data-automation="button-primary">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="examples-container">
+            <div class="example-description">
+              Icons inside of buttons can only appear to the right, and left padding is applied to the icon. As a result there should be no whitespace between the button text and the icon <code>span</code> tag
+            </div>
+            <div class="moo-example" data-language="markup">
+              <button type="button" class="btn btn-primary">Add<span class="mooicon-cart" aria-hidden="true"></span></button>
+            </div>
+          </div>
+
+          <div class="examples-container">
+            <div class="example-description">
+              Square buttons can be made with the modifier <code>.btn-square</code> and have fixed dimensions. Ideal for icon buttons.
+            </div>
+            <div class="moo-example" data-language="markup">
+              <button type="button" class="btn btn-primary btn-square">
+                <span class="mooicon-cart" aria-hidden="true"></span>
+                <span class="sr-only">Add to cart</span>
+              </button>
+            </div>
+          </div>
+
+          <h3 id="default-button"><a href="#default-button" class="link-fragement">Default button</a></h3>
+
+          <div class="examples-container">
+            <div class="example-description">Standard buttons using the class <code>.btn-default</code></div>
+            <div class="moo-example" data-language="markup">
+              <button type="button" class="btn btn-default" data-automation="button-default">Add to cart</button>
+            </div>
+          </div>
+
+          <h3 id="alt-button"><a href="#alt-button" class="link-fragement">Alternate button</a></h3>
+
+          <p>Light buttons to be used against colorful backgrounds are an alternate to the primary button</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <button type="button" class="btn btn-alt" data-automation="button-alt">Add to cart</button>
+            </div>
+          </div>
+
+          <h3 id="button-sizes"><a href="#button-sizes" class="unstyled-link link-fragement">Button Sizes</a></h3>
+
+          <p>Buttons can appear in variety of defined sizes.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="btn-container">
+                <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
+
+                <button type="button" class="btn btn-primary btn-lg">
+                  Add<span class="mooicon-cart" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-square btn-lg">
+                  <span class="mooicon-cart" aria-hidden="true"></span>
+                  <span class="sr-only">Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="btn-container">
+                <button type="button" class="btn btn-primary btn-sm">Add to cart</button>
+
+                <button type="button" class="btn btn-primary btn-sm">
+                  Add<span class="mooicon-cart" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-square btn-sm">
+                  <span class="mooicon-cart" aria-hidden="true"></span>
+                  <span class="sr-only">Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <h3 id="disabled-button"><a href="#disabled-button" class="unstyled-link link-fragement">Disabled Buttons</a></h3>
+
+          <p>Adding the attribute <code>disabled</code> to a button will prevent it from being clicked and provide custom styling</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <div class="btn-container">
+                <button type="button" class="btn btn-primary" disabled=disabled>Add to cart</button>
+
+                <button type="button" class="btn btn-primary" disabled=disabled>
+                  Add<span class="mooicon-cart" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-square" disabled=disabled>
+                  <span class="mooicon-cart" aria-hidden="true"></span>
+                  <span class="sr-only">Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <h3 id="button-links"><a href="#button-links" class="unstyled-link link-fragement">Button links</a></h3>
+
+          <div class="examples-container">
+            <div class="example-description">Buttons can be styled so that they appear to look more like standard links using the class <code>.btn-link</code></div>
+            <div class="moo-example" data-language="markup">
+              <button type="button" class="btn btn-link">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="examples-container">
+            <div class="example-description">Button links with icons can only appear on the left. There should be no whitespace after the icons <code>span</code> tag.</div>
+            <div class="moo-example" data-language="markup">
+              <button type="button" class="btn btn-link"><span class="mooicon-cart" aria-hidden="true"></span>Add to cart</button>
+            </div>
+          </div>
+
+          <!-- Buttons End  -->
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

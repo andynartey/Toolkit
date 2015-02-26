@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Pagination</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="pagination" class="page-header">
+            <a href="#pagination" class="link-unstyled link-fragment">Pagination</a>
+          </h2>
+
+          <p>This is the default pagination style, used throughout the site. As well as being easily scalable, each link item has been created to have a large click area, for improved usability. To disable the prime pagination links (previous and next), simply toggle the <code>.disabled</code> CSS class. To mark the current page, corresponding with a list item, apply the <code>.active</code> CSS class to the list item.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <ul class="pagination">
+                <li class="previous disabled"><a href="#">Previous</a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li class="ellipsis disabled"><a href="#">&hellip;</a></li>
+                <li><a href="#">17</a></li>
+                <li class="next"><a href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <p><b>Note:</b> The <code>.sr-only</code> CSS class is for hiding assistive text, which are used for screen readers.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

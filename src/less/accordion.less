@@ -1,0 +1,106 @@
+//--------------------------------------------------------------
+// Accordion
+//--------------------------------------------------------------
+
+.accordion {
+  .list-unstyled();
+
+  &:before {
+    content: "";
+    display: block;
+
+    .separator;
+    .separator-thin;
+    .separator-light;
+    .separator-bottom;
+  }
+
+  > li {
+    .separator;
+    .separator-thin;
+    .separator-light;
+    .separator-bottom;
+
+    // Target padding is @panel-body-padding
+    // magic numbers used to compensate for
+    // line height + type spacings
+    padding: (@panel-body-padding - 6) 0 (@panel-body-padding - 3) 0;
+  }
+
+  &.no-trailing {
+    > li.last-child,
+    > li:last-child {
+      padding-bottom: 0;
+      border: none;
+    }
+  }
+}
+
+.accordion-toggle {
+  .h5;
+  color: @text-color;
+
+  position: relative;
+  display: block;
+  margin: 0;
+
+  outline: none;
+
+  @icon-width: 1em;
+  @icon-right-padding: 0.25em;
+
+  padding-right: @icon-width + @icon-right-padding;
+
+  &:hover, &:active,
+  &:focus, &:visited {
+    text-decoration: none;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    right: @icon-right-padding;
+
+    color: @brand-primary;
+
+    height: 1em;
+    line-height: inherit;
+
+    cursor: pointer;
+
+    transition: opacity 0.25s linear;
+  }
+
+  &:before {
+    .mooicon-minus-small();
+    opacity: 0;
+  }
+
+  &:after {
+    .mooicon-plus-small();
+  }
+
+  &.accordion-open {
+    &:before {
+      opacity: 1;
+    }
+
+    &:after {
+      opacity: 0;
+    }
+  }
+
+
+  // For locked accordions remove hover state on
+  // opened panels
+  [data-accordion-toggle="locked"] &.accordion-open {
+    cursor: default;
+    color: @text-color;
+  }
+}
+
+.accordion-content {
+  .clearfix;
+  margin-top: 7px;
+}

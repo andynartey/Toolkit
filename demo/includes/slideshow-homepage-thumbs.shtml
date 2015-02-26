@@ -1,0 +1,116 @@
+<div id="mySlideshow" class="slideshow-container" data-slideshow-autoplay="true">
+
+  <ul class="slideshow-slides">
+    <li class="active"
+        style="background-image: url('./bower_components/moo-toolkit/demo/examples/images/slideshow/1.jpg')"
+        data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/1.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content text-center">
+            <h1>Welcome Back Richard</h1>
+            <p>Standout with premium Business Cars, MiniCards, Notecards and our latest product, Letterheads</p>
+            <button class="btn btn-alt">Browse our products</button>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/8.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content">
+            <h1>Buy our stuff</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<p>
+            <p>Voluptate porro, doloremque eligendi! Iste illo alias dicta, exercitationem sint maiores officiis facilis</p>
+            <button class="btn btn-alt">Buy it now</button>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/3.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content text-right">
+            <h1>It's really nice</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<p>
+            <p>Voluptate porro, doloremque eligendi! Iste illo alias dicta, exercitationem sint maiores officiis facilis</p>
+            <button class="btn btn-alt">Check it out</button>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/9.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content">
+            <h1>Lorem Ipsum</h1>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/5.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content">
+            <h1>Lorem Ipsum</h1>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/10.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content">
+            <h1>Lorem Ipsum</h1>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/7.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content">
+            <h1>Lorem Ipsum</h1>
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+
+  <ul class="slideshow-nav slideshow-nav-thumbs">
+    <li class="active">
+      <img src="http://lorempixel.com/75/50/abstract/1/" alt="">
+      Welcome
+    </li>
+    <li>
+      <img src="http://lorempixel.com/75/50/abstract/2/" alt="">
+      Business Cards
+    </li>
+    <li>
+      <img src="http://lorempixel.com/75/50/abstract/3/" alt="">
+      The Luxe Family
+    </li>
+    <li>
+      <img src="http://lorempixel.com/75/50/abstract/4/" alt="">
+      MiniCards
+    </li>
+    <li>
+      <img src="http://lorempixel.com/75/50/abstract/5/" alt="">
+      Notecards
+    </li>
+    <li>
+      <img src="http://lorempixel.com/75/50/abstract/6/" alt="">
+      Stickers and Postcards
+    </li>
+    <li>
+      <img src="http://lorempixel.com/75/50/abstract/7/" alt="">
+      The MOO Shop
+    </li>
+  </ul>
+</div>

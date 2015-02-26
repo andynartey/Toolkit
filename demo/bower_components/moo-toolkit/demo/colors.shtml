@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Colours</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" id="colors-page" role="main">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 id="color-pallet" class="page-header">
+            <a href="#color-pallet" class="color-pallet link-unstyled link-fragment">Colour Pallete</a>
+          </h2>
+
+          <p>All of our brand colours are available as LESS variables, and are displayed here for reference. Only colours found here should be used across the toolkit and website. And all colour reference should always use the variable names, instead of referencing HEX values.</p>
+
+          <h3 id="primary-brand-colours"><a href="#primary-brand-colours" class="link-fragment">Primary brand colours</a></h3>
+          <div class="container">
+            <div class="row">
+              <div class="swatch-container brand-hero">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-primary-green">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-primary-yellow">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-primary-red">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-primary-blue">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-primary-navy">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-primary-black">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+            </div>
+          </div>
+          <hr/>
+
+          <h3 id="secondary-brand-colours"><a href="#primary-secondary-colours" class="link-fragment">Secondary brand colours</a></h3>
+          <div class="container">
+            <div class="row">
+              <div class="swatch-container brand-secondary-green">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-secondary-yellow">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-secondary-pink">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-secondary-blue">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-secondary-purple">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-secondary-beige">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container brand-secondary-gray">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+            </div>
+          </div>
+          <hr/>
+
+
+          <h3 id="luxe"><a href="#luxe" class="link-fragment">Luxe</a></h3>
+          <div class="container">
+            <div class="row">
+              <div class="swatch-container luxe-hero">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container luxe-black">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+              <div class="swatch-container luxe-gray">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+            </div>
+          </div>
+          <hr/>
+
+          <h3 id="ui-only"><a href="">Alternate</a></h3>
+          <div class="container">
+            <div class="row">
+              <div class="swatch-container brand-alternate-gray">
+                <div class="swatch"></div>
+                <div class="swatch-info"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

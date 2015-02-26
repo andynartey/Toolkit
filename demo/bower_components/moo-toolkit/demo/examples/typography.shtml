@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="../">
+    <!--#include virtual="../includes/head.shtml" -->
+    <title>MOO Toolkit Example - Typography</title>
+  </head>
+  <body>
+
+    <div class="container" role="main">
+      <div class="row">
+
+        <div class="col-5">
+          <h1>Business Cards</h1>
+
+          <span class="text-standout">
+            <strong>Double-sided Business Cards from £13.19</strong> (£10.99 excl. VAT)
+          </span>
+
+          <p>Business cards should be a conversation starter - something to be kept and acted on. Don't let your cards let you down when it's so easy to make something great!</p>
+          <p>Choose from thousands of designs or upload your own artwork.</p>
+
+          <button class="btn btn-primary">Use MOO Designs</button>
+          <button class="btn btn-primary">Design your own</button>
+        </div>
+
+        <div class="col-5 text-center pull-right">
+          <h1>Title at 36px</h1>
+          <p>Verdana body copy at 13px over 21px. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-5">
+          <h1>H1 Nam cursus.</h1>
+          <p>Body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+
+          <a href="#" class="text-standout"><strong>Add to cart</strong></a>
+        </div>
+
+        <div class="col-4 pull-right">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h4 class="panel-title">Do you have 20+ employees?</h4>
+
+              <img src="./examples/images/zipcar.jpg" alt="Zip car">
+              <p>Then save time and money with our free service for bigger businesses. You'll get a dedicated Account Manager and access to an easy online ordering system.</p>
+
+              <a href="#" class="text-standout"><strong>Read more</strong></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--#include virtual="../includes/page-end-body.shtml" -->
+  </body>
+</html>

@@ -1,0 +1,82 @@
+//--------------------------------------------------------------
+// Mixins - Utilities
+//
+// Define custom mixins. All mixins should have parenthesis
+// even if they take not arguments so that they do not appear
+// in the output as classes
+//--------------------------------------------------------------
+
+// Stretches an element using absolute positioning to
+// fill the full height and width of it's relative parent
+.stretch() {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.all-link-styles(@rules){
+  &,
+  &:active,
+  &:hover,
+  &:focus:visited {
+    @rules();
+  }
+}
+
+.square(@size) {
+  .shape-square(@size);
+}
+
+.bryant-pro-regular() {
+  font-family: @font-family-bryant;
+  font-weight: normal;
+//  letter-spacing: 0.5px;
+}
+
+.bryant-pro-medium() {
+  font-family: @font-family-bryant;
+  font-weight: 500;
+//  letter-spacing: 0.5px;
+}
+
+.bryant-pro-bold() {
+  font-family: @font-family-bryant;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+// List styles
+// Remove default list style
+.list-unstyled() {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+// Apply font smoothing
+.font-smoothing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.background-image(@path) {
+   background-image: url("@{image-path}@{path}");
+}
+
+// SVG background image with PNG fallback
+.svg-background(@src) {
+  .background-image(@src);
+
+  html.no-svg & {
+    .background-image(replace(@src, '.svg', '.png'));
+  }
+}
+
+.background-size(@size) {
+  background-size: @size;
+  -ms-behavior: url(/bower_components/background-size-polyfill/backgroundsize.min.htc);
+}
+

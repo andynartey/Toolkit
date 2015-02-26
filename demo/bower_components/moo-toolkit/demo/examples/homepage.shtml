@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <base href="../">
+        <!--#include virtual="../includes/head.shtml" -->
+        <title>MOO Toolkit Example - Home page</title>
+
+        <link rel="stylesheet" href="stylesheets/examples.css">
+    </head>
+    <body>
+        <!--#include virtual="includes/header.shtml" -->
+
+        <div class="hero-banner">
+          <!--#include virtual="../includes/slideshow-homepage.shtml" -->
+        </div>
+
+        <!--#include virtual="includes/homepage-content.shtml" -->
+
+        <!--#include virtual="includes/footer.shtml" -->
+
+        <!--#include virtual="../includes/page-end-body.shtml" -->
+    </body>
+</html>

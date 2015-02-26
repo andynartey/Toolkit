@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>http://localhost:8000/alerts.shtml</loc>
+  <lastmod>2014-05-27T09:08:38.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/button-groups.shtml</loc>
+  <lastmod>2014-05-27T09:08:38.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/buttons.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/colors.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/forms.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/grid.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/icons.shtml</loc>
+  <lastmod>2014-05-27T10:44:40.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/images.shtml</loc>
+  <lastmod>2014-05-27T09:08:38.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/</loc>
+  <lastmod>2014-05-27T11:00:14.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/jumbotron.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/relative-sizing.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/separators.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/shapes.shtml</loc>
+  <lastmod>2014-05-27T10:44:40.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/sprites.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/tables.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://localhost:8000/typography.shtml</loc>
+  <lastmod>2014-05-21T15:48:18.000Z</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+</urlset>

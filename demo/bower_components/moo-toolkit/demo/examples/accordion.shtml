@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="../">
+    <!--#include virtual="../includes/head.shtml" -->
+    <title>MOO Toolkit Example - Accordion</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav>
+            <ol class="breadcrumbs h1">
+              <li><a href="#">Ask MOO About</a></li>
+              <li>Delivery and Turnaround</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+
+          <ul class="accordion">
+            <li>
+              <a href="#" class="accordion-toggle">MOO Products</a>
+              <div class="accordion-content collapse">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere molestias voluptatem esse a distinctio laboriosam velit qui dolorem! Doloribus obcaecati corporis repudiandae! Est adipisci alias dignissimos. Soluta, non, expedita.</p>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="accordion-toggle">Researching MOO</a>
+              <div class="accordion-content collapse">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere molestias voluptatem esse a distinctio laboriosam velit qui dolorem! Doloribus obcaecati corporis repudiandae! Est adipisci alias dignissimos. Soluta, non, expedita.</p>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="accordion-toggle">Making Your Cards</a>
+              <div class="accordion-content collapse">
+                <ul class="list-unstyled">
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Printfinity</a></li>
+                  <li><a href="#">Paper</a></li>
+                  <li><a href="#">Packaging</a></li>
+                  <li><a href="#">MOO in the community</a></li>
+                  <li><a href="#">The MOO Promise</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="accordion-toggle">Placing Orders Lorem Ipsum</a>
+              <div class="accordion-content collapse">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere molestias voluptatem esse a distinctio laboriosam velit qui dolorem! Doloribus obcaecati corporis repudiandae! Est adipisci alias dignissimos. Soluta, non, expedita.</p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-9">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h2 class="panel-title">Delivery and Turnaround</h2>
+              <ul class="accordion no-trailing" data-accordion-toggle="locked">
+                <li>
+                  <a href="#" class="accordion-toggle accordion-open">Turnaround Times</a>
+                  <div class="accordion-content collapse in">
+                    <strong>How long will it take for me to get my order?</strong>
+                    <p>It depends on which shipping method you have chosen. Here is a table with basic turnaround times (which has printing and transit times combined, to make it easier for you to check at a glance).</p>
+                    <p>Please note, all turnaround times are in working days (Mon-Fri, excluding Public Holidays) and are not guaranteed. They are simple estimates based on our experience. For the fastest possible delivery, we strongly recommend that you chose Rush Printing with Express Shipping.</p>
+
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th><strong>Destination</strong></th>
+                          <th><strong>Rush<sup>***</sup><br>Express</strong><br>(trackable)</th>
+                          <th><strong>Rush<sup>***</sup><br>Standard</strong></strong></th>
+                          <th><strong>Express</strong><br>(trackable)</th>
+                          <th><strong>Standard</strong></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Domestic (UK)</td>
+                          <td>2 days</td>
+                          <td>2 days</td>
+                          <td>2 days</td>
+                          <td>2 days</td>
+                        </tr>
+                        <tr>
+                          <td>Europe (Zone 1<sup>*</sup>)</td>
+                          <td>3-5 days</td>
+                          <td>3-5 days</td>
+                          <td>3-5 days</td>
+                          <td>3-5 days</td>
+                        </tr>
+                        <tr>
+                          <td>Europe (Zone 2<sup>**</sup>)</td>
+                          <td>3-5 days</td>
+                          <td>3-5 days</td>
+                          <td>3-5 days</td>
+                          <td>3-5 days</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle">Shipping &amp; Delivery</a>
+                  <div class="accordion-content collapse">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi fugiat reprehenderit nulla iusto soluta perspiciatis, praesentium possimus voluptas ipsum tempora blanditiis unde error atque vitae assumenda. Repellat et illum, earum!</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="accordion-toggle">Rush Printing</a>
+                  <div class="accordion-content collapse">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi fugiat reprehenderit nulla iusto soluta perspiciatis, praesentium possimus voluptas ipsum tempora blanditiis unde error atque vitae assumenda. Repellat et illum, earum!</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--#include virtual="../includes/page-end-body.shtml" -->
+  </body>
+</html>

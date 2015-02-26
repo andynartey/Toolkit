@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="../">
+    <!--#include virtual="../includes/head.shtml" -->
+    <title>MOO Toolkit Example - Buttons</title>
+
+    <style>
+      .row {
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .separator-thin-line {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container" role="main">
+      <div class="row">
+        <div class="col-3">
+          <h6>Inactive</h6>
+        </div>
+        <div class="col-3">
+          <h6>Normal</h6>
+        </div>
+        <div class="col-3">
+          <h6>Hover</h6>
+        </div>
+        <div class="col-3">
+          <h6>Active</h6>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-primary" disabled=disabled>Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-primary">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-primary hover">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-primary active">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-primary btn-square" disabled=disabled>
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-primary btn-square">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-primary btn-square hover">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-primary btn-square active">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-primary" disabled=disabled>Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-primary">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-primary hover">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-primary active">Next Step</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="separator-thin-line">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-default" disabled=disabled>Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-default">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-default hover">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-default active">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-default btn-square" disabled=disabled>
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-default btn-square">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-default btn-square hover">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-default btn-square active">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-default" disabled=disabled>Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-default">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-default hover">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-default active">Next Step</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-green">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-yellow">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-pink">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-purple">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-beige">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" role="main">
+      <div class="row">
+        <div class="col-3">
+          <h6>Inactive</h6>
+        </div>
+        <div class="col-3">
+          <h6>Normal</h6>
+        </div>
+        <div class="col-3">
+          <h6>Hover</h6>
+        </div>
+        <div class="col-3">
+          <h6>Active</h6>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary" disabled=disabled>Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary hover">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary active">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary btn-square" disabled=disabled>
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary btn-square">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary btn-square hover">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary btn-square active">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary" disabled=disabled>Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary hover">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-primary active">Next Step</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="separator-thin-line">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default" disabled=disabled>Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default hover">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default active">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default btn-square" disabled=disabled>
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default btn-square">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default btn-square hover">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default btn-square active">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default" disabled=disabled>Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default hover">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-lg btn-default active">Next Step</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-green">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-yellow">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-pink">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-purple">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-beige">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" role="main">
+      <div class="row">
+        <div class="col-3">
+          <h6>Inactive</h6>
+        </div>
+        <div class="col-3">
+          <h6>Normal</h6>
+        </div>
+        <div class="col-3">
+          <h6>Hover</h6>
+        </div>
+        <div class="col-3">
+          <h6>Active</h6>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary" disabled=disabled>Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary hover">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary active">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary btn-square" disabled=disabled>
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary btn-square">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary btn-square hover">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary btn-square active">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary" disabled=disabled>Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary hover">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-primary active">Next Step</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="separator-thin-line">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default" disabled=disabled>Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default hover">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default active">Add to cart<span class="mooicon-cart" aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default btn-square" disabled=disabled>
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default btn-square">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default btn-square hover">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default btn-square active">
+            <span class="mooicon-cart" aria-hidden="true"></span>
+            <span class="sr-only">Add to cart</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default" disabled=disabled>Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default hover">Next Step</button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-default active">Next Step</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-green">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-yellow">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-pink">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-purple">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brand-secondary-beige">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt" disabled=disabled>Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt hover">Next Step</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-sm btn-alt active">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="../includes/page-end-body.shtml" -->
+  </body>
+</html>

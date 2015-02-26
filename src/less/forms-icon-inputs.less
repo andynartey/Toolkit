@@ -1,0 +1,59 @@
+//--------------------------------------------------------------
+// Forms Icon Inputs
+//
+// Styles for radio buttons and check boxes that use icons
+//--------------------------------------------------------------
+
+
+// Styled check boxes
+// span.form-styled-radio > input[type=radio]
+
+
+.form-styled-radio {
+    display: inline-block;
+    position: relative;
+
+    input[type="radio"] {
+        .square(26px);
+        visibility: hidden;
+        position: absolute;
+
+    }
+
+    input[type="radio"] + label ,
+    input[type="radio"]:checked + label {
+      transition: all .5s ease-in-out;
+    }
+
+    input[type="radio"] + label {
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        &:before {
+            content: " ";
+            display: block;
+
+            &:extend(.mooimage-tick-grey);
+        }
+    }
+
+    input[type="radio"]:checked + label {
+
+
+        &:hover,
+        &:focus {
+            transform: scale(1);
+        }
+
+        &:before {
+            &:extend(.mooimage-tick-green);
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+

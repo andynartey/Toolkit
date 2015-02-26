@@ -1,0 +1,157 @@
+//--------------------------------------------------------------
+// Popover content
+//--------------------------------------------------------------
+
+.popover-content {
+  display: inline-block;
+
+  &:hover, &:focus {
+    cursor: pointer;
+  }
+
+  // Location flag
+  .popover-list-current {
+    vertical-align: middle;
+    display: inline-block;
+
+    &[class*='option-'] {
+      padding: 0;
+
+      :before {
+        margin-right: 0;
+      }
+
+      &:hover, &:focus {
+        background-color: initial;
+      }
+    }
+  }
+
+  // Location switch
+  .popover-list-selection {
+    .text-hide();
+    .text-overflow();
+    .bryant-pro-medium();
+    color: @brand-hero;
+
+    &:hover, &:focus {
+      color: @brand-hero-darker;
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+
+      .mooicon-chevron-down;
+      font-size: 10px;
+    }
+  }
+
+  [class*='option-'] {
+    padding: 10px;
+    line-height: initial;
+    color: @brand-hero;
+    white-space: nowrap;
+
+    &:hover, &:focus {
+      cursor: pointer;
+      background-color: @brand-gray;
+      color: @brand-primary-white;
+
+      a {
+        text-decoration: none;
+        color: @brand-primary-white;
+      }
+    }
+
+    &.current {
+      background-color: @brand-secondary-gray;
+
+      &:hover, &:focus {
+        background-color: @brand-gray;
+      }
+
+      a {
+        color: @brand-hero-darker;
+
+        &:hover, &:focus {
+          color: @brand-primary-white;
+        }
+      }
+    }
+
+    :before {
+      content: "";
+      paddin-right:@padding-base-horizontal;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+
+  .option-uk_en {
+    :before {
+      .moosprite-flag-uk;
+      .no-svg & { .no-svg .moosprite-flag-uk; }
+    }
+  }
+  .option-us_en {
+    :before {
+      .moosprite-flag-us;
+      .no-svg & { .no-svg .moosprite-flag-us; }
+    }
+  }
+  .option-eu_en {
+    :before {
+      .moosprite-flag-eu;
+      .no-svg & { .no-svg .moosprite-flag-eu; }
+    }
+  }
+  .option-uk_de {
+    :before {
+      .moosprite-flag-de;
+      .no-svg & { .no-svg .moosprite-flag-de; }
+    }
+  }
+  .option-uk_es {
+    :before {
+      .moosprite-flag-es;
+      .no-svg & { .no-svg .moosprite-flag-es; }
+    }
+  }
+  .option-uk_fr {
+    :before {
+      .moosprite-flag-fr;
+      .no-svg & { .no-svg .moosprite-flag-fr; }
+    }
+  }
+  .option-nl_en {
+    :before {
+      .moosprite-flag-nl;
+      .no-svg & { .no-svg .moosprite-flag-nl; }
+    }
+  }
+  .option-uk_it {
+    :before {
+      .moosprite-flag-it;
+      .no-svg & { .no-svg .moosprite-flag-it; }
+    }
+  }
+  .option-au_en {
+    :before {
+      .moosprite-flag-au;
+      .no-svg & { .no-svg .moosprite-flag-au; }
+    }
+  }
+  .option-ca_en {
+    :before {
+      .moosprite-flag-ca;
+      .no-svg & { .no-svg .moosprite-flag-ca; }
+    }
+  }
+}
+
+.popover-list-items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}

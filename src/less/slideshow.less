@@ -1,0 +1,420 @@
+@slideshow-height: 550px;
+@slideshow-height-condensed: 385px;
+@slideshow-transition-duration: 0.25s;
+
+@pager-z-index: 100;
+@nav-z-index: @pager-z-index + 1;
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+
+    .slideshow-slides {
+        width: 100%;
+        height: @slideshow-height;
+    }
+
+    .btn {
+      .btn-alt;
+    }
+
+    &:hover {
+        .slideshow-pager {
+            .prev,
+            .next {
+                opacity: 1;
+            }
+        }
+    }
+
+    .container {
+      .jumbotron-left {
+        padding-top: 120px;
+        padding-left: 10px;
+        text-align: left;
+
+        p {
+          max-width: 330px;
+        }
+
+        .btn {
+          margin-top: 20px;
+        }
+      }
+    }
+}
+
+.slideshow-condensed {
+    .slideshow-slides {
+        height: @slideshow-height-condensed;
+    }
+}
+
+.slideshow-slides {
+    .list-inline;
+    margin: 0;
+
+    li {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        padding: 0;
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.slideshow-container {
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+
+        .video-player {
+            transition: all 700ms ease;
+            display: block;
+            margin: 0 auto;
+            opacity: 1;
+            width: 100%;
+            height: 100%;
+
+            &.invisible {
+                opacity: 0;
+            }
+        }
+
+        .play-cta {
+            position: absolute;
+            top: 34%;
+            left: 46%;
+            background: @brand-primary;
+            border: 1px solid #FFF;
+            border-radius: 50%;
+            height: 153px;
+            width: 153px;
+            text-align: center;
+            opacity: 0.7;
+            transition: opacity 1s ease;
+            z-index: 1;
+            color: #FFF;
+            font-size: 60px;
+            line-height: 1;
+            vertical-align: middle;
+            padding: 0;
+            padding-left: 20px;
+
+            &::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            &:active,
+            &:focus,
+            &:hover {
+                opacity: 1;
+                outline: none;
+            }
+        }
+
+        .close-cta {
+            color: #FFF;
+            font-size: 25px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: transparent;
+            border: none;
+            line-height: 1;
+            opacity: 0.7;
+            transition: opacity 1s ease;
+
+            &:active,
+            &:focus,
+            &:hover {
+                opacity: 1;
+                outline: none;
+            }
+        }
+    }
+
+
+    .slideshow-slides {
+        position: relative;
+        display: block;
+
+        .slideshow-content {
+            transition: transform @slideshow-transition-duration linear, opacity @slideshow-transition-duration linear;
+            opacity: 0.5;
+            transform: scale(0.95);
+
+            &.invisible {
+                opacity: 0;
+            }
+        }
+
+        li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            .opacity(0);
+            overflow: hidden;
+            .background-size(auto 100%);
+
+
+            transition: opacity @slideshow-transition-duration linear;
+
+            &.active {
+                z-index: 1;
+                .opacity(1);
+
+                .slideshow-content {
+                    opacity: 1;
+                    transform: scale(1);
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+.slideshow-content {
+    .make-column(12);
+    &.slideshow-content-fixed {
+        z-index: 1; // Careful changing this, if it's any higher than 1, it will break http://jira.moo.com/browse/MB-1064
+        float: none;
+        position: absolute;
+        left: 50%;
+        margin-left: -(@container-desktop / 2);
+    }
+}
+
+.slideshow-simple {
+    .slideshow-slides li.active {
+        z-index: auto;
+    }
+}
+
+
+.slideshow-nav {
+    .list-inline;
+    overflow: hidden;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: @nav-z-index;
+
+    text-align: center;
+
+    li {
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        cursor: pointer;
+        user-select: none;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+.slideshow-nav-labels {
+
+    .slideshow-nav-underline() {
+      &:after {
+        .shape-rectangle(@rectangle-width, @rectangle-height);
+
+        transform: scaleX(1);
+        background-color: @brand-secondary-black;
+        bottom: 7px;
+
+        // http://stackoverflow.com/a/8852418/810987
+        // IE8 Fix - Force a redrawn of the pusedo element by making a change to the content
+        content: " ";
+      }
+    }
+
+    li {
+        @rectangle-width: 50%;
+        @rectangle-height: 2px;
+        transition: all ease-in @slideshow-transition-duration;
+
+        &:after {
+          transform: scaleX(0);
+          transition: all @slideshow-transition-duration;
+          margin-left: -0.5 * @rectangle-width;
+        }
+
+        &:hover {
+          .slideshow-nav-underline;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &.active {
+          color: @text-color;
+
+          .slideshow-nav-underline;
+        }
+    }
+}
+
+.slideshow-nav-minimal {
+    margin-bottom: 20px;
+
+    li {
+        .text-hide();
+        .shape-circle(10px);
+
+        padding: 0;
+
+        background-color: @brand-primary-white;
+        opacity: 0.75;
+
+        transition: opacity @slideshow-transition-duration linear;
+
+        margin-left: 5px;
+        margin-right: 5px;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+.slideshow-nav-thumbs {
+    li {
+        min-width: 150px;
+
+        &:after {
+            opacity: 0;
+            top: -9px;
+            @triangle-width: 12px;
+            @triangle-height: 6px;
+            @triangle-color: white;
+            .shape-triangle-up(@triangle-width, @triangle-height, @triangle-color);
+            margin-left: -0.5 * @triangle-width;
+        }
+
+        &.active {
+            &:after {
+                opacity: 1;
+            }
+
+            img {
+                border-color: white;
+            }
+        }
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 5px;
+    }
+}
+
+.slideshow-nav-labels,
+.slideshow-nav-thumbs {
+    li {
+        .h5;
+        color: @brand-primary-black-darker;
+        margin-bottom: 0;
+
+        &:after {
+            content: " ";
+            position: absolute;
+            left: 50%;
+        }
+
+        a {
+          color: @brand-primary-black-darker;
+          text-decoration: none;
+        }
+    }
+}
+
+.slideshow-pager {
+    width: 100%;
+    .container;
+    .stretch;
+
+    ul {
+        .list-unstyled;
+        .row;
+        .stretch;
+    }
+
+    li {
+        z-index: @pager-z-index;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+
+    .prev,
+    .next {
+        opacity: 0;
+        transition: opacity @slideshow-transition-duration linear;
+
+        &:before {
+            width: @font-size-h1;
+            text-align: center;
+            font-size: @font-size-h1;
+            height: @font-size-h1;
+            cursor: pointer;
+            opacity: 0.6;
+
+            position: absolute;
+            top: 50%;
+            margin-top: -0.5 * @font-size-h1;
+
+            transition: transform 0.1s linear;
+        }
+
+        &:active {
+            &:before {
+                transform: scale(0.9);
+            }
+        }
+    }
+
+    .prev {
+        left: -4em;
+        &:before {
+            .mooicon-chevron-left();
+        }
+    }
+
+    .next {
+        right: -4em;
+        &:before {
+            .mooicon-chevron-right();
+            right: 0;
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .slideshow-pager {
+        width: 0;
+        opacity: 0;
+    }
+}

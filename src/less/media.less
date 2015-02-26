@@ -1,0 +1,80 @@
+//--------------------------------------------------------------
+// Media objects
+//
+// Import bootstrap Media
+//--------------------------------------------------------------
+@import (less) "bootstrap/less/media.less";
+
+.media-list {
+    .media  {
+        border-top: @table-border-width solid @gray;
+        padding-top: 20px;
+        margin-top: 20px;
+
+
+        &:first-child {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        img {
+            padding-top: 5px;
+
+            &.media-margin-right {
+                margin-right: 15px;
+            }
+            &.media-margin-left {
+                margin-left: 15px;
+            }
+        }
+
+        &>.pull-left {
+            margin-right: 12px;
+        }
+        &>.pull-right {
+            margin-left: 12px;
+        }
+
+        .wide& {
+            padding-right: 40px;
+            margin-top: 0;
+            margin-bottom: 0;
+            border-top: none;
+
+            .border-right& {
+                border-right: @table-border-width solid @gray;
+            }
+
+            > h1,
+            > h2,
+            > h3,
+            > h4,
+            > .h1,
+            > .h2
+            > .h3
+            > .h4 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+ul.wide {
+    margin-bottom: 0;
+}
+
+.media-body {
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > .h1,
+    > .h2
+    > .h3
+    > .h4 {
+        &:first-child {
+          .media-heading;
+        }
+    }
+}

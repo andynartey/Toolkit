@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Statuses</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="status-indicator" class="page-header">
+            <a href="#status-indicator" class="link-unstyled link-fragment">Status indicator</a>
+          </h2>
+
+          <p>Status show a dot indicator, at various stages of the order process. Here we use different classes to display purchased, printing, dispatched, unknown and cancelled. The following classes can be applied to a <code>span</code> to show an order status:
+          <ul>
+            <li><code>.status-purchased</code></li>
+            <li><code>.status-printing</code></li>
+            <li><code>.status-dispatched</code></li>
+            <li><code>.status-unknown</code></li>
+            <li><code>.status-cancelled</code></li>
+          </ul>
+
+          <h3>Purchased</h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <span class="status-purchased">
+                purchased
+              </span>
+            </div>
+          </div>
+          <hr/>
+
+          <h3>Printing</h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <span class="status-printing">
+                printing
+              </span>
+            </div>
+          </div>
+          <hr/>
+
+          <h3>Packing</h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <span class="status-packing">
+                packing
+              </span>
+            </div>
+          </div>
+          <hr/>
+
+          <h3>Dispatched</h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <span class="status-dispatched">
+                dispatched
+              </span>
+            </div>
+          </div>
+          <hr/>
+
+          <h3>Unknown</h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <span class="status-unknown">
+                unknown
+              </span>
+            </div>
+          </div>
+          <hr/>
+
+          <h3>Cancelled</h3>
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <span class="status-cancelled">
+                cancelled
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

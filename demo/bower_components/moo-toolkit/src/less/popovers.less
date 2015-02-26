@@ -1,0 +1,107 @@
+//---------------------------------------------------
+// Popovers
+// --------------------------------------------------
+@import (less) "bootstrap/less/popovers.less";
+
+.popover {
+  box-shadow: initial;
+  font-size: @font-size-base;
+  border-radius: @border-radius-base;
+
+  .popover-content{
+    padding: 15px 19px 15px 19px;
+  }
+
+  &.top {
+    margin-top: -20px;
+  }
+  &.right {
+    margin-left: 20px;
+  }
+  &.bottom {
+    margin-top: 20px;
+  }
+  &.left {
+    margin-left: -20px;
+  }
+
+  // Mostly copied from bootstrap/less/popovers.less
+  &.bottom-left > .arrow,
+  &.bottom-right > .arrow {
+    border-top-width: 0;
+    border-bottom-color: @popover-arrow-outer-fallback-color; // IE8 fallback
+    border-bottom-color: @popover-arrow-outer-color;
+    top: -@popover-arrow-outer-width;
+
+    &:after {
+      content: " ";
+      top: 1px;
+      margin-left: -@popover-arrow-width;
+      border-top-width: 0;
+      border-bottom-color: @popover-arrow-color;
+    }
+  }
+
+  &.bottom-right > .arrow,
+  &.top-right > .arrow {
+    left: 10px;
+  }
+
+  &.bottom-left > .arrow,
+  &.top-left > .arrow {
+    right: 10px;
+  }
+
+  &.top-left > .arrow,
+  &.top-right > .arrow {
+    border-bottom-width: 0;
+    border-top-color: @popover-arrow-outer-fallback-color; // IE8 fallback
+    border-top-color: @popover-arrow-outer-color;
+    bottom: -@popover-arrow-outer-width;
+    &:after {
+      content: " ";
+      bottom: 1px;
+      margin-left: -@popover-arrow-width;
+      border-bottom-width: 0;
+      border-top-color: @popover-arrow-color;
+    }
+  }
+
+  &.custom-width {
+    max-width: 430px;
+    z-index: 10100;
+
+      .popover-content {
+        padding-top: 10px;
+
+        .popover-comparison-image {
+          width: 210px;
+          text-align: center;
+        }
+
+        .standard-size {
+          .standard-size-colour;
+        }
+
+        .moo-size {
+          .moo-size-colour;
+        }
+
+        h1, h2, h3, h4, h5,
+        .h1, .h2, .h3, .h5 {
+          margin: 0 0 5px 0;
+        }
+      }
+  }
+
+}
+
+.popover-tooltip {
+  color: @brand-hero;
+  &:hover, &:focus {
+    cursor: help;
+  }
+}
+
+
+

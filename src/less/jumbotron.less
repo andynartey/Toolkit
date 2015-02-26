@@ -1,0 +1,71 @@
+//--------------------------------------------------------------
+// Jumbotron
+//--------------------------------------------------------------
+@import (less) "bootstrap/less/jumbotron.less";
+
+
+
+.jumbotron {
+  padding-top: 0;
+
+  p {
+    font-size: @font-size-base;
+    margin-bottom: 10px;
+  }
+
+  .intro {
+    margin-bottom: 30px;
+  }
+
+  text-align: center;
+  background-color:transparent;
+
+  h1,
+  .h1 {
+    margin-bottom: 0;
+  }
+
+  .jumbotron-price {
+    .h5;
+
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-family: @font-family-verdana;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+    @media screen and (min-width: @screen-sm-min) {
+        h1,
+        .h1 {
+            font-size: @font-size-h1;
+            margin-bottom: 0;
+        }
+
+        h2,
+        .h2 {
+            font-size: @font-size-h2;
+        }
+    }
+}
+
+.container {
+  .jumbotron-left {
+    padding-top: 90px;
+    padding-left: @grid-gutter-width / 2;
+    text-align: left;
+
+    h1 {
+      color: @text-color;
+    }
+
+    p {
+      max-width: 350px;
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
+  }
+}

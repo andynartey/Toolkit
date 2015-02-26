@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Typography</title>
+</head>
+<body>
+<div class="page-header-container">
+    <!--#include virtual="includes/page-header.shtml" -->
+</div>
+
+<div class="toolkit-body container" role="main">
+    <div class="row">
+        <div class="col-12">
+
+            <h2 id="typography" class="page-header">
+                <a href="#typography" class="link-unstyled link-fragment">Typography</a>
+            </h2>
+
+            <h3 id="headings">
+                <a href="#headings" class="link-unstyled link-fragment">Headings</a>
+            </h3>
+
+            <h1 data-automation="h1">H1 36px MOO Bryant Pro Regular</h1>
+
+            <h2 data-automation="h2">H2 30px MOO Bryant Pro Regular</h2>
+
+            <h3 data-automation="h3">H3 24px MOO Bryant Pro Regular</h3>
+            <h4 data-automation="h4">H4 20px MOO Bryant Pro Medium</h4>
+            <h5 data-automation="h5">H5 18px MOO Bryant Pro Medium</h5>
+            <h6 data-automation="h6">H6 15px MOO Bryant Pro Regular</h6>
+
+            <div class="alert alert-info">
+                <strong>Heading classes:</strong>
+
+                <p>It is possible to apply the above heading sizes to other elements, using the following CSS classes:
+                    <code>.h1</code>, <code>.h2</code>, <code>.h3</code>, <code>.h4</code>, <code>.h5</code>,
+                    <code>.h6</code></p>
+            </div>
+
+            <hr/>
+
+            <h3 id="body-copy">
+                <a href="#body-copy" class="link-unstyled link-fragment">Body Copy</a>
+            </h3>
+
+            <p>Bodycopy, 13px over 21px line height. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eum
+                quasi quo. Dolorum fugiat nisi fuga dignissimos in aut deserunt ratione! Reiciendis, minus sequi magnam
+                explicabo corrupti nemo nobis fugiat!</p>
+
+            <hr/>
+
+            <h3 id="titles">
+                <a href="#titles" class="link-unstyled link-fragment">Titles</a>
+            </h3>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="examples-container">
+                        <div class="moo-example" data-language="markup">
+                            <span class="text-standout"><strong>Title 18px MOO Bryant Pro Medium</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="examples-container">
+                        <div class="moo-example" data-language="markup">
+                            <a class="text-standout"><strong>Linked title 18px MOO Bryant Pro Medium</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <h3 id="lists">
+                <a href="#lists" class="link-unstyled link-fragment">Lists</a>
+            </h3>
+
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, autem, veritatis, odit repellat
+                    magni quasi rerum tempore quo recusandae molestias accusamus quia provident sunt repudiandae dolore
+                    error pariatur possimus cupiditate.
+                </li>
+                <li>Aut, quibusdam, repellat suscipit at quaerat perspiciatis ipsum facere quod aliquam labore quam
+                    tempora veritatis blanditiis laudantium adipisci natus tenetur consequatur facilis quae assumenda
+                    quo veniam ullam asperiores et excepturi.
+                </li>
+            </ul>
+
+            <div class="alert alert-info">
+                <strong>Additional list styles:</strong>
+
+                <p>Further examples of list styles are <a href="./lists.shtml">available here</a>.</p>
+            </div>
+
+            <hr/>
+
+            <h3 id="color">
+                <a href="#color" class="link-unstyled link-fragment">Color</a>
+            </h3>
+
+            <p>There are helper classes available to change the text color of elements. Which can either be <code>.text-body</code>
+                or <code>.text-primary</code></p>
+
+            <div class="examples-container">
+                <div class="moo-example" data-language="markup">
+                    <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                        dignissimos cumque dolorum. Mollitia, architecto provident. Sequi nobis repudiandae error
+                        tempore ullam aperiam ad aliquam nihil doloribus, quibusdam, impedit. Assumenda, obcaecati!</p>
+
+                    <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae veritatis
+                        officiis aut, assumenda iste, illo praesentium architecto, optio sequi quisquam voluptatem odit
+                        sapiente rem mollitia perspiciatis? Aliquid veniam sequi temporibus!</p>
+                </div>
+            </div>
+
+            <h3 id="pricing">
+                <a href="#pricing" class="link-unstyled link-fragment">Pricing</a>
+            </h3>
+
+            <div class="examples-container">
+                <div class="moo-example" data-language="markup">
+              <span class="price-with-tax">
+                <strong>
+                  <span class="price-full">
+                    <s>£230.30</s>
+                  </span>
+                  <span class="price-actual">
+                    £143.95
+                  </span>
+                </strong>
+              </span>
+                    <br>
+                    <small class="price-without-tax vat-message">
+                        (<span class="price-actual">£119.96</span> <span class="excluding-tax-text">excl. VAT</span>)
+                    </small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="examples-container">
+                        <div class="moo-example" data-language="markup">
+                            <div class="h4">
+                    <span class="price-with-tax">
+                      <strong>
+                        <span class="price-full">
+                          <s>£230.30</s>
+                        </span>
+                        <span class="price-actual">
+                          £143.95
+                        </span>
+                      </strong>
+                    </span>
+                                <br>
+                                <small class="price-without-tax vat-message">
+                                    (<span class="price-actual">£119.96</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="examples-container">
+                        <div class="moo-example" data-language="markup">
+                            <p class="h5">
+                    <span class="price-with-tax">
+                      <span class="price-actual"><strong>£13.19</strong></span>
+                    </span>
+                                <br/>
+                                <small>
+                      <span class="price-without-tax vat-message">
+                          (<span class="price-actual">£10.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+                      </span>
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-info">
+                <strong>Changing font size:</strong>
+
+                <p>Like other items the font size for the prices can be modified using classes like <code>.h1</code>
+                    through to <code>.h6</code></p>
+            </div>
+            <hr/>
+
+            <h3 id="miscellaneous">
+                <a href="#miscellaneous" class="link-unstyled link-fragment">Miscellaneous</a>
+            </h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, culpa, doloremque, quibusdam explicabo magni nam reprehenderit suscipit ut corporis doloribus temporibus dolores reiciendis minus fugit quisquam obcaecati veritatis. Animi, qui!</span>
+            <hr>
+            <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit, alias tenetur quae quas voluptas harum
+                deleniti vero accusantium illo. Nulla, porro voluptatibus quos nisi soluta quasi reiciendis consectetur
+                doloribus.</b>
+            <hr>
+            <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, et, eos quaerat odit veniam quia
+                laudantium autem mollitia rem dignissimos quos doloribus dicta esse! Eligendi, non ducimus obcaecati
+                laudantium cumque?</i>
+            <hr>
+            <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, eos, fugit, molestias assumenda
+                accusantium autem dolorem aspernatur incidunt facere odio laudantium sit ipsa commodi corrupti mollitia!
+                Doloribus quam mollitia ex?</em>
+            <hr>
+            <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, ab, ut magnam ipsum earum ratione
+                voluptatibus esse iure rem dolores perferendis suscipit at tempora neque sed nihil quae pariatur
+                est.</strong>
+            <hr>
+            <u>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, esse, maiores fugiat itaque alias
+                quam blanditiis corporis tenetur suscipit dignissimos veniam temporibus officiis inventore deleniti
+                necessitatibus iusto obcaecati voluptas velit.</u>
+            <hr>
+            <s>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, quaerat, quis, ratione deleniti
+                dolorum suscipit quasi accusantium inventore velit sed consequatur culpa tempore aut laborum eos
+                temporibus perspiciatis illum ea.</s>
+            <hr>
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, laborum maiores possimus ad autem
+                aperiam libero! Impedit, repellat, ipsam ipsum tenetur nisi aperiam quis quaerat odio explicabo fugiat
+                dolorem aliquam.
+            </small>
+
+
+
+            <hr/>
+
+            <h3 id="quotes">
+                <a href="#quotes" class="link-unstyled link-fragment">Quotes</a>
+            </h3>
+
+            <div class="examples-container">
+                <div class="moo-example" data-language="markup">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, eos, fugit, molestias assumenda accusantium autem dolorem aspernatur incidunt facere odio laudantium sit ipsa commodi corrupti mollitia! Doloribus quam mollitia ex?</p>
+                        <footer>
+                            <cite title="Source Title">
+                                <span class="reviewer">Jessey Cherne, Ambercare</span>
+                                <time datetime="2014-11-17">17th November 2014</time>
+                            </cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="includes/page-end-body.shtml" -->
+</body>
+</html>

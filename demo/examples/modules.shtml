@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="../">
+    <!--#include virtual="../includes/head.shtml" -->
+    <title>MOO Toolkit - Modules</title>
+  </head>
+  <body>
+
+    <div class="page-header-container">
+      <!--#include virtual="../includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="container">
+
+          <h2 id="modules" class="page-header">
+            <a href="#modules" class="link-unstyled link-fragment">Modules</a>
+          </h2>
+          <h3>Module sizes</h3>
+          <p>The toolkit includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy <a href="./grid.shtml">layout options</a>, as well as powerful mixins for generating more semantic layouts. Further information on the columns and grids can be found <a href="./grid.shtml">here</a>.</p>
+          <p>In this current version of the toolkit we utilise a <a href="./grid.shtml">static grid</a>. In all the examples, we use the <a href="./panels.shtml">panel component</a> for border, padding, heading and link styles.</p>
+          <div class="alert alert-info clearfix">
+            <div class="container">
+              <p>All of the module examples are contained in a <code>DIV</code> element, with one of the following classes applied:</p>
+            </div>
+            <div class="col-3">
+              <ul class="list-unstyled">
+                <li><code>.col-3</code> 3 Columns</li>
+                <li><code>.col-4</code> 4 Columns</li>
+                <li><code>.col-6</code> 6 Columns</li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul class="list-unstyled">
+                <li><code>.col-9</code> 9 Columns</li>
+                <li><code>.col-8</code> 8 Columns</li>
+                <li><code>.col-12</code> 12 Columns</li>
+              </ul>
+            </div>
+          </div>
+          <hr/>
+
+          <!-- Examples Begin -->
+          <!-- Nav tabs -->
+          <nav class="tabs">
+            <ul>
+              <li class="active"><a href="#4column" data-toggle="tab">4 Columns</a></li>
+              <li><a href="#9column" data-toggle="tab">9 Columns</a></li>
+              <li><a href="#8column" data-toggle="tab">8 Columns</a></li>
+              <li><a href="#3column" data-toggle="tab">3 Columns</a></li>
+              <li><a href="#6column" data-toggle="tab">6 Columns</a></li>
+              <li><a href="#12column" data-toggle="tab">12 Columns</a></li>
+            </ul>
+          </nav>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- 4 Column examples -->
+            <div class="tab-pane active" id="4column">
+              <!--#include virtual="../examples/modules/4-column.shtml" -->
+            </div>
+            <!-- 9 Column examples -->
+            <div class="tab-pane" id="9column">
+              <!--#include virtual="../examples/modules/9-column.shtml" -->
+            </div>
+            <!-- 8 Column examples -->
+            <div class="tab-pane" id="8column">
+              <!--#include virtual="../examples/modules/8-column.shtml" -->
+            </div>
+            <!-- 3 Column examples -->
+            <div class="tab-pane" id="3column">
+              <!--#include virtual="../examples/modules/3-column.shtml" -->
+            </div>
+            <!-- 6 Column examples -->
+            <div class="tab-pane" id="6column">
+              <!--#include virtual="../examples/modules/6-column.shtml" -->
+            </div>
+            <!-- 12 Column examples -->
+            <div class="tab-pane" id="12column">
+              <!--#include virtual="../examples/modules/12-column.shtml" -->
+            </div>
+          </div>
+        <!--  Examples End -->
+
+        <h2 id="horizontal-modules" class="page-header">
+          <a href="#horizontal-modules" class="link-unstyled link-fragment">Horizontal Modules</a>
+        </h2>
+
+        <p>The left and right borders for modules can be removed using the <code>.panel-horizontal</code> modifier class.</p>
+
+        <div class="panel panel-default panel-horizontal panel-loud">
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda temporibus, sed facilis, non voluptate, consequatur cupiditate reprehenderit dignissimos necessitatibus vel unde expedita libero. Dignissimos quaerat nemo id quas, nostrum.</p>
+          </div>
+        </div>
+
+        <h2 id="condensed-modules" class="page-header">
+          <a href="#condensed-modules" class="link-unstyled link-fragment">Condensed Modules</a>
+        </h2>
+
+        <p>The default padding around the <code>panel-body</code> can be reduced using the <code>.panel-condensed</code> modifier class.</p>
+
+        <div class="panel panel-default panel-horizontal panel-loud panel-condensed">
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda temporibus, sed facilis, non voluptate, consequatur cupiditate reprehenderit dignissimos necessitatibus vel unde expedita libero. Dignissimos quaerat nemo id quas, nostrum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="../includes/page-end-body.shtml" -->
+  </body>
+</html>

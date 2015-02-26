@@ -1,0 +1,173 @@
+<div id="mySlideshow" class="slideshow-container" data-slideshow-autoplay="false">
+
+    <ul class="slideshow-slides">
+        <li
+                style="background-image: url('./bower_components/moo-toolkit/demo/examples/images/slideshow/4.jpg')"
+                data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/4.jpg" class="active">
+            <div class="container">
+                <div class="row">
+                    <div class="slideshow-content jumbotron jumbotron-left">
+                        <h1>Video Example</h1>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                        <p>Voluptate porro, doloremque eligendi! Iste illo alias dicta, exercitationem sint maiores
+                            officiis facilis</p>
+                        <button class="btn btn-alt">Do something</button>
+                    </div>
+                </div>
+            </div>
+            <div class="video-overlay">
+                <iframe class="video-player invisible"
+                        src="//player.vimeo.com/video/113897053?title=0&amp;byline=0&amp;playbar=0&amp;share=0&amp;portrait=0&amp;badge=0&amp;api=1"
+                        width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                        allowfullscreen></iframe>
+                <button class="play-cta"><span class="mooicon-play-fill"></span></button>
+                <button class="close-cta invisible"><span class="mooicon-cross"></span></button>
+            </div>
+        </li>
+
+        <li
+            style="background-image: url('./bower_components/moo-toolkit/demo/examples/images/slideshow/1.jpg')"
+            data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/1.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="slideshow-content jumbotron">
+                        <h1>Welcome Back Richard</h1>
+
+                        <p>Standout with premium Business Cars, MiniCards, Notecards and our latest product,
+                            Letterheads</p>
+                        <button class="btn btn-alt">Browse our products</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+
+
+        <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/2.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="slideshow-content jumbotron jumbotron-left">
+                        <h1>Buy our stuff</h1>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                        <p>Voluptate porro, doloremque eligendi! Iste illo alias dicta, exercitationem sint maiores
+                            officiis facilis</p>
+                        <button class="btn btn-alt">Buy it now</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/3.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="slideshow-content jumbotron jumbotron-left">
+                        <h1>It's really nice</h1>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                        <p>Voluptate porro, doloremque eligendi! Iste illo alias dicta, exercitationem sint maiores
+                            officiis facilis</p>
+                        <button class="btn btn-alt">Check it out</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/5.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="slideshow-content jumbotron jumbotron-left">
+                        <h1>Lorem Ipsum</h1>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/6.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="slideshow-content jumbotron jumbotron-left">
+                        <h1>Lorem Ipsum</h1>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/7.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="slideshow-content jumbotron jumbotron-left">
+                        <h1>Lorem Ipsum</h1>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+    <ul class="slideshow-nav slideshow-nav-labels value-prop">
+        <li class="active">
+            Video Example
+        </li>
+        <li>
+            Welcome
+        </li>
+        <li>
+            Business Cards
+        </li>
+        <li>
+            The Luxe Family
+        </li>
+        <li>
+            Notecards
+        </li>
+        <li>
+            Stickers and Postcards
+        </li>
+        <li>
+            The MOO Shop
+        </li>
+    </ul>
+</div>
+
+<div class="row value-prop-container value-prop-dark">
+    <div class="container">
+        <div class="col-4 spacer-top spacer-bottom">
+            <div class="col-3">
+                <div class="mooimage-stopwatch-white"></div>
+            </div>
+            <div class="col-9 spacer-bottom">
+                <h5>
+                    <a href="" rel="">Next day delivery</a>
+                </h5>
+                <span class="h6">Quisque sagittis mauris dui, aliquam mollis libero.</span>
+            </div>
+        </div>
+        <div class="col-4 spacer-top spacer-bottom">
+            <div class="col-3">
+                <div class="mooimage-promise-white"></div>
+            </div>
+            <div class="col-9 spacer-bottom">
+                <h5>
+                    <a href="" rel="">100% Satisfaction</a>
+                </h5>
+                <span class="h6">Quisque sagittis mauris dui, aliquam mollis libero.</span>
+            </div>
+        </div>
+        <div class="col-4 spacer-top spacer-bottom">
+            <div class="col-3">
+                <div class="mooimage-printfinity-white"></div>
+            </div>
+            <div class="col-9 spacer-bottom">
+                <h5>
+                    <a href="" rel="">One card, lots of designs</a>
+                </h5>
+                <span class="h6">Quisque sagittis mauris dui, aliquam mollis libero.</span>
+            </div>
+        </div>
+    </div>
+</div>

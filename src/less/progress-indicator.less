@@ -1,0 +1,106 @@
+//--------------------------------------------------------------
+// Progress Indicator
+//--------------------------------------------------------------
+
+.progress-indicator {
+  @bg-color: @gray-lighter;
+  @active-bg-color: #fff;
+
+  display: table;
+  width: 100%;
+
+  border: 1px solid @gray;
+
+  ul,
+  ol {
+    .list-unstyled;
+    display: table-row;
+  }
+
+  li {
+    .h5;
+
+    display: table-cell;
+    text-align: center;
+    padding: @padding-large-vertical 0;
+
+    background-color: @active-bg-color;
+
+    position: relative;
+
+    &:before {
+      @icon-height: 26px;
+
+      .mooicon;
+      content: @mooicon-chevron-right-small;
+      color: @gray-dark;
+
+      font-size: @icon-height;
+
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -0.5 * @icon-height;
+    }
+
+    &:first-child {
+      &:before {
+        content: none;
+      }
+    }
+
+    &.active {
+      ~ li {
+        background-color: @bg-color;
+      }
+
+      &:after {
+        @triangle-width: 12px;
+        // Matches height of the li. line-height + padding
+        @triangle-height: @line-height-computed + (2 * @padding-large-vertical);
+
+        content: "";
+        .shape-triangle-right(@triangle-width, @triangle-height, @active-bg-color);
+
+        position: absolute;
+        top: 0;
+        left: 100%;
+
+        z-index: 1;
+      }
+
+      &:last-child,
+      &.last,
+      &.last-child {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+.progress-indicator-condensed {
+  @active-bg-color: #fff;
+
+  li {
+    font-size: @font-size-base;
+    line-height: @line-height-computed;
+    padding: @padding-small-vertical 0;
+
+    &:before {
+      @icon-height: 18px;
+      font-size: @icon-height;
+      margin-top: -0.5 * @icon-height;
+    }
+
+    &.active {
+      &:after {
+        @triangle-width: 12px;
+        // Matches height of the li. line-height + padding
+        @triangle-height: @line-height-computed + (2 * @padding-small-vertical);
+        .shape-triangle-right(@triangle-width, @triangle-height, @active-bg-color);
+      }
+    }
+  }
+}

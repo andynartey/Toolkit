@@ -1,0 +1,20 @@
+<h3 id="sortable-tables">
+  <a href="#sortable-tables" class="link-unstyled link-fragment">Sortable table</a>
+</h3>
+
+<p>Sortable tables can be created by adding the class <code>.table-sortable</code> to the <code>table</code>. In addition each sortable header requires the class <code>.column-sortable</code> and one of <code>.column-sort-up</code> or <code>.column-sort-down</code>. The <code>th</code> elements should contain an anchor that when clicked triggers the ordering of the table.</p>
+
+<div class="examples-container">
+  <div class="moo-example" data-language="markup">
+    <table class="table table-striped table-sortable" data-automation="table-striped">
+      <thead>
+        <tr>
+          <th class="column-sortable column-sort-up"><a href="#">Foo</a></th>
+          <th class="column-sortable"><a href="#">Bar</a></th>
+          <th>Baz</th>
+        </tr>
+      </thead>
+      <tbody>
+    </table>
+  </div>
+</div>

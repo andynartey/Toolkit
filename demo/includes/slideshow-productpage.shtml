@@ -1,0 +1,78 @@
+<div id="mySlideshow" class="slideshow-container" data-slideshow-autoplay="true">
+
+  <nav class="slideshow-pager">
+    <ul>
+      <li class="prev" data-slideshow-nav="prev">
+        <span class="sr-only">Previous</span>
+      </li>
+      <li class="next" data-slideshow-nav="next">
+        <span class="sr-only">Next</span>
+      </li>
+    </ul>
+  </nav>
+
+  <ul class="slideshow-slides">
+    <li class="active"
+        style="background-image: url('./bower_components/moo-toolkit/demo/examples/images/product-slideshow/1.jpg')"
+        data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/product-slideshow/1.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content">
+            <div class="jumbotron jumbotron-left">
+                <h1>Square Business Cards</h1>
+
+                <span class="jumbotron-price">
+                  <strong>
+                    <span class="text-standout">
+                      <span class="pre-price-text">Double-sided Square Business Cards from</span>
+                      <span class="price-actual">£15.59</span>
+                    </span>
+                  </strong>
+                  <div>
+                    <small class="price-without-tax vat-message">
+                      (<span class="price-actual">£12.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+                    </small>
+                  </div>
+                </span>
+
+                <p>Maximise the potential of your communications by sending them on your own Letterhead. This one is stylishly simple with your initials leading the way. A personalised Letterhead shows you think about the details, and care about your clients too.</p>
+                <a href="#" class="btn btn-alt">Use MOO Designs</a>
+                <a href="#" class="btn btn-alt">Design your own</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/1.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content text-center">
+            <h1>Welcome Back Richard</h1>
+            <p>Standout with premium Business Cars, MiniCards, Notecards and our latest product, Letterheads</p>
+            <button class="btn btn-alt">Browse our products</button>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li data-slideshow-image="./bower_components/moo-toolkit/demo/examples/images/slideshow/3.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-content text-right">
+            <h1>It's really nice</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<p>
+            <p>Voluptate porro, doloremque eligendi! Iste illo alias dicta, exercitationem sint maiores officiis facilis</p>
+            <button class="btn btn-alt">Check it out</button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="slideshow-nav slideshow-nav-minimal">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>

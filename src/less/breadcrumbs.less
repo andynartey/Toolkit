@@ -1,0 +1,50 @@
+//--------------------------------------------------------------
+// Breadcrumbs
+//--------------------------------------------------------------
+
+.breadcrumbs {
+  ul,
+  ol {
+    .list-horizontal();
+    .h1;
+
+    margin-left: -7px;
+    margin-bottom: 10px;
+
+    li {
+      padding: 0;
+
+      &:before {
+        .mooicon-chevron-right-small();
+        padding: 0 0.5em;
+        font-size: 0.75em;
+        vertical-align: baseline;
+      }
+
+      &:first-child {
+        &:before {
+          content: "";
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  &.breadcrumbs-condensed {
+    ul, ol {
+      .h6;
+      min-height: 40px;
+
+      li {
+        padding-top: 3px;
+      }
+    }
+  }
+
+  &.breadcrumbs-line-height {
+    ul, ol {
+      line-height: 33px;
+    }
+  }
+
+}

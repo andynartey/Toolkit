@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Shapes</title>
+  </head>
+  <body>
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" id="shapes-page" role="main">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="shapes" class="page-header">
+            <a href="#shapes" class="link-unstyled link-fragment">Shapes</a>
+          </h2>
+
+          <h3 id="triangles">
+            <a href="#triangles" class="link-unstyled link-fragment">Triangles</a>
+          </h3>
+
+          <p>Triangles can be rendered in CSS using mixins. For example the down triangle mixin <code>.shape-triangle-down-el(@width, @height: @width, @color: @brand-primary, @border-color: false, @border-width: 1px)</code>. The only required parameter is <code>@width</code>. Triangles can optionally have a border color if <code>@border-color</code> is a valid CSS color. This mixin uses <code>:before</code> and <code>:after</code> pseudo elements.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <span class="triangle-down"></span>
+              <span class="triangle-down-border"></span>
+
+              <span class="triangle-up"></span>
+              <span class="triangle-up-border"></span>
+
+              <div class="rectangle">
+                <span class="rectangle-triangle"></span>
+              </div>
+            </div>
+          </div>
+
+          <h4>Simple Triangles</h4>
+          <p>If you do not require borders on triangles then you can use the simpler <code>.shape-triangle-down-el(@width, @height: @width, @color: @brand-primary)</code> mixin. The benifit of this is that you can apply the shape to a pseudo element of your choosing.</p>
+
+          <div class="examples-container">
+            <div class="moo-example" data-language="markup">
+              <span class="triangle-down-simple"></span>
+              <span class="triangle-up-simple"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--#include virtual="includes/head.shtml" -->
+    <title>MOO Toolkit - Grid</title>
+  </head>
+  <body>
+    <div class="page-header-container">
+      <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="grid" class="page-header">
+            <a href="#grid" class="link-unstyled link-fragment">Grid</a>
+          </h2>
+
+          <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+          <ul>
+            <li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
+            <li>Use rows to create horizontal groups of columns.</li>
+            <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+            <li>Predefined grid classes like <code>.row</code> and <code>.col-4</code> are available for quickly making grid layouts, though their usage is discouraged. Less mixins can also be used for more semantic layouts.</li>
+            <li>Columns create gutters (gaps between column content) via <code>padding</code>. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>s.</li>
+            <li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-4</code>.</li>
+          </ul>
+          <p><b>Note:</b> We use a 12 column grid for our layout.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div role="main" id="grid-page">
+
+        <div class="container">
+          <h3 id="static-grid-example">
+            <a href="#static-grid-example" class="link-unstyled link-fragment">Static grid example</a>
+          </h3>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2"></div>
+            <div class="col-3"></div>
+            <div class="col-4"></div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-5"></div>
+            <div class="col-6"></div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-7"></div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-8"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-9"></div>
+            <div class="col-3"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-10"></div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-11"></div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12"></div>
+          </div>
+
+          <hr>
+        </div>
+      </div>
+
+      <div id="responsive-grid">
+        <div class="container">
+          <h3 id="responsive-grid-example">
+            <a href="#responsive-grid-example" class="link-unstyled link-fragment">Responsive grid example</a>
+          </h3>
+          <p>In this example, we apply a 12 column width to each of the following columns at tablet and below. The predefined grid class names used (col-6, col-4 etc.) are for example only. Adopt a modular based naming convention when creating class names, to be used with modules.</p>
+          <div class="row">
+            <div class="module-container-12-2"></div>
+            <div class="module-container-12-6"></div>
+            <div class="module-container-12-4"></div>
+          </div>
+          <p>Breakpoints for responsive design:</p>
+          <ul>
+            <li>@small</li>
+            <li>@medium</li>
+            <li>@large</li>
+          </ul>
+
+          <div class="examples-container">
+            <div class="moo-example moo-example-no-render" data-language="css">
+              .foo {
+                .make-column(12);
+                  @media @medium {
+                    .make-column(4);
+                  }
+              }
+              .bar {
+                .make-column(12);
+                  @media @medium {
+                    .make-column(8);
+                  }
+              }
+            </div>
+          </div>
+
+          <p><b>Note:</b> The <code>.foo</code> class is made of 4 columns and expands to 12 columns at tablet and below. The <code>.bar</code> class is made of 8 columns at desktop and expands to 12 columns at tablet and below.</p>
+
+          <hr>
+        </div>
+      </div>
+
+      <h3 id="row-fixed">
+        <a href="#row-fixed" class="link-unstyled link-fragment">Fixed height rows</a>
+      </h3>
+
+      <div class="alert alert-warning">
+        <strong>Are you sure?</strong> - If the content within a fixed height row is variable or dynamic the column content will spill outside of it's container.
+      </div>
+
+      <p>Rows can be forced to be specified minimum height. This is useful when you want a row of panels or other content to appear at the same size, like <a href="./examples/homepage.shtml">the homepage</a>, for example. Add the class <code>.row-fixed</code> onto and existing <code>.row</code> <strong>and</strong> also add some CSS that sets the <code>min-height</code> for that row.</p>
+      <p>The min-height of the row will then be inherited by the columns. And other toolkit elements like panels will start to behave differently to stretch to fill the height, usually through absolute positioning.</p>
+
+      <div class="examples-container">
+        <div class="moo-example moo-example-no-render" data-language="markup">
+          <div id="my-selector" class="row row-fixed">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+        <div class="moo-example moo-example-no-render" data-language="css">
+          #my-selector {
+            min-height: 400px;
+          }
+        </div>
+      </div>
+
+      <h3 id="row-flex">
+        <a href="#row-flex" class="link-unstyled link-fragment">Flexbox rows</a>
+      </h3>
+
+      <p>Using flexbox we can create rows with equal height columns. Add the class <code>.row-flex</code> onto your row and all columns inside it will flex to become the same height</p>
+
+      <div class="examples-container">
+        <div class="moo-example" data-language="markup">
+          <div class="container">
+            <div class="row row-flex">
+              <div class="col-3">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <h3 class="panel-title">Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="panel-footer">Footer</div>
+                 </div>
+              </div>
+              <div class="col-3">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <h3 class="panel-title">Column 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum beatae modi eos autem eius odio, a suscipit molestiae dolores quasi mollitia iste. Ratione veniam esse quod itaque vitae sapiente.</p>
+                  </div>
+                 </div>
+              </div>
+              <div class="col-3">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <h3 class="panel-title">Column 3</h3>
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>As can be seen in the example above Column 1 has been flexed correctly, however the footer is not at the bottom of the panel. To fix this add the class <code>.flex-grow</code> to the elements whose height needs increasing (in this case the panel body). Then add the class <code>.flex-col</code> to it's parent</p>
+
+      <div class="examples-container">
+        <div class="moo-example" data-language="markup">
+          <div class="container">
+            <div class="row row-flex">
+              <div class="col-3">
+                <div class="panel panel-default flex-col">
+                  <div class="panel-body flex-grow">
+                    <h3 class="panel-title">Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="panel-footer">Footer</div>
+                 </div>
+              </div>
+              <div class="col-3">
+                <div class="panel panel-default flex-col">
+                  <div class="panel-body flex-grow">
+                    <h3 class="panel-title">Column 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum beatae modi eos autem eius odio, a suscipit molestiae dolores quasi mollitia iste. Ratione veniam esse quod itaque vitae sapiente.</p>
+                  </div>
+                 </div>
+              </div>
+              <div class="col-3">
+                <div class="panel panel-default flex-col">
+                  <div class="panel-body flex-grow">
+                    <h3 class="panel-title">Column 3</h3>
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="push-col">
+        <div class="container">
+          <h3 id="pushing-columns">
+            <a href="#pushing-columns" class="link-unstyled link-fragment">Pushing columns</a>
+          </h3>
+          <p>In this example we push the last column along by 6 columns, following our 12 column grid layout. while it's possible to use predefined class names provided by bootstrap, we recommend utilising a mixin called <code><em>.make-column-push()</em></code>.</p>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4"></div>
+          </div>
+
+          <br>
+
+          <div class="examples-container">
+            <div class="moo-example moo-example-no-render" data-language="css">
+              .col-4 {
+                .make-column-push(6);
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="vert-col">
+          <div class="container">
+              <h3 id="vertical-aligned-columns">
+                  <a href="#vertical-aligned-columns" class="link-unstyled link-fragment">Vertically aligning columns</a>
+              </h3>
+              <p>Make things vertically align in the middle.</p>
+              <div class="examples-container">
+                  <div class="moo-example" data-language="markup">
+                      <div class="row row-vertical-middle">
+                          <div class="col-6">Some content</div>
+                          <div class="col-6">Some<br>Other<br>Vertical<br>Content</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </div>
+    <!--#include virtual="includes/page-end-body.shtml" -->
+  </body>
+</html>

@@ -1,0 +1,150 @@
+//--------------------------------------------------------------
+// Grid
+//
+// Define grid
+//--------------------------------------------------------------
+.container {
+  max-width: @container-desktop;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+  .clearfix();
+}
+
+.row {
+  margin-left:  (@grid-gutter-width / -2);
+  margin-right: (@grid-gutter-width / -2);
+  .clearfix();
+}
+
+.col-base {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-left:  (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+}
+
+.make-column(@columns) {
+  width: percentage((@columns / @grid-columns));
+  &:extend(.col-base all);
+}
+.make-column-offset(@columns) {
+  margin-left: percentage((@columns / @grid-columns));
+}
+.make-column-push(@columns) {
+  left: percentage((@columns / @grid-columns));
+}
+.make-column-pull(@columns) {
+  right: percentage((@columns / @grid-columns));
+}
+
+.make-all-grid-columns() {
+  .col(@index) when (@index =< @grid-columns) {
+
+    .col-@{index} {
+      .make-column(@index);
+    }
+
+    .col-offset-@{index} {
+      .make-column-offset(@index);
+    }
+
+    .col((@index + 1));
+  }
+  .col(1);
+}
+
+.make-all-grid-columns();
+
+.col-1 {.make-column(1);}
+.col-2 {.make-column(2);}
+.col-3 {.make-column(3);}
+.col-4 {.make-column(4);}
+.col-5 {.make-column(5);}
+.col-6 {.make-column(6);}
+.col-7 {.make-column(7);}
+.col-8 {.make-column(8);}
+.col-9 {.make-column(9);}
+.col-10 {.make-column(10);}
+.col-11 {.make-column(11);}
+.col-12 {.make-column(12);}
+
+.row-fixed {
+  // Fixed height rows.
+  //
+  // The implementer is required to set the
+  // desired min height for the row.
+  // All columns will inherit height and some elements
+  // like panel have additional stretch styling.
+
+  > [class*='col-'] {
+    min-height: inherit;
+  }
+}
+
+html.flexbox {
+  .row-flex, .row-flex > div[class*='col-'] {
+      display: flex;
+      flex:1 1 auto;
+  }
+
+  .row-flex {
+    flex-flow: row wrap;
+    align-content: flex-start;
+    flex: 0;
+  }
+
+  .row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+     margin:-.2px; /* hack adjust for wrapping */
+  }
+
+  .row-flex > div[class*='col-'] div[class*="panel"] {
+    width:100%;
+  }
+
+  .flex-col {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: column nowrap;
+  }
+
+  .flex-grow {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+}
+
+
+// Leading & trailing space. Useful for shoving some margin in to get the desired design without needing a specific class
+
+.leading-sm {
+  margin-top: @vertical-space-base;
+}
+
+.leading-md {
+  margin-top: @vertical-space-base * 2;
+}
+
+// Trailing
+
+.trailing-sm {
+  margin-bottom: @vertical-space-base;
+}
+
+.trailing-md {
+  margin-bottom: @vertical-space-base * 2;
+}
+
+
+.row-vertical-middle {
+    white-space: nowrap;
+
+    div[class*='col-'] {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+}

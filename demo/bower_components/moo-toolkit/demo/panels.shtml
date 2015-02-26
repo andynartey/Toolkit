@@ -1,0 +1,145 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <!--#include virtual="includes/head.shtml" -->
+        <title>MOO Toolkit - Panels</title>
+    </head>
+    <body>
+    <div class="page-header-container">
+        <!--#include virtual="includes/page-header.shtml" -->
+    </div>
+
+    <div class="toolkit-body container" role="main">
+        <div class="row">
+            <div class="col-12">
+
+                <h2 id="panels" class="page-header">
+                    <a href="#panels" class="link-unstyled link-fragment">Panels</a>
+                </h2>
+
+                <h3>Basic</h3>
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                Basic panel example
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                Basic panel example
+                            </div>
+                            <div class="panel-footer">With a footer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h4 class="panel-title">Panel heading</h4>
+                                <p>Panel body</p>
+                            </div>
+                            <div class="panel-footer">With a footer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h4 class="panel-title">Panel heading</h4>
+                                <div class="panel-content">
+                                    <p>Panel body</p>
+                                </div>
+                                <div class="panel-image"><img src="http://placehold.it/260x150/f1eb9c"></div>
+                            </div>
+                            <div class="panel-footer">With a footer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h4 class="panel-title panel-title-separator">Panel heading underlined</h4>
+                                <p>Panel body</p>
+                            </div>
+                            <div class="panel-footer">With a footer</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr/>
+
+                <h3>Loud</h3>
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-loud">
+                            <div class="panel-body">
+                                Loud panel example
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Basic alternate</h3>
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-alternate">
+                            <div class="panel-body">
+                                Promise panel example
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Loud alternate</h3>
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-alternate panel-loud">
+                            <div class="panel-body">
+                                Promise panel example
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Hoverable Panel</h3>
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-loud panel-hover">
+                            <div class="panel-body">
+                                Promise panel example
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Condensed Horizontal Panel</h3>
+                <div class="examples-container">
+                    <div class="moo-example" data-language="markup">
+                        <div class="panel panel-default panel-horizontal panel-loud panel-condensed">
+                            <div class="panel-body">
+                                Help, I'm condensed!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--#include virtual="includes/page-end-body.shtml" -->
+    </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "jQuery-menu-aim",
+  "homepage": "https://github.com/kamens/jQuery-menu-aim",
+  "_release": "da3cb657f3",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "da3cb657f36a1876d6a34514ad1fb81f1dd2433c"
+  },
+  "_source": "git://github.com/kamens/jQuery-menu-aim.git",
+  "_target": "*",
+  "_originalSource": "jQuery-menu-aim"
+}

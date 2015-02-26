@@ -1,0 +1,228 @@
+<h4>4 column</h4>
+<div class="row">
+  <div class="col-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">Lorem ipsum dolor</h3>
+          <div class="media-body">
+            <h4>
+              <a href="#">Media heading</a>
+            </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quidem consequatur possimus deserunt.</p>
+          </div>
+          <button class="btn btn-primary">Use Moo designs</button>
+      </div>
+      <div class="panel-image">
+        <a href="#" >
+          <img src="./examples/images/thumbelina.jpg" alt="..." class="panel-image"/>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="panel panel-loud">
+      <div class="panel-body">
+          <h3 class="panel-title">Lorem ipsum dolor sit amet</h3>
+          <img src="./examples/images/zipcar.jpg" alt="Zip car">
+          <p>Then save time and money with our free service for bigger businesses. You'll get a dedicated Account Manager and access to an easy online ordering system.</p>
+          <button class="btn btn-primary">Use Moo designs</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">
+          <a href="#">Lorem ipsum dolor</a>
+        </h3>
+        <img src="./examples/images/zipcar.jpg" alt="Zip car">
+        <p>Then save time and money with our free service for bigger businesses. You'll get a dedicated Account Manager and access to an easy online ordering system.</p>
+        <a href="#" class="text-standout">
+          <strong>Read more</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<hr/>
+<div class="row">
+  <div class="col-12">
+    <div class="alert alert-info">
+      <strong>Heads up!</strong> The following examples use <a href="./media-object.shtml">media object</a> base content, inside the <a href="./panels.shtml">panel component</a>.
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">Lorem ipsum dolor</h3>
+        <ul class="media-list">
+          <li class="media">
+            <img class="media-object pull-left media-margin-right" src="http://placehold.it/100x130.png" alt="...">
+            <div class="media-body">
+              <h4>Media heading</h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quidem consequatur possimus deserunt.
+            </div>
+          </li>
+          <li class="media">
+            <img class="media-object pull-left media-margin-right" src="http://placehold.it/100x130.png" alt="...">
+            <div class="media-body">
+              <h4>Media heading</h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quidem consequatur possimus deserunt.
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="text-standout">
+          <strong>Read more</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">Lorem ipsum dolor</h3>
+        <ul class="media-list">
+          <li class="media">
+            <img class="media-object pull-left media-margin-right" src="http://placehold.it/60x60.png" alt="...">
+            <div class="media-body">
+              <h4>
+                <a href="#">Media heading</a>
+              </h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quidem consequatur possimus deserunt.
+            </div>
+          </li>
+          <li class="media">
+            <img class="media-object pull-left media-margin-right" src="http://placehold.it/60x60.png" alt="...">
+            <div class="media-body">
+              <h4>
+                <a href="#">Media heading</a>
+              </h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quidem consequatur possimus deserunt.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">Lorem ipsum dolor</h3>
+        <ul class="media-list">
+          <li class="media">
+            <div class="media-body">
+              <h4>
+                <a href="#">Media heading</a>
+              </h4>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque Illum quidem consequatur...
+            </div>
+          </li>
+          <li class="media">
+            <div class="media-body">
+              <h4>
+                <a href="#">Media heading</a>
+              </h4>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque Illum quidem consequatur...
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="text-standout">
+          <strong>Read more</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<hr/>
+<div class="row">
+  <div class="col-12">
+    <div class="alert alert-info">
+      <strong>Heads up!</strong> The following examples use the <a href="./lists.shtml">lists</a> base content, and the <a href="./tabs.shtml">tabs component</a> inside the <a href="./panels.shtml">panel component</a>.
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <!-- Nav tabs -->
+        <nav class="tabs">
+          <ul>
+            <li class="active"><a href="#one" data-toggle="tab">One</a></li>
+            <li><a href="#two" data-toggle="tab">Two</a></li>
+            <li><a href="#three" data-toggle="tab">Three</a></li>
+          </ul>
+        </nav>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="one">
+            <h3 class="panel-title">Lorem ipsum dolor</h3>
+            <ol class="list-fancy-numbers">
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit. </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit. </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit. </li>
+            </ol>
+            <a href="#" class="text-standout">
+              <strong>Read more</strong>
+            </a>
+          </div>
+          <div class="tab-pane" id="two">
+            <h3 class="panel-title">Lorem ipsum dolor</h3>
+            <ul class="media-list">
+              <li class="media">
+                <div class="media-body">
+                  <h4>
+                    <a href="#">Media heading</a>
+                  </h4>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque Illum quidem consequatur...
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-body">
+                  <h4>
+                    <a href="#">Media heading</a>
+                  </h4>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque Illum quidem consequatur...
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="text-standout">
+              <strong>Read more</strong>
+            </a>
+          </div>
+          <div class="tab-pane" id="three">Sed semper mollis aliquam. Ut sed dolor eu leo tincidunt lobortis sit amet sed elit. Phasellus at lectus pellentesque, venenatis dui in, adipiscing mauris. Cras vulputate eleifend dignissim. Quisque vestibulum sem quis aliquam venenatis.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3 class="panel-title">Lorem ipsum dolor</h3>
+        <ol class="list-fancy-numbers">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit. </li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit. </li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit. </li>
+        </ol>
+        <a href="#" class="text-standout">
+          <strong>Read more</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="panel panel-alternate">
+      <div class="panel-body">
+        <h3 class="panel-title">The MOO Promise</h3>
+        <div class="panel-bg-top-right mooimage-promise-stamp">100% satisfaction guaranteed</div>
+        <div class="row">
+          <p class="col-10">We hope you're happy with all your MOO products - but if you're not, we'll do everything in our power to fix the problem. In the unlikely event that we can't help, we'll happily give you your money back.</p>
+        </div>
+        <p>Learn more about <a href="#" title="...">The MOO Promise</a>.</p>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,80 @@
+//--------------------------------------------------------------
+// Statuses
+//
+//--------------------------------------------------------------
+
+// Status mixins
+.status-square() {
+  width: 10px;
+  height: 10px;
+  margin: 0 @status-indicator-width;
+  background-color: @brand-primary-black;
+  border-radius: @border-radius-base;
+}
+
+// Status progress
+.status-purchased,
+.status-printing,
+.status-packing,
+.status-dispatched,
+.status-unknown,
+.status-ready_to_collect,
+.status-collected,
+.status-cancelled {
+  .text-hide();
+  .status-square();
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+  &:before,
+  &:after {
+    .status-square();
+    content: '';
+    position: absolute;
+    margin: 0;
+  }
+
+  &:before {
+    right: @status-indicator-width;
+  }
+
+  &:after {
+    left: @status-indicator-width;
+  }
+}
+
+.status-purchased {
+  &:before {
+    background: @brand-hero;
+  }
+}
+
+.status-printing,
+.status-packing {
+  background: @brand-hero;
+
+  &:before {
+    background: inherit;
+  }
+}
+
+.status-dispatched,
+.status-ready_to_collect,
+.status-collected {
+  background: @brand-hero;
+
+  &:before,
+  &:after {
+    background: inherit;
+  }
+}
+
+.status-cancelled {
+  background: @brand-primary-red;
+
+  &:before,
+  &:after {
+    background: inherit;
+  }
+}

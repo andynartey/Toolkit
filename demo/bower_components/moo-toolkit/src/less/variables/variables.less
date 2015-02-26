@@ -1,0 +1,440 @@
+//--------------------------------------------------------------
+// Variables
+//
+// Include the various variable sub files. This file should
+// generate no CSS output
+//--------------------------------------------------------------
+
+// Import bootstrap variables
+@import (reference) 'bootstrap/less/variables.less';
+
+// Import our various variable groups
+@import (reference) 'colors';
+@import (reference) 'unicode';
+
+@images-path: "../images/";
+
+// Overwrite bootstrap defaults
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@gray-darker:            @brand-primary-black;
+@gray-dark:              @brand-gray;
+@gray:                   @brand-secondary-gray;
+@gray-light:             @brand-pastel-gray;
+@gray-lighter:           @brand-alternate-gray;
+
+@brand-primary:         @brand-hero;
+@brand-success:         @brand-primary-green;
+@brand-info:            @brand-secondary-blue;
+@brand-warning:         @brand-secondary-yellow;
+@brand-danger:          @brand-primary-red;
+
+@brand-hero-darker:               darken(@brand-hero, 10%);
+@brand-primary-red-darker:        darken(@brand-primary-red, 10%);
+@brand-primary-blue-darker:       darken(@brand-primary-blue, 10%);
+@brand-primary-navy-darker:       darken(@brand-primary-navy, 10%);
+@brand-primary-black-darker:      darken(@brand-primary-black, 10%);
+@brand-primary-gray-darker:       darken(@brand-primary-gray, 10%);
+@brand-primary-green-darker:      darken(@brand-primary-green, 10%);
+@brand-primary-yellow-darker:     darken(@brand-primary-yellow, 10%);
+
+@brand-hero-lighter:               lighten(@brand-hero, 3%);
+@brand-primary-red-lighter:        lighten(@brand-primary-red, 3%);
+@brand-primary-blue-lighter:       lighten(@brand-primary-blue, 3%);
+@brand-primary-navy-lighter:       lighten(@brand-primary-navy, 3%);
+@brand-primary-black-lighter:      lighten(@brand-primary-black, 3%);
+@brand-primary-gray-lighter:       lighten(@brand-primary-gray, 3%);
+@brand-primary-green-lighter:      lighten(@brand-primary-green, 3%);
+@brand-primary-yellow-lighter:     lighten(@brand-primary-yellow, 3%);
+
+//== Scaffolding
+//
+// ## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               @brand-primary-white;
+//** Global text color on `<body>`.
+@text-color:            @brand-primary-black-darker;
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      @link-color;
+
+@image-path:           "../images/";
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-path:           "../fonts/";
+@font-family-bryant:  "Bryant MOO Pro", "Trebuchet MS", Trebuchet, "Liberation Sans", sans-serif;
+@font-family-verdana: Verdana, Geneva, sans-serif;
+
+@font-family-base:        @font-family-verdana;
+
+@font-size-base:          13px;
+@font-size-medium:        15px;
+@font-size-large:         17px;
+@font-size-xl:            21px;
+@font-size-small:         10px;
+
+@font-size-h1:            36px;
+@font-size-h2:            30px;
+@font-size-h3:            24px;
+@font-size-h4:            20px;
+@font-size-h5:            18px;
+@font-size-h6:            15px;
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-target: 18px;
+@line-height-computed: @line-height-target;
+@line-height-base: unit((@line-height-target / @font-size-base));
+
+
+@headings-font-family:    @font-family-bryant;
+@headings-line-height:    (25 / 18);
+@headings-color:          inherit;
+@headings-font-weight:    normal;
+@headings-small-color:    inherit;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         20px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     8px;
+@padding-base-horizontal:   16px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  20px;
+
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     4px;
+
+@line-height-large:         unit((25px / @font-size-base));
+@line-height-small:         unit((18px / @font-size-base));
+
+@border-radius-base:        2px;
+@border-radius-large:       3px;
+@border-radius-small:       2px;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+//
+// Default button
+
+@btn-default-color:              @text-color;
+@btn-default-bg:                 @gray;
+@btn-default-border:             @gray;
+@btn-default-shadow:             @gray-dark;
+
+@btn-default-hover-color:        @text-color;
+@btn-default-hover-bg:           @gray;
+@btn-default-hover-border:       @gray;
+
+@btn-default-active-color:        @text-color;
+@btn-default-active-bg:           @gray-lighter;
+@btn-default-active-border:       @gray-lighter;
+
+// Primary button
+
+@btn-primary-color:              @brand-primary-white;
+@btn-primary-bg:                 @brand-hero;
+@btn-primary-border:             @brand-hero;
+@btn-primary-shadow:             @brand-hero-darker;
+
+@btn-primary-hover-color:        @brand-primary-white;
+@btn-primary-hover-bg:           @brand-hero;
+@btn-primary-hover-border:       @brand-hero;
+
+@btn-primary-active-color:        @brand-primary-white;
+@btn-primary-active-bg:           @brand-hero-lighter;
+@btn-primary-active-border:       @brand-hero;
+
+// Alt button
+
+@btn-alt-color:              @text-color;
+@btn-alt-bg:                 @brand-white;
+@btn-alt-border:             @brand-white;
+@btn-alt-shadow:             @gray-dark;
+
+@btn-alt-hover-color:        @text-color;
+@btn-alt-hover-bg:           @brand-white;
+@btn-alt-hover-border:       @brand-white;
+
+@btn-alt-active-color:        @text-color;
+@btn-alt-active-bg:           @brand-white;
+@btn-alt-active-border:       @gray-lighter;
+
+// Btn link
+
+@btn-link-disabled-color:        @gray-light;
+
+//== Border width
+//
+//## Element border width.
+@border-width-base:                   1px;
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+@table-cell-padding:            20px;
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding:  10px;
+// Offset used to position the sort icons
+@table-sortable-padding: 3px;
+
+//** Default background color used for all tables.
+@table-bg:                      transparent;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               @gray-light;
+
+//** Border color for table and cell borders.
+@table-border-color:            @brand-primary-white;
+@table-border-width:            @border-width-base;
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+@input-bg:                       #fff;
+//** `<input disabled>` background color
+@input-bg-disabled:              @gray-lighter;
+
+//** Text color for `<input>`s
+@input-color:                    @text-color;
+//** `<input>` border color
+@input-border:                   @brand-primary;
+//** `<input>` border radius
+@input-border-radius:            @border-radius-base;
+//** Border color for inputs on focus
+@input-border-focus:             #66afe9;
+
+//** Placeholder text color
+@input-color-placeholder:        @brand-secondary-gray;
+
+//** Default `.form-control` height
+@input-height-base:              (@line-height-computed + ((@padding-base-vertical + 2) * 2) + 2);
+
+@input-icons-size: @font-size-large;
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-text:             @brand-success;
+@state-success-bg:               @brand-success;
+@state-success-border:           @brand-success;
+
+@state-info-text:                @brand-info;
+@state-info-bg:                  @brand-info;
+@state-info-border:              @brand-info;
+
+@state-warning-text:             @brand-warning;
+@state-warning-bg:               @brand-warning;
+@state-warning-border:           @brand-warning;
+
+@state-danger-text:              @brand-danger;
+@state-danger-bg:                @brand-danger;
+@state-danger-border:            @brand-danger;
+
+//== Code
+//
+//##
+
+@code-color:                  @brand-primary-navy;
+@code-bg:                     @brand-secondary-blue;
+
+@kbd-color:                   #fff;
+@kbd-bg:                      #333;
+
+@pre-bg:                      @brand-secondary-pink;
+@pre-color:                   @gray-dark;
+@pre-border-color:            @brand-secondary-gray;
+@pre-scrollable-max-height:   340px;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+@small:                       ~"only screen and (min-width: 320px)";
+@medium:                      ~"only screen and (min-width: 768px)";
+@large:                       ~"only screen and (min-width: 1224px)";
+
+// Mobile Device Orientation breakpoints
+@small-portrait:              ~"only screen and (max-width: 321px)";
+@small-landscape:             ~"only screen and (min-width : 321px)";
+
+
+// Tablet orientation
+@medium-portrait:             ~"only screen and (min-device-width : 768px)",
+                              ~"only screen and (max-device-width : 1024px)",
+                              ~"only screen and (orientation : portrait)";
+@medium-landscape:            ~"only screen and (min-device-width : 768px)",
+                              ~"only screen and (max-device-width : 1024px)",
+                              ~"only screen and (orientation : landscape)";
+
+//== Separator lines
+//
+//## Define border width for separator lines
+//
+
+@separator-thick-line:         6px;
+@separator-medium-line:        3px;
+@separator-thin-line:          1px;
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+@alert-padding:               15px;
+@alert-border-radius:         0;
+@alert-link-font-weight:      bold;
+
+@alert-success-bg:            @brand-secondary-green;
+@alert-success-text:          @text-color;
+@alert-success-border:        @state-success-border;
+
+@alert-info-bg:               @brand-secondary-blue;
+@alert-info-text:             @text-color;
+@alert-info-border:           @brand-primary-blue;
+
+@alert-warning-bg:            @brand-secondary-yellow;
+@alert-warning-text:          @text-color;
+@alert-warning-border:        @brand-primary-yellow;
+
+@alert-danger-bg:             @brand-secondary-pink;
+@alert-danger-text:           @text-color;
+@alert-danger-border:         @state-danger-border;
+
+//== Pagination
+//
+//## Define background and border colors.
+
+@pagination-border:           @brand-secondary-gray;
+@pagination-hover-bg:         transparent;
+@pagination-active-color:     @text-color;
+@pagination-active-bg:        transparent;
+@pagination-disabled-color:   @gray-dark;
+@pagination-disabled-border:  @brand-secondary-gray;
+@pagination-hover-border:     @brand-secondary-gray;
+
+//== Statuses
+//
+//## Define status progress colour indicators
+//
+@status-indicator-width:          12px;
+
+
+//== Panels
+//
+//##
+
+@panel-bg:                    @body-bg;
+@panel-body-padding:          20px;
+@panel-border-radius:         @border-radius-base;
+
+//** Border color for elements within panels
+@panel-inner-border:          @gray-light;
+@panel-footer-bg:             @gray-lighter;
+
+@panel-default-text:          @gray-dark;
+@panel-default-border:        @gray-light;
+@panel-default-heading-bg:    @text-color;
+
+@panel-loud-text:             @text-color;
+@panel-loud-border:           @gray-dark;
+@panel-loud-heading-bg:       @text-color;
+
+@panel-bg-position:           10px;
+
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+@dropdown-bg:                    #fff;
+//** Dropdown menu `border-color`.
+@dropdown-border:                rgba(0,0,0,.15);
+//** Dropdown menu `border-color` **for IE8**.
+@dropdown-fallback-border:       #ccc;
+//** Divider color for between dropdown items.
+@dropdown-divider-bg:            #e5e5e5;
+
+//** Dropdown link text color.
+@dropdown-link-color:            @text-color;
+//** Hover color for dropdown links.
+@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+//** Hover background for dropdown links.
+@dropdown-link-hover-bg:         #f5f5f5;
+
+//** Active dropdown menu item text color.
+@dropdown-link-active-color:     @component-active-color;
+//** Active dropdown menu item background color.
+@dropdown-link-active-bg:        @component-active-bg;
+
+//** Disabled dropdown menu item background color.
+@dropdown-link-disabled-color:   @gray-light;
+
+//** Text color for headers within dropdown menus.
+@dropdown-header-color:          @gray-light;
+
+
+//== Navs
+//
+//##
+
+//=== Shared nav styles
+@nav-link-padding:                          10px 15px;
+@nav-link-hover-bg:                         transparent;
+
+@nav-open-link-hover-color:                 #fff;
+
+//== Tabs
+@nav-tabs-border-color:                     @gray;
+
+@nav-tabs-link-hover-border-color:          transparent;
+
+@nav-tabs-active-link-hover-bg:             @body-bg;
+@nav-tabs-active-link-hover-color:          @text-color;
+@nav-tabs-active-link-hover-border-color:   transparent;
+
+@nav-tabs-justified-link-border-color:      transparent;
+
+//== Popovers
+
+//** Popover border color
+@popover-border-color:                @brand-gray;
+@zindex-popover:                            1035;
+
+
+// Vertical spacing
+@vertical-space-base:                       10px;

@@ -1,0 +1,138 @@
+.shape-rectangle(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.shape-square(@width) {
+  .shape-rectangle(@width, @width);
+}
+
+.shape-circle(@diameter) {
+  .shape-square(@diameter);
+  border-radius: 50%;
+}
+
+#private {
+  .triangle-all(@width, @height) {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    width: @width;
+    height: @height;
+
+    &:before,
+    &:after {
+      position: absolute;
+    }
+
+    &:before {
+      content: "";
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .triangle-down(@width, @height, @color) {
+    .shape-square(0);
+
+    display: inline-block;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: @color;
+
+    border-left-width: @width / 2;
+    border-right-width: @width / 2;
+    border-top-width: @height;
+
+  }
+
+  .triangle-up(@width, @height, @color) {
+    .shape-square(0);
+
+    display: inline-block;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: @color;
+
+    border-left-width: @width / 2;
+    border-right-width: @width / 2;
+    border-bottom-width: @height;
+  }
+
+  .triangle-right(@width, @height, @color) {
+    .shape-square(0);
+
+    display: inline-block;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: @color;
+
+    border-top-width: @height / 2;
+    border-bottom-width: @height / 2;
+    border-left-width: @width;
+  }
+}
+
+.shape-triangle-down(@width, @height: @width, @color: @brand-primary) {
+  #private.triangle-down(@width, @height, @color);
+}
+
+.shape-triangle-up(@width, @height: @width, @color: @brand-primary) {
+  #private.triangle-up(@width, @height, @color);
+}
+
+.shape-triangle-right(@width, @height: @width, @color: @brand-primary) {
+  #private.triangle-right(@width, @height, @color);
+}
+
+.shape-triangle-down-el(@width, @height: @width, @color: @brand-primary, @border-color: false, @border-width: 1px) when not (iscolor(@border-color)) {
+  #private.triangle-all(@width, @height);
+
+  &:before {
+    #private.triangle-down(@width, @height, @color);
+  }
+}
+
+.shape-triangle-down-el(@width, @height: @width, @color: @brand-primary, @border-color: false, @border-width: 1px) when (iscolor(@border-color)) {
+  #private.triangle-all(@width, @height);
+
+  &:before {
+    #private.triangle-down(@width, @height, @border-color);
+  }
+
+  &:after {
+    content: "";
+
+    bottom: @border-width;
+    left: 0;
+
+    #private.triangle-down(@width, @height, @color);
+  }
+}
+
+
+.shape-triangle-up-el(@width, @height: @width, @color: @brand-primary, @border-color: false, @border-width: 1px) when not (iscolor(@border-color)) {
+  #private.triangle-all(@width, @height);
+
+  &:before {
+    #private.triangle-up(@width, @height, @color);
+  }
+}
+
+.shape-triangle-up-el(@width, @height: @width, @color: @brand-primary, @border-color: false, @border-width: 1px) when (iscolor(@border-color)) {
+  #private.triangle-all(@width, @height);
+
+  &:before {
+    #private.triangle-up(@width, @height, @border-color);
+  }
+
+  &:after {
+    content: "";
+
+    top: @border-width * 2;
+    left: 0;
+
+    #private.triangle-up(@width, @height, @color);
+  }
+}

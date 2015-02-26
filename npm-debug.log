@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'fontforge' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 info shrinkwrap file "/Users/andrew/moo/toolkit/npm-shrinkwrap.json"
+5 verbose readDependencies returned deps { bower: 'http://goth.office.moo.com:4873/bower/-/bower-1.3.12.tgz',
+5 verbose readDependencies returned deps   'connect-ssi': 'http://goth.office.moo.com:4873/connect-ssi/-/connect-ssi-0.0.3.tgz',
+5 verbose readDependencies returned deps   grunt: 'http://goth.office.moo.com:4873/grunt/-/grunt-0.4.5.tgz',
+5 verbose readDependencies returned deps   'grunt-autoprefixer': 'http://goth.office.moo.com:4873/grunt-autoprefixer/-/grunt-autoprefixer-0.7.6.tgz',
+5 verbose readDependencies returned deps   'grunt-bump': 'git+ssh://goth/usr/local/git/thomaswelton/grunt-bump.git#783d8e0125e39b3c843f8253f8deb82503b12714',
+5 verbose readDependencies returned deps   'grunt-cli': 'http://goth.office.moo.com:4873/grunt-cli/-/grunt-cli-0.1.13.tgz',
+5 verbose readDependencies returned deps   'grunt-contrib-clean': 'http://goth.office.moo.com:4873/grunt-contrib-clean/-/grunt-contrib-clean-0.5.0.tgz',
+5 verbose readDependencies returned deps   'grunt-contrib-connect': 'http://goth.office.moo.com:4873/grunt-contrib-connect/-/grunt-contrib-connect-0.7.1.tgz',
+5 verbose readDependencies returned deps   'grunt-contrib-copy': 'http://192.168.19.171:8001/grunt-contrib-copy/-/grunt-contrib-copy-0.5.0.tgz',
+5 verbose readDependencies returned deps   'grunt-contrib-csslint': 'http://goth.office.moo.com:4873/grunt-contrib-csslint/-/grunt-contrib-csslint-0.2.0.tgz',
+5 verbose readDependencies returned deps   'grunt-contrib-less': 'http://192.168.19.171:8001/grunt-contrib-less/-/grunt-contrib-less-0.11.4.tgz',
+5 verbose readDependencies returned deps   'grunt-contrib-requirejs': 'http://192.168.19.171:8001/grunt-contrib-requirejs/-/grunt-contrib-requirejs-0.4.4.tgz',
+5 verbose readDependencies returned deps   'grunt-contrib-watch': 'http://192.168.19.171:8001/grunt-contrib-watch/-/grunt-contrib-watch-0.6.1.tgz',
+5 verbose readDependencies returned deps   'grunt-cssjoin': 'http://goth.office.moo.com:4873/grunt-cssjoin/-/grunt-cssjoin-0.2.0.tgz',
+5 verbose readDependencies returned deps   'grunt-csso': 'http://goth.office.moo.com:4873/grunt-csso/-/grunt-csso-0.6.3.tgz',
+5 verbose readDependencies returned deps   'grunt-image-info': 'git+ssh://goth/usr/local/git/thomaswelton/grunt-image-info.git#9b62254bf70b5d27ed3a142bfd7c7acd09d575e3',
+5 verbose readDependencies returned deps   'grunt-jslint': 'http://goth.office.moo.com:4873/grunt-jslint/-/grunt-jslint-1.1.12.tgz',
+5 verbose readDependencies returned deps   'grunt-markdown': 'http://goth.office.moo.com:4873/grunt-markdown/-/grunt-markdown-0.6.1.tgz',
+5 verbose readDependencies returned deps   'grunt-modernizr': 'http://goth.office.moo.com:4873/grunt-modernizr/-/grunt-modernizr-0.5.2.tgz',
+5 verbose readDependencies returned deps   'grunt-notify': 'http://goth.office.moo.com:4873/grunt-notify/-/grunt-notify-0.3.1.tgz',
+5 verbose readDependencies returned deps   'grunt-svg-sprites': 'http://goth.office.moo.com:4873/grunt-svg-sprites/-/grunt-svg-sprites-0.1.0.tgz',
+5 verbose readDependencies returned deps   'grunt-svg2png': 'http://goth.office.moo.com:4873/grunt-svg2png/-/grunt-svg2png-0.2.5.tgz',
+5 verbose readDependencies returned deps   'grunt-svgmin': 'http://goth.office.moo.com:4873/grunt-svgmin/-/grunt-svgmin-0.4.0.tgz',
+5 verbose readDependencies returned deps   'grunt-template': 'http://goth.office.moo.com:4873/grunt-template/-/grunt-template-0.2.3.tgz',
+5 verbose readDependencies returned deps   'grunt-webfont': 'http://goth.office.moo.com:4873/grunt-webfont/-/grunt-webfont-0.4.8.tgz',
+5 verbose readDependencies returned deps   'grunt-wrap': 'http://goth.office.moo.com:4873/grunt-wrap/-/grunt-wrap-0.3.0.tgz',
+5 verbose readDependencies returned deps   'http-rewrite-middleware': 'http://goth.office.moo.com:4873/http-rewrite-middleware/-/http-rewrite-middleware-0.1.6.tgz',
+5 verbose readDependencies returned deps   'load-grunt-tasks': 'http://192.168.19.171:8001/load-grunt-tasks/-/load-grunt-tasks-0.4.0.tgz',
+5 verbose readDependencies returned deps   'time-grunt': 'http://192.168.19.171:8001/time-grunt/-/time-grunt-0.3.2.tgz',
+5 verbose readDependencies returned deps   version: 'http://goth.office.moo.com:4873/version/-/version-0.1.2.tgz' }
+6 verbose cache add [ 'fontforge', null ]
+7 verbose cache add name=undefined spec="fontforge" args=["fontforge",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'fontforge',
+8 verbose parsed url   path: 'fontforge',
+8 verbose parsed url   href: 'fontforge' }
+9 silly lockFile babc262a-fontforge fontforge
+10 verbose lock fontforge /Users/andrew/.npm/babc262a-fontforge.lock
+11 silly lockFile babc262a-fontforge fontforge
+12 silly lockFile babc262a-fontforge fontforge
+13 verbose addNamed [ 'fontforge', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 6d7e4a74-fontforge fontforge@
+16 verbose lock fontforge@ /Users/andrew/.npm/6d7e4a74-fontforge.lock
+17 silly addNameRange { name: 'fontforge', range: '*', hasData: false }
+18 verbose url raw fontforge
+19 verbose url resolving [ 'https://registry.npmjs.org/', './fontforge' ]
+20 verbose url resolved https://registry.npmjs.org/fontforge
+21 info trying registry request attempt 1 at 09:19:31
+22 http GET https://registry.npmjs.org/fontforge
+23 http 404 https://registry.npmjs.org/fontforge
+24 silly registry.get cb [ 404,
+24 silly registry.get   { date: 'Tue, 24 Feb 2015 09:19:31 GMT',
+24 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=0',
+24 silly registry.get     'content-length': '52',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '0',
+24 silly registry.get     'x-served-by': 'cache-lhr6330-LHR',
+24 silly registry.get     'x-cache': 'MISS',
+24 silly registry.get     'x-cache-hits': '0',
+24 silly registry.get     'x-timer': 'S1424769570.692051,VS0,VE353',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 silly lockFile 6d7e4a74-fontforge fontforge@
+26 silly lockFile 6d7e4a74-fontforge fontforge@
+27 error 404 'fontforge' is not in the npm registry.
+27 error 404 You should bug the author to publish it
+27 error 404 It was specified as a dependency of 'moo-toolkit'
+27 error 404
+27 error 404 Note that you can also install from a
+27 error 404 tarball, folder, or http url, or git url.
+28 error System Darwin 14.1.0
+29 error command "node" "/usr/local/bin/npm" "install" "fontforge"
+30 error cwd /Users/andrew/moo/toolkit
+31 error node -v v0.10.26
+32 error npm -v 1.4.3
+33 error code E404
+34 verbose exit [ 1, true ]

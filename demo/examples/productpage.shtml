@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <base href="../">
+        <!--#include virtual="../includes/head.shtml" -->
+        <title>MOO Toolkit Example - Product page</title>
+
+        <link rel="stylesheet" href="stylesheets/examples.css">
+    </head>
+    <body>
+        <!--#include virtual="includes/header.shtml" -->
+
+        <div class="hero-banner">
+          <!--#include virtual="../includes/slideshow-productpage.shtml" -->
+        </div>
+
+        <div class="container" role="main">
+
+
+            <div class="row product-page-modules">
+                <div class="col-4">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <h3 class="panel-title">Premium quality</h3>
+                        <ul class="media-list">
+                            <li class="media">
+                                <img class="media-object pull-left" src="http://static9.moo.com/images/bc_showcase_colour.png?q=1-4107700000122621137234838098951" width="101" height="130" alt="">
+                                <div class="media-body">
+                                    <h5 class="media-heading">Colour</h5>
+                                    <p>Our Business Cards are printed in full colour, on both sides of the card. There is no extra charge for this (not even sneaky hidden ones).</p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <img class="media-object pull-left" src="http://static1.moo.com/images/bc_showcase_printfinity.png?q=1-4107700000122729137235237990695" width="101" height="130" alt="">
+                                <div class="media-body">
+                                    <h5 class="media-heading">Printfinity</h5>
+                                    <p>With 50 Business Cards per pack, there's the option to print a different image or design on every one. We call this technology <a href="/about/printfinity.html" title="Printfinity technology from MOO">Printfinity</a>.</p>
+                                </div>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="panel-footer">
+                        <a href="http://uk.moo.com/about/" class="text-standout"><strong>What makes MOO different?</strong></a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                          <h3 class="panel-title">Which paper?</h3>
+                          <ul class="media-list">
+                              <li class="media">
+                                  <img class="media-object pull-left" src="http://static1.moo.com/images/bc_about_paper_classic.png?q=1-41077000001250213728670667025" width="101" height="130" alt="">
+                                  <div class="media-body">
+                                      <h5 class="media-heading">Classic</h5>
+                                      <p>A heavy paper with silky finish this stock was chosen for its great print quality and luxurious, thick feel. Available in gloss finish.</p>
+                                  </div>
+                              </li>
+                              <li class="media">
+                                  <img class="media-object pull-left" src="http://static4.moo.com/images/bc_about_paper_luxe.png?q=1-410770000012532137286708302788" width="101" height="130" alt="">
+                                  <div class="media-body">
+                                      <h5 class="media-heading">Luxe</h5>
+                                      <p>Our finest paper stock. Four layers of sumptuous Mohawk Superfine sandwiched together to create the ultimate Business Card.</p>
+                                  </div>
+                              </li>
+                          </ul>
+                        </div>
+                        <div class="panel-footer">
+                          <a href="http://uk.moo.com/about/paper.html" class="text-standout"><strong>About our paper stock &amp; finishes</strong></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                          <h3 class="panel-title">Dimensions</h3>
+                          <ul class="media-list">
+                              <li class="media">
+                                  <img class="media-object pull-right" alt="Business Cards final card size" src="http://static4.moo.com/images/bc_dimension_card_size.png">
+                                  <div class="media-body">
+                                      <dl>
+                                          <dt>Final card size</dt>
+                                          <dd>84mm x 55mm</dd>
+                                          <dd>3.30" x 2.16"</dd>
+                                          <dd>&nbsp;</dd>
+                                      </dl>
+                                  </div>
+                              </li>
+                              <li class="media">
+                                  <img class="media-object pull-right" alt="Business Cards final artwork size" src="http://static4.moo.com/images/bc_dimension_artwork_size.png">
+                                  <div class="media-body">
+                                      <dl>
+                                          <dt>Final artwork size</dt>
+                                          <dd>88mm x 59mm</dd>
+                                          <dd>3.46" x 2.32"</dd>
+                                          <dd>(300dpi)</dd>
+                                      </dl>
+                                  </div>
+                              </li>
+                          </ul>
+                        </div>
+                        <div class="panel-footer">
+                          <a href="http://uk.moo.com/help/faq/design-overview.html" class="text-standout"><strong>Design Guidelines</strong></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3 class="panel-title">How much?</h3>
+                            <table class="table table-striped table-bordered table-condensed" summary="A table showing vital statistics for MOO Cards">
+                                <thead>
+                                    <tr>
+                                        <th>Quantity</th>
+                                        <th>Classic</th>
+                                        <th>Green</th>
+                                        <th>Luxe</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>50</strong></td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£13.19</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£10.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£15.35</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£12.79</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£28.79</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£23.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>100</strong></td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£26.38</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£21.98</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£30.70</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£25.58</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£57.58</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£47.98</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>200</strong></td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£47.99</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£39.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£55.19</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£45.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <strong>
+                                                    <span class="price-full">
+                                                        <del>£115.15</del>
+                                                    </span>
+                                                    <span class="price-actual">
+                                                        £92.39
+                                                    </span>
+                                                </strong>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£76.99</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>400</strong></td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£81.58</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£67.98</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <span class="price-actual"><strong>£97.90</strong></span>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£81.58</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <span class="price-with-tax">
+                                                <strong>
+                                                    <span class="price-full">
+                                                        <del>£230.30</del>
+                                                    </span>
+                                                    <span class="price-actual">
+                                                        £143.95
+                                                    </span>
+                                                </strong>
+                                            </span>
+                                            <br>
+                                            <small class="price-without-tax vat-message">
+                                                (<span class="price-actual">£119.96</span> <span class="excluding-tax-text">excl. VAT</span>)
+                                            </small>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                </tfoot>
+                            </table>
+                            <a href="http://uk.moo.com/help/faq/cost-calculator.html" class="text-standout"><strong>Get a detailed price quote</strong></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h4 class="panel-title">What you can do with Business Cards</h4>
+                            <ul class="media-list">
+                                <li class="media">
+                                    <a href="http://uk.moo.com/ideas/pocket-size-photography-portfolio.html" class="media-object pull-left">
+                                        <img src="http://static8.moo.com/images/products/business-card-ideas/business-card-portfolio.jpg?q=1-18662128040954546275" width="300" height="150" alt="A pocket portfolio" title="A pocket portfolio">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><a href="http://uk.moo.com/ideas/pocket-size-photography-portfolio.html">A pocket portfolio</a></h5>
+                                        <p>It's often difficult to describe your work, so why not <strong>show it</strong>? Photographer, Simon Warren, prints a range of photos on MOO Business Cards. When he meets new contacts he's able to talk them through his work right there, and leave a card with them as the perfect reminder.</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <a href="http://uk.moo.com/ideas/dough-dough.html" class="media-object pull-left">
+                                        <img src="http://static6.moo.com/images/products/business-card-ideas/business-card-product-range.jpg?q=1-19116128040958220031" width="300" height="150" alt="A portable product catalogue" title="A portable product catalogue">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><a href="http://uk.moo.com/ideas/dough-dough.html">A portable product catalogue</a></h5>
+                                        <p>Take advantage of Printfinity and create Business Cards featuring your products, like <strong>doughdough.com</strong>. Use the cards as a conversation starter, show people your product range and let them pick a favourite card to keep.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <a href="http://uk.moo.com/ideas/business-card-ideas.html" class="text-standout"><strong>Business Card ideas</strong></a>
+
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h4 class="panel-title">Business Cards: Making your first impression count</h4>
+                            <p>Handing out a business card is often the first impression people take of your business, so you need to get it right. Using your own <a href="/help/faq/using-my-own-photos.html">photography</a> or <a href="/help/faq/using-my-own-artwork.html">artwork</a> to create custom business cards can help, and MOO makes the process easy with our simple online <strong>tools and templates</strong>.</p>
+                            <p>Our Business Cards are double sided, printed in full colour at no extra cost, and available in short print runs. There's a choice of <a href="/about/paper.html">premium paper</a> for Business Cards too: As well as sustainably sourced Gloss, you can choose 100% recycled with a light satin finish or sustainably sourced, with a smooth matte laminate.</p>
+                            <p>No design or images of your own? No problem, choose from a selection of <a href="/design-templates/business-cards/">free business card designs</a> created by our professional team and personalise them with your own details. There's a range of <strong>Business Card templates</strong> to choose from too, with the option of uploading your own logo.</p>
+                            <p>Don't forget, just like all our products, there's also <a href="/about/printfinity.html">Printfinity</a>, MOO's own technology, helping you print a different image on every card. If you only have one chance to make a first impression, <strong>make it a good one</strong>!</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-4">
+                    <div class="panel panel-loud">
+                        <div class="panel-body">
+                            <h4 class="panel-title">Order a sample pack!</h4>
+                            <img src="http://static1.moo.com/images/free-business-card-sample-pack-uk.png?q=1-410770000012769137286838236415" width="260" height="150" alt="Business Card sample pack" title="Click here to start making your business card sample pack">
+                            <p>If you'd like to see what our paper and printing is like, try a Business Card sample pack!</p>
+                            <p>You'll be able to upload your own images or browse our designs, so you get a good idea of the way our process works.</p>
+
+                            <a href="http://uk.moo.com/partner/sample/" class="btn btn-primary">Get your sample pack</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-alternate">
+                      <div class="panel-body">
+                        <h3 class="panel-title">The MOO Promise</h3>
+                        <div class="panel-bg-top-right mooimage-promise-stamp">100% satisfaction guaranteed</div>
+                        <div class="row">
+                          <p class="col-10">We hope you're happy with all your MOO products - but if you're not, we'll do everything in our power to fix the problem. In the unlikely event that we can't help, we'll happily give you your money back.</p>
+                        </div>
+                        <p>Learn more about <a href="#" title="...">The MOO Promise</a>.</p>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--#include virtual="includes/footer.shtml" -->
+
+        <!--#include virtual="../includes/page-end-body.shtml" -->
+    </body>
+</html>

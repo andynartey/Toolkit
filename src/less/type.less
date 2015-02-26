@@ -1,0 +1,162 @@
+//--------------------------------------------------------------
+// Buttons
+//
+// Import bootstrap type as a reference
+// Define customizations and moo typography.
+// Use ems instead of pixels
+//--------------------------------------------------------------
+@import (less) "bootstrap/less/type.less";
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @headings-font-family;
+  line-height: @headings-line-height;
+  color: @headings-color;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h6
+.h1, .h2, .h3, .h6 {
+  .bryant-pro-regular();
+}
+
+h4, h5,
+.h4, .h5 {
+  .bryant-pro-regular();
+}
+
+// Helper to set font size and margins using em functions
+.heading-size(@heading-font-size, @heading-margin-top, @heading-margin-bottom){
+  font-size: @heading-font-size;
+  margin-top: @heading-margin-top;
+  margin-bottom: @heading-margin-bottom;
+}
+
+h1, .h1 { .heading-size(@font-size-h1, @line-height-computed, @line-height-computed / 2); }
+h2, .h2 { .heading-size(@font-size-h2, @line-height-computed, @line-height-computed / 2); }
+h3, .h3 { .heading-size(@font-size-h3, @line-height-computed, @line-height-computed / 2); }
+h4, .h4 { .heading-size(@font-size-h4, @line-height-computed / 2, @line-height-computed / 2); }
+h5, .h5 { .heading-size(@font-size-h5, @line-height-computed / 2, @line-height-computed / 2); }
+h6, .h6 { .heading-size(@font-size-h6, @line-height-computed / 2, @line-height-computed / 2); }
+
+// MOORESKIN-610
+h4, .h4 {
+    line-height: 1.1em;
+}
+
+a {
+  .hero-background & {
+    color: @brand-white;
+  }
+}
+
+small,
+.small {
+  font-size: 80%;
+}
+
+.no-leading {
+  margin-top: 0;
+}
+
+.no-trailing {
+  margin-bottom: 0;
+}
+
+.link-unstyled {
+  .all-link-styles({
+      text-decoration: none;
+      color: inherit;
+  });
+}
+
+.text-standout {
+  font-size: @font-size-large;
+  .bryant-pro-regular();
+
+  strong &,
+  strong {
+    .bryant-pro-medium();
+  }
+
+}
+
+small,
+.small  { font-size: unit(@font-size-small / @font-size-base) * 100%; }
+
+.address-inline {
+  display: inline;
+}
+
+.page-header {
+  margin-top: 0;
+  border-bottom: initial;
+
+  p {
+    .h5;
+    font-weight: normal;
+  }
+}
+
+.text-body {
+  color: @text-color;
+}
+
+.text-primary {
+  color: @brand-hero;
+}
+
+blockquote {
+    border: none;
+    padding: 0;
+
+    @triangle-width: 14px;
+    @triangle-height: 10px;
+    @triangle-border-width: 1px;
+    @triangle-left-start: 20px;
+
+    p {
+        font-size: @font-size-medium;
+        line-height: 1.5em;
+        border: 1px solid @brand-hero;
+        padding: 15px;
+
+        // Bottom Triangle
+        margin-bottom: @triangle-height + @triangle-border-width + 8px;
+        position: relative;
+
+        &:before, &:after {
+            content: " ";
+            display: block;
+            position: absolute;
+        }
+
+        &:before {
+            .shape-triangle-down(@triangle-width, @triangle-height, @brand-hero);
+            bottom: -(@triangle-height + (@triangle-border-width * 3));
+            left: @triangle-left-start;
+        }
+
+        &:after {
+            .shape-triangle-down(@triangle-width - @triangle-border-width, @triangle-height - @triangle-border-width, #fff);
+            bottom: -(@triangle-height + (@triangle-border-width * 2));
+            left: @triangle-left-start + @triangle-border-width;
+        }
+    }
+
+    footer {
+        color: @brand-black-lighter;
+        font-size: 11px;
+
+        &:before {
+            content: "";
+            display: none;
+        }
+
+        time {
+            display: block;
+        }
+    }
+}

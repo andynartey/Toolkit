@@ -1,0 +1,567 @@
+// Import the actual toolkit
+@import "../../src/less/template";
+@import "../../src/less/code";
+
+@font-path: "../bower_components/moo-toolkit/dist/fonts/";
+@image-path: "../bower_components/moo-toolkit/dist/images/";
+
+
+@import "bootstrap/less/popovers";
+@import "bootstrap/less/utilities";
+
+@import (less) "prism/themes/prism.css";
+@import (less) "prism/plugins/autolinker/prism-autolinker.css";
+@import (less) "prism/plugins/wpd/prism-wpd.css";
+
+@header-height: 82px;
+@code-example-height: 450px;
+
+
+// Style pages specific to the demo pages
+header {
+  .mooimage-lockup-white {
+    vertical-align: text-top;
+  }
+
+  h1 {
+    .bryant-pro-medium();
+  }
+}
+
+.link-fragment {
+  &:before {
+    display: block;
+    content: " ";
+    margin-top: -1 * @header-height;
+    height: @header-height;
+    visibility: hidden;
+  }
+}
+
+#grid-page,
+#push-col {
+
+  div[class*='col-'] {
+    height: 100px;
+    background: @brand-secondary-blue;
+    border-color: @brand-secondary-purple;
+    border-style: solid;
+    border-width: @border-width-base;
+
+    &:hover {
+      background: @brand-secondary-pink;
+    }
+
+    &:before{
+      content: attr(class);
+    }
+  }
+}
+
+#responsive-grid {
+
+  [class*='module-container-'] {
+    height: 100px;
+    background: @brand-secondary-blue;
+    border-color: @brand-secondary-purple;
+    border-style: solid;
+    border-width: @border-width-base;
+
+    &:hover {
+      background: @brand-secondary-pink;
+    }
+
+    &:before{
+      content: attr(class);
+    }
+  }
+
+  div.module-container-12-2 {
+    .make-column(12);
+
+    &:before{
+      content: "12 Columns";
+    }
+
+    @media @medium{
+      .make-column(2);
+      &:before{
+        content: "2 Columns";
+      }
+    }
+  }
+
+  div.module-container-12-6 {
+    .make-column(12);
+
+    &:before{
+      content: "12 Columns";
+    }
+
+    @media @medium {
+      .make-column(6);
+      &:before{
+        content: "6 Columns";
+      }
+    }
+  }
+
+  div.module-container-12-4 {
+    .make-column(12);
+
+    &:before{
+      content: "12 Columns";
+    }
+
+    @media @medium {
+      .make-column(4);
+      &:before{
+        content: "4 Columns";
+      }
+    }
+  }
+}
+
+#push-col {
+  .col-2 {
+    .make-column(12);
+
+    @media(min-width: @screen-tablet) {
+      .make-column(2);
+    }
+  }
+
+  .col-4 {
+    .make-column(12);
+
+    @media(min-width: @screen-tablet) {
+      .make-column(4);
+      .make-column-push(6);
+    }
+  }
+}
+
+.mooicons-container {
+  .make-column(12);
+  margin-bottom: 20px;
+
+  padding-left: 0;
+  padding-right: 0;
+
+  .mooicons-list {
+    .list-unstyled();
+
+    li {
+      .make-column(6);
+      word-wrap: break-word;
+      height: 115px;
+      padding: 10px;
+      line-height: 1.4;
+      text-align: center;
+      border-color: @brand-white;
+      border-style: solid;
+      border-width: @border-width-base;
+      background-color: @brand-secondary-blue;
+
+      @media @medium {
+        .make-column(2);
+      }
+
+      &:hover {
+        color: @brand-white;
+        background-color: @brand-primary-blue;
+      }
+    }
+  }
+
+  [class*='mooicon-'] {
+    font-size: 24px;
+    margin-top: 5px;
+
+    display: block;
+
+    &:before {
+      .square(24px);
+    }
+
+    &:after {
+      content: attr(class) ;
+      font-size: @font-size-base;
+      display: block;
+      word-wrap: break-word;
+      text-align: center;
+    }
+  }
+}
+
+.examples-container {
+  &:extend(.panel);
+  &:extend(.panel-default);
+
+  margin-bottom: 15px;
+  padding-top: 50px;
+
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "Example";
+    position: absolute;
+    top: @panel-body-padding;
+    left: @panel-body-padding;
+    font-size: @font-size-small;
+    color: @gray-light;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .example-description{
+    &:extend(.panel-body);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .moo-example {
+    &:extend(.panel-body);
+    padding-bottom: @panel-body-padding;
+
+    &.moo-example-no-render {
+      display: none;
+    }
+  }
+
+  pre {
+    margin: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 0;
+    max-height: @code-example-height;
+    overflow-y: auto;
+  }
+}
+
+.toolkit-content {
+  .make-column(12);
+
+  @media @medium {
+    .make-column(9);
+    .make-column-push(3);
+
+    border-left-color: @brand-secondary-gray;
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+
+  ul {
+    .make-column(6);
+
+    @media @medium {
+      .make-column(4);
+    }
+    &:extend(.list-unstyled);
+  }
+}
+
+.toolkit-info {
+  .make-column(12);
+
+  @media @medium {
+    .make-column(3);
+    .make-column-pull(9);
+  }
+
+  word-wrap: break-word;
+
+  ul {
+    &:extend(.list-unstyled);
+  }
+}
+
+.page-header-container {
+  position: fixed;
+  z-index: 100;
+  margin: 0 auto;
+  width: 100%;
+  top: 0;
+}
+
+.toolkit-body {
+  margin-top: @header-height;
+  padding-bottom: 30px;
+}
+
+#colors-page {
+
+  .swatch-primary() {
+    .square(150px);
+     position: relative;
+     display: block;
+  }
+
+  .swatch-alternate() {
+    position: absolute;
+    content: ' ';
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .swatch-container {
+    width: 150px;
+    margin: 20px 20px 20px;
+    float: left;
+    text-align: center;
+
+    .swatch {
+      .swatch-primary();
+      .square(150px);
+    }
+  }
+
+  [class *=" brand-hero"],
+  [class *=" brand-primary"] {
+    min-height: 300px;
+    .swatch {
+      &:before,
+      &:after {
+        .swatch-alternate();
+      }
+      &:before {
+        top: 0;
+      }
+    }
+  }
+
+  .swatch-info {
+    &:before,
+    &:after {
+      white-space: pre;
+      word-wrap: break-word;
+    }
+  }
+
+  .brand-hero {
+    .swatch {
+      background: @brand-hero;
+
+      &:before { background: @brand-hero-lighter; }
+      &:after { background: @brand-hero-darker; }
+    }
+    .swatch-info:after { content: "@brand-hero: \a@{brand-hero} \a@brand-hero-lighter: \a@{brand-hero-lighter} \a @brand-hero-darker: @{brand-hero-darker}"; }
+  }
+
+  .brand-primary-red {
+    .swatch {
+      background: @brand-primary-red;
+
+      &:before{ background: @brand-primary-red-lighter; }
+      &:after { background: @brand-primary-red-darker; }
+    }
+    .swatch-info:after { content: "@brand-primary-red: @{brand-primary-red} \a @brand-primary-red-lighter: @{brand-primary-red-lighter} \a @brand-primary-red-darker: @{brand-primary-red-darker}"; }
+  }
+
+  .brand-primary-blue {
+    .swatch {
+      background: @brand-primary-blue;
+
+      &:before { background: @brand-primary-blue-lighter; }
+      &:after { background: @brand-primary-blue-darker; }
+    }
+    .swatch-info:after { content: "@brand-primary-blue: @{brand-primary-blue} \a @brand-primary-blue-lighter: @{brand-primary-blue-lighter} \a @brand-primary-blue-darker: @{brand-primary-blue-darker}"; }
+  }
+
+  .brand-primary-navy {
+    .swatch {
+      background: @brand-primary-navy;
+
+      &:before { background: @brand-primary-navy-lighter; }
+      &:after { background: @brand-primary-navy-darker; }
+    }
+    .swatch-info:after { content: "@brand-primary-navy: @{brand-primary-navy} \a @brand-primary-navy-lighter: @{brand-primary-navy-lighter} \a @brand-primary-navy-darker: @{brand-primary-navy-darker}"; }
+  }
+
+  .brand-primary-black {
+    .swatch {
+      background: @brand-primary-black;
+
+      &:before { background: @brand-primary-black-lighter; }
+      &:after { background: @brand-primary-black-darker; }
+    }
+    .swatch-info:after { content: "@brand-primary-black: @{brand-primary-black} \a @brand-primary-black-lighter: @{brand-primary-black-lighter} \a @brand-primary-black-darker: @{brand-primary-black-darker}"; }
+  }
+
+  .brand-primary-gray {
+    .swatch {
+      background: @brand-primary-gray;
+
+      &:before { background: @brand-primary-gray-lighter; }
+      &:after { background: @brand-primary-gray-darker; }
+    }
+    .swatch-info:after { content: "@brand-primary-gray: @{brand-primary-gray} \a @brand-primary-gray-lighter: @{brand-primary-gray-lighter} \a @brand-primary-gray-darker: @{brand-primary-gray-darker}"; }
+  }
+
+  .brand-primary-green {
+    .swatch {
+      background: @brand-primary-green;
+
+      &:before { background: @brand-primary-green-lighter; }
+      &:after { background: @brand-primary-green-darker; }
+    }
+    .swatch-info:after { content: "@brand-primary-green: @{brand-primary-green} \a @brand-primary-green-lighter: @{brand-primary-green-lighter} \a @brand-primary-green-darker: @{brand-primary-green-darker}"; }
+  }
+
+  .brand-primary-yellow {
+    .swatch {
+      background: @brand-primary-yellow;
+
+      &:before { background: @brand-primary-yellow-lighter; }
+      &:after { background: @brand-primary-yellow-darker; }
+    }
+    .swatch-info:after { content: "@brand-primary-yellow: @{brand-primary-yellow} \a @brand-primary-yellow-lighter: @{brand-primary-yellow-lighter} \a @brand-primary-yellow-darker: @{brand-primary-yellow-darker}";}
+  }
+
+  .brand-secondary-gray {
+    .swatch { background: @brand-secondary-gray; }
+    .swatch-info:after { content: "@brand-secondary-gray: @{brand-secondary-gray}"; }
+  }
+
+  .brand-secondary-pink {
+    .swatch { background: @brand-secondary-pink; }
+    .swatch-info:after { content: "@brand-secondary-pink: @{brand-secondary-pink}"; }
+  }
+
+  .brand-secondary-blue {
+   .swatch { background: @brand-secondary-blue; }
+    .swatch-info:after { content: "@brand-secondary-blue: @{brand-secondary-blue}"; }
+  }
+
+  .brand-secondary-brown {
+    .swatch { background: @brand-secondary-brown; }
+    .swatch-info:after { content: "@brand-secondary-brown: @{brand-secondary-brown}"; }
+  }
+
+  .brand-secondary-beige {
+    .swatch { background: @brand-secondary-beige;}
+    .swatch-info:after { content: "@brand-secondary-beige: @{brand-secondary-beige}"; }
+  }
+
+  .brand-secondary-green {
+    .swatch { background: @brand-secondary-green;}
+    .swatch-info:after { content: "@brand-secondary-green: @{brand-secondary-green}"; }
+  }
+
+  .brand-secondary-yellow {
+    .swatch {  background: @brand-secondary-yellow; }
+    .swatch-info:after { content: "@brand-secondary-yellow: @{brand-secondary-yellow}"; }
+  }
+
+  .brand-secondary-purple {
+    .swatch {  background: @brand-secondary-purple; }
+    .swatch-info:after { content: "@brand-secondary-purple: @{brand-secondary-purple}"; }
+  }
+
+  .brand-alternate-gray {
+    .swatch { background: @brand-alternate-gray; }
+    .swatch-info:after { content: "@brand-alternate-gray: @{brand-alternate-gray}"; }
+  }
+
+  .brand-gray {
+    .swatch { background: @gray-dark; }
+    .swatch-info:after { content: "@brand-gray: @{brand-gray}"; }
+  }
+
+  .brand-alternate-gray {
+    .swatch { background: @gray-light; }
+    .swatch-info:after { content: "@brand-alternate-gray: @{brand-alternate-gray}"; }
+  }
+
+  .luxe-hero {
+    .swatch { background: @luxe-hero; }
+    .swatch-info:after { content: "@luxe-hero: @{luxe-hero}"; }
+  }
+
+  .luxe-black {
+    .swatch { background: @luxe-black; }
+    .swatch-info:after { content: "@luxe-black: @{luxe-black}"; }
+  }
+
+  .luxe-gray {
+    .swatch {  background: @luxe-gray; }
+    .swatch-info:after { content: "@luxe-gray: @{luxe-gray}"; }
+  }
+}
+
+
+#shapes-page{
+  .triangle-down {
+    .shape-triangle-down-el(50px, 50px, @brand-secondary-blue);
+  }
+  .triangle-down-border {
+    .shape-triangle-down-el(50px, 50px, @brand-secondary-blue, @brand-secondary-purple, 5px);
+  }
+
+  .triangle-up {
+    .shape-triangle-up-el(50px, 50px, @brand-secondary-blue);
+  }
+  .triangle-up-border {
+    .shape-triangle-up-el(50px, 50px, @brand-secondary-blue, @brand-secondary-purple, 5px);
+  }
+
+  .triangle-up-simple {
+    .shape-triangle-up(50px, 50px, @brand-secondary-blue);
+  }
+
+  .triangle-down-simple {
+    .shape-triangle-down(50px, 50px, @brand-secondary-blue);
+  }
+
+  .rectangle {
+    @width: 44px;
+    @height: 22px;
+    @border-width: 2px;
+
+    .shape-rectangle(300px, 200px);
+
+    position: relative;
+    background: @brand-secondary-blue;
+    border: @border-width solid @brand-primary-yellow;
+
+    .rectangle-triangle {
+      .shape-triangle-up-el(@width, @height, @brand-secondary-blue, @brand-primary-yellow, @border-width);
+
+      position: absolute;
+      top: -1 * @height;
+      left: 25px;
+    }
+  }
+}
+
+.btn{
+  &.hover:extend(:hover all){}
+  &.active:extend(:active all){}
+}
+
+.bg-brand-hero {
+  background: @brand-hero;
+}
+.bg-brand-secondary-green{
+  background: @brand-secondary-green;
+}
+.bg-brand-secondary-yellow{
+  background: @brand-secondary-yellow;
+}
+.bg-brand-secondary-pink{
+  background: @brand-secondary-pink;
+}
+.bg-brand-secondary-blue{
+  background: @brand-secondary-blue;
+}
+.bg-brand-secondary-purple{
+  background: @brand-secondary-purple;
+}
+.bg-brand-secondary-beige{
+  background: @brand-secondary-beige;
+}
+
